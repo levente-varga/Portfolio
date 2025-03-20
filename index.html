@@ -6,13 +6,37 @@
     <link href="/src/styles.css" rel="stylesheet">
 </head>
 <body class="bg-background">
-    <div class="bg-background text-textDark text-center content-center w-full pt-20 pb-20">
-        <div class="text-6xl font-semibold">
-            LEVENTE VARGA
+    <div class="text-center p-4 text-textDark">
+        <p id="viewportSize">Viewport size: 0 x 0</p>
+    </div>
+    <script>
+        function updateViewportSize() {
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+            document.getElementById('viewportSize').textContent = `Viewport size: ${width} x ${height}`;
+        }
+        window.addEventListener('load', updateViewportSize);
+        window.addEventListener('resize', updateViewportSize);
+    </script>
+
+    <div class="flex flex-col items-center justify-center space-y-4 min-h-screen">
+        <img class="w-32 h-32 rounded-3xl hover:opacity-50" src="/assets/images/profile.png" alt="Portrait of Levente Varga"/>
+        <div class="text-textDark text-center content-center w-fit pt-32 pb-32">
+            <div class="text-8xl font-black">
+                LEVENTE
+            </div>
+            <div class="text-8xl font-black text-right">
+                VARGA
+            </div>
+            <div class="text-3xl font-normal">
+                Developer & Designer
+            </div>
         </div>
-        <div class="text-xl font-normal">
-            Developer & Designer
-        </div>
+    </div>
+
+    <div class="relative w-64 h-64 border">
+        <div class="absolute inset-0 bg-red-500 opacity-50">This is the first div (Red)</div>
+        <div class="absolute inset-0 bg-blue-500 opacity-50">This is the second div (Blue)</div>
     </div>
 </body>
 </html>
