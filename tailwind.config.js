@@ -12,12 +12,12 @@ module.exports = {
         },
     },
     safelist: [
-        "cpp",
-        "csharp",
-        "javascript",
-        "java",
-        "godot",
-        "game",
+        'bg-javascipt',
+        'bg-cpp',
+        'bg-csharp',
+        'bg-dart',
+        'bg-godot',
+        'bg-game',
     ],
     plugins: [],
 };
