@@ -13,6 +13,34 @@
     --color-text: #888888;
     --color-textLight: #dddddd;
     --color-yellow: #ffcc55;
+
+    --animate-rotate-y-right: rotateYRight 1.5s ease-in-out;
+    @keyframes rotateYRight {
+        0% {
+            transform: rotateY(-90deg);
+            transform-origin: right;
+        }
+        70% {
+            transform: rotateY(10deg); /* Overshoot effect */
+            transform-origin: right;
+        }
+        100% {
+            transform: rotateY(0deg); /* Final position */
+            transform-origin: right;
+        }
+    }
+}
+
+@layer utilities {
+    .animation-delay-200 {
+        animation-delay: 200ms;
+        animation-fill-mode: backwards;
+    }
+
+    .animation-delay-400 {
+        animation-delay: 400ms;
+        animation-fill-mode: backwards;
+    }
 }
 
 body {
