@@ -4,10 +4,21 @@
     <meta charset="UTF-8">
     <title>Levente Varga</title>
     <link href="/src/styles.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="/assets/images/logo_light.png">
+    <link rel="icon" type="image/png" href="/assets/images/logo_light.png" media="(prefers-color-scheme: light)">
     <link rel="icon" type="image/png" href="/assets/images/logo_dark.png" media="(prefers-color-scheme: dark)">
 </head>
 <body class="bg-background">
+    <nav class="fixed top-0 left-0 w-full bg-background text-white p-4 flex justify-center">
+        <ul class="flex space-x-5 items-center">
+            <li><a href="#"><img src="/assets/svg/logo.svg" alt="Logo" class="w-8 h-8 mr-4 ml-4"></a></li>
+            <li><a href="#" class="hover:text-gray-300">Projects</a></li>
+            <li><a href="#" class="hover:text-gray-300">About</a></li>
+            <li><a href="#" class="hover:text-gray-300">Experience</a></li>
+            <li><a href="#" class="hover:text-gray-300">Education</a></li>
+            <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+        </ul>
+    </nav>
+
     <div class="text-center p-4 text-textDark">
         <p id="viewportSize">Viewport size: 0 x 0</p>
     </div>
