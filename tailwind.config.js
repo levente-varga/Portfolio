@@ -11,5 +11,13 @@ module.exports = {
             },
         },
     },
+    safelist: [
+        "cpp",
+        "csharp",
+        "javascript",
+        "java",
+        "godot",
+        "game",
+    ],
     plugins: [],
 };
