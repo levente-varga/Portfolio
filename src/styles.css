@@ -9,10 +9,18 @@
 
 @theme {
     --color-background: #111111;
+    --color-foreground: #1e1e1e;
     --color-textDark: #343434;
     --color-text: #888888;
     --color-textLight: #dddddd;
     --color-yellow: #ffcc55;
+
+    --color-javascipt: #f7e025;
+    --color-cpp: #f34b7d;
+    --color-csharp: #178600;
+    --color-dart: #00b4ab;
+    --color-godot: #4d90c1;
+    --color-game: #e34c26;
 
     --animate-rotate-y-right: rotateYRight 1.5s ease-in-out;
     @keyframes rotateYRight {

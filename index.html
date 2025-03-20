@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Levente Varga</title>
@@ -7,7 +8,9 @@
     <link rel="icon" type="image/png" href="/assets/images/logo_light.png" media="(prefers-color-scheme: light)">
     <link rel="icon" type="image/png" href="/assets/images/logo_dark.png" media="(prefers-color-scheme: dark)">
 </head>
+
 <body class="bg-background">
+    <script type="module" src="src/components/projectCard.js"></script>
     <nav class="fixed top-0 left-0 w-full bg-background text-white p-4 flex justify-center h-16">
         <ul class="flex space-x-5 items-center">
             <li><a href="#"><img src="/assets/svg/logo.svg" alt="Logo" class="w-8 h-8 mr-4 ml-4"></a></li>
@@ -24,10 +27,10 @@
     <div class="flex flex-col items-center justify-center space-y-4 min-h-screen">
         <img class="w-40 h-40 rounded-4xl hover:opacity-50 duration-300" src="/assets/images/profile.png" alt="Portrait of Levente Varga"/>
         <div class="text-textDark text-center content-center w-fit pt-16 pb-32 perspective-distant perspective-origin-right">
-            <div class="text-8xl font-black animate-rotate-y-right">
+            <div class="text-8xl font-extrabold animate-rotate-y-right">
                 LEVENTE
             </div>
-            <div class="text-8xl font-black text-right animate-rotate-y-right animation-delay-200">
+            <div class="text-8xl font-extrabold text-right animate-rotate-y-right animation-delay-200">
                 VARGA
             </div>
             <div class="text-3xl font-normal text-right animate-rotate-y-right animation-delay-400">
@@ -36,12 +39,12 @@
         </div>
     </div>
 
-    <div class="relative w-64 h-64 border">
-        <div class="absolute inset-0 bg-red-500 opacity-50">This is the first div (Red)</div>
-        <div class="absolute inset-0 bg-blue-500 opacity-50">This is the second div (Blue)</div>
-    </div>
-
-
+    <project-card
+            title="Cardium"
+            description="A card game made in Godot Engine."
+            bg="./assets/images//projects/cardium.png"
+            tags='{"C#": "csharp", "Godot": "godot", "Game": "game"}'>
+    </project-card>
 
     <div class="text-center p-4 text-textDark">
         <p id="viewportSize">Viewport size: 0 x 0</p>
