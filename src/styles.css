@@ -7,6 +7,13 @@
     font-style: normal;
 }
 
+@theme {
+    --color-background: #111111;
+    --color-textDark: #343434;
+    --color-text: #888888;
+    --color-textLight: #dddddd;
+}
+
 body {
     font-family: 'Inter', sans-serif;
 }
