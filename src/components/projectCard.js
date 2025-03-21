@@ -1,6 +1,6 @@
 class ProjectCard extends HTMLElement {
     static get observedAttributes() {
-        return ["title", "description", "src", "tags"];
+        return ["title", "description", "src", "tags", "year"];
     }
 
     connectedCallback() {
@@ -16,13 +16,17 @@ class ProjectCard extends HTMLElement {
         const description = this.getAttribute("description") || "Description";
         const src = this.getAttribute("src") || "";
         const tags = this.getAttribute("tags") ? JSON.parse(this.getAttribute("tags")) : {};
+        const year = this.getAttribute("year") || "";
 
         this.innerHTML = `
             <div class="relative rounded-2xl w-80 ring-1 ring-white/5 bg-foreground shadow-xl">
                 <div class="rounded-t-2xl aspect-[calc(5/3)] bg-cover bg-center" style="background-image: url(${src});"> </div>
                 
                 <div class="p-6">
-                    <div class="text-xl text-textLight font-bold">${title}</div>
+                    <div class="flex justify-between items-center">
+                        <div class="text-xl text-textLight font-bold">${title}</div>
+                        <div class="text-sm text-textDim font-light">${year}</div>
+                    </div>
                     <div class="text-sm text-text font-light my-2">${description}</div>
                     <ul class="flex text-text items-center">
                         ${Object.entries(tags).map(([tag, color]) => `
