@@ -19,7 +19,7 @@ class ProjectCard extends HTMLElement {
 
         this.innerHTML = `
             <div class="relative rounded-2xl w-80 ring-1 ring-white/5 bg-foreground shadow-xl">
-                <div class="rounded-t-2xl aspect-[calc(5/3)] bg-cover bg-center bg-[url(${src})]"> </div>
+                <div class="rounded-t-2xl aspect-[calc(5/3)] bg-cover bg-center" style="background-image: url(${src});"> </div>
                 
                 <div class="p-6">
                     <div class="text-xl text-textLight font-bold">${title}</div>
