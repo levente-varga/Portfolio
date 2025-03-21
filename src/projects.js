@@ -5,7 +5,7 @@ export const projects = [
         image: "/images/projects/cardium.png",
         tags: '{"C#": "csharp", "Godot": "godot"}',
         year: "2025",
-        url: "src/pages/cardium.html"
+        url: "/src/pages/cardium.html"
     },
     {
         title: "Ecometer Desktop",
