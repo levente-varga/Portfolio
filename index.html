@@ -2,149 +2,150 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Levente Varga</title>
 
-    <meta property="og:title" content="Levente Varga">
-    <meta property="og:image" content="https://leventevarga.com/images/projects/portfolio.png">
-    <meta property="og:url" content="https://leventevarga.com">
-    <meta property="og:site_name" content="Levente Varga">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Levente Varga</title>
-    <link href="/src/styles.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="/public/images/logo_light.png" media="(prefers-color-scheme: light)">
-    <link rel="icon" type="image/png" href="/public/images/logo_dark.png" media="(prefers-color-scheme: dark)">
-    <link rel="apple-touch-icon" href="/public/images/touch_icon.png">
+  <meta property="og:title" content="Levente Varga">
+  <meta property="og:image" content="https://leventevarga.com/images/projects/portfolio.png">
+  <meta property="og:url" content="https://leventevarga.com">
+  <meta property="og:site_name" content="Levente Varga">
+
+  <link href="/src/styles.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/public/images/logo_light.png" media="(prefers-color-scheme: light)">
+  <link rel="icon" type="image/png" href="/public/images/logo_dark.png" media="(prefers-color-scheme: dark)">
+  <link rel="apple-touch-icon" href="/public/images/touch_icon.png">
 </head>
 
 <body class="bg-background">
-    <header>
-        <div class="flex fixed inset-0 z-20 bg-background text-white p-4 justify-center h-16">
-            <nav class="md:flex hidden">
-                <ul class="flex space-x-5 items-center">
-                    <li><a href="#home"><img src="/svg/logo.svg" alt="Logo" class="w-8 h-8 mr-4 ml-4"></a></li>
-                    <li><a href="#projects" class="hover:text-gray-300">Projects</a></li>
-                    <li><a href="#about" class="hover:text-gray-300">About</a></li>
-                    <li><a href="#experience" class="hover:text-gray-300">Experience</a></li>
-                    <li><a href="#education" class="hover:text-gray-300">Education</a></li>
-                    <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
-                </ul>
-            </nav>
+<header>
+  <div class="flex fixed inset-0 z-20 bg-background text-white p-4 justify-center h-16">
+    <nav class="md:flex hidden">
+      <ul class="flex space-x-5 items-center">
+        <li><a href="#home"><img src="/svg/logo.svg" alt="Logo" class="w-8 h-8 mr-4 ml-4"></a></li>
+        <li><a href="#projects" class="hover:text-gray-300">Projects</a></li>
+        <li><a href="#about" class="hover:text-gray-300">About</a></li>
+        <li><a href="#experience" class="hover:text-gray-300">Experience</a></li>
+        <li><a href="#education" class="hover:text-gray-300">Education</a></li>
+        <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+      </ul>
+    </nav>
 
-            <!-- Mobile Menu Button -->
-            <div class="flex md:hidden w-full justify-between items-center">
-                <div class="flex-1 items-center"></div>
-                <button id="menu-btn" class="px-4 py-4 cursor-pointer">
-                    <svg class="size-6 fill-white" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M30 0L30 60H10V20L30 0Z" fill="white"/>
-                        <path d="M30 60L50 40V60H30Z" fill="white"/>
-                    </svg>
-                </button>
-            </div>
-        </div>
-
-        <!-- Mobile Dropdown Menu -->
-        <div id="mobile-menu" class="md:hidden hidden z-20 fixed inset-y-16 w-full h-fit text-2xl">
-            <div class="bg-background shadow-md">
-                <a id="btnHome" href="#home" class="block px-8 py-6 text-white hover:bg-textDark duration-300">Home</a>
-                <a id="btnProjects" href="#projects" class="block px-8 py-6 text-white hover:bg-textDark duration-300">Projects</a>
-                <a id="btnExperience" href="#experience" class="block px-8 py-6 text-white hover:bg-textDark duration-300">Experience</a>
-                <a id="btnEducation" href="#education" class="block px-8 py-6 text-white hover:bg-textDark duration-300">Education</a>
-                <a id="btnAbout" href="#about" class="block px-8 py-6 text-white hover:bg-textDark duration-300">About</a>
-                <a id="btnContact" href="#contact" class="block px-8 py-6 text-white hover:bg-textDark duration-300">Contact</a>
-            </div>
-            <button id="btnClose" class="w-full h-full bg-black/50"></button>
-        </div>
-    </header>
-
-    <div id="home" class="container h-16"></div>
-
-    <div class="flex flex-col justify-center space-y-4 pb-32 pt-16 w-fit mx-auto">
-        <img class="w-48 h-48 mx-auto mb-16 rounded-4xl" src="/images/profile.png" alt="Portrait of Levente Varga"/>
-
-        <div class="text-textDark text-center content-center w-fit">
-            <div class="text-7xl font-extrabold">LEVENTE</div>
-            <div class="text-7xl font-extrabold">VARGA</div>
-            <div class="text-xl font-light">Developer & Designer</div>
-            <ul class="flex space-x-4 items-center mt-8 mx-auto w-fit">
-                <li><a href="https://github.com/levente-varga">
-                    <svg class="size-8 fill-textDark hover:fill-textDim duration-250" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M31.9047 0C14.2622 0 0 14.4375 0 32.2987C0 46.576 9.13829 58.6615 21.8155 62.939C23.4005 63.2605 23.9811 62.244 23.9811 61.3889C23.9811 60.6401 23.9288 58.0735 23.9288 55.3993C15.0537 57.3247 13.2056 51.5491 13.2056 51.5491C11.7793 47.8058 9.66596 46.8438 9.66596 46.8438C6.76114 44.8652 9.87755 44.8652 9.87755 44.8652C13.0998 45.0791 14.7905 48.1806 14.7905 48.1806C17.6425 53.0998 22.238 51.7099 24.0869 50.8541C24.3507 48.7686 25.1964 47.3248 26.0944 46.5229C19.0158 45.7741 11.5683 42.9936 11.5683 30.5872C11.5683 27.0578 12.8353 24.1703 14.8428 21.9247C14.526 21.1227 13.4165 17.8067 15.1602 13.3685C15.1602 13.3685 17.854 12.5127 23.9282 16.6838C26.5287 15.9768 29.2106 15.6172 31.9047 15.6142C34.5985 15.6142 37.3447 15.9889 39.8805 16.6838C45.9553 12.5127 48.6491 13.3685 48.6491 13.3685C50.3928 17.8067 49.2826 21.1227 48.9659 21.9247C51.0263 24.1703 52.241 27.0578 52.241 30.5872C52.241 42.9936 44.7935 45.7203 37.662 46.5229C38.8245 47.5387 39.8276 49.4635 39.8276 52.5118C39.8276 56.8431 39.7753 60.3192 39.7753 61.3882C39.7753 62.244 40.3566 63.2605 41.9409 62.9396C54.6181 58.6609 63.7564 46.576 63.7564 32.2987C63.8087 14.4375 49.4942 0 31.9047 0Z"/>
-                    </svg></a></li>
-                <li><a href="https://www.linkedin.com/in/levente-varga/">
-                    <svg class="size-8 fill-textDark hover:fill-textDim duration-250" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M56.8889 64H7.11111C3.18375 64 0 60.8163 0 56.8889V7.11111C0 3.18375 3.18375 0 7.11111 0H56.8889C60.8163 0 64 3.18375 64 7.11111V56.8889C64 60.8163 60.8163 64 56.8889 64ZM45.6139 55.1111H55.1111V35.6011C55.1111 27.3462 50.4317 23.3549 43.8956 23.3549C37.3565 23.3549 34.6045 28.447 34.6045 28.447V24.2963H25.4519V55.1111H34.6045V38.9352C34.6045 34.601 36.5997 32.0218 40.4184 32.0218C43.9287 32.0218 45.6139 34.5002 45.6139 38.9352V55.1111ZM8.88889 14.5751C8.88889 17.7153 11.4152 20.2613 14.5328 20.2613C17.6503 20.2613 20.1751 17.7153 20.1751 14.5751C20.1751 11.435 17.6503 8.88889 14.5328 8.88889C11.4152 8.88889 8.88889 11.435 8.88889 14.5751ZM19.3506 55.1111H9.80671V24.2963H19.3506V55.1111Z"/>
-                    </svg>
-                </a></li>
-                <li><a href="https://www.youtube.com/@levente-varga">
-                    <svg class="size-8 fill-textDark hover:fill-textDim duration-250" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M57.0414 10.3765C59.7828 11.1177 61.9442 13.2883 62.6823 16.0412C64.053 21.0707 64.0003 31.5531 64.0003 31.5531C64.0003 31.5531 64.0003 41.9826 62.6823 47.0121C61.9442 49.765 59.7828 51.9356 57.0414 52.6768C52.0331 54.0004 32.0001 54.0004 32.0001 54.0004C32.0001 54.0004 12.0198 54.0004 6.95884 52.6239C4.21748 51.8827 2.05602 49.7121 1.31796 46.9591C0 41.9826 0 31.5002 0 31.5002C0 31.5002 0 21.0707 1.31796 16.0412C2.05602 13.2883 4.2702 11.0647 6.95884 10.3235C11.9671 9 32.0001 9 32.0001 9C32.0001 9 52.0331 9 57.0414 10.3765ZM25.6211 21.8648L42.2801 31.5002L25.6211 41.1355V21.8648Z"/>
-                    </svg>
-                </a></li>
-            </ul>
-        </div>
+    <!-- Mobile Menu Button -->
+    <div class="flex md:hidden w-full justify-between items-center">
+      <div class="flex-1 items-center"></div>
+      <button id="menu-btn" class="px-4 py-4 cursor-pointer">
+        <svg class="size-6 fill-white" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+          <path d="M30 0L30 60H10V20L30 0Z" fill="white"/>
+          <path d="M30 60L50 40V60H30Z" fill="white"/>
+        </svg>
+      </button>
     </div>
+  </div>
 
-    <div id="projects" class="text-4xl text-center text-textDark font-bold mb-8">Projects</div>
-    <div class="mx-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full lg:max-w-5xl max-w-2xl mx-auto" id="projects-container"></div>
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobile-menu" class="md:hidden hidden z-20 fixed inset-y-16 w-full h-fit text-2xl">
+    <div class="bg-background shadow-md">
+      <a id="btnHome" href="#home" class="block px-8 py-6 text-white hover:bg-textDark duration-300">Home</a>
+      <a id="btnProjects" href="#projects" class="block px-8 py-6 text-white hover:bg-textDark duration-300">Projects</a>
+      <a id="btnExperience" href="#experience" class="block px-8 py-6 text-white hover:bg-textDark duration-300">Experience</a>
+      <a id="btnEducation" href="#education" class="block px-8 py-6 text-white hover:bg-textDark duration-300">Education</a>
+      <a id="btnAbout" href="#about" class="block px-8 py-6 text-white hover:bg-textDark duration-300">About</a>
+      <a id="btnContact" href="#contact" class="block px-8 py-6 text-white hover:bg-textDark duration-300">Contact</a>
     </div>
+    <button id="btnClose" class="w-full h-full bg-black/50"></button>
+  </div>
+</header>
 
-    <div id="experience" class="text-4xl text-center text-textDark font-bold mb-16 mt-32">Experience</div>
-    <div class="mx-8">
-        <div class="flex flex-col mx-auto" id="experience-container"></div>
+<div id="home" class="container h-16"></div>
+
+<div class="flex flex-col justify-center space-y-4 pb-32 pt-16 w-fit mx-auto">
+  <img class="w-48 h-48 mx-auto mb-16 rounded-4xl" src="/images/profile.png" alt="Portrait of Levente Varga"/>
+
+  <div class="text-textDark text-center content-center w-fit">
+    <div class="text-7xl font-extrabold">LEVENTE</div>
+    <div class="text-7xl font-extrabold">VARGA</div>
+    <div class="text-xl font-light">Developer & Designer</div>
+    <ul class="flex space-x-4 items-center mt-8 mx-auto w-fit">
+      <li><a href="https://github.com/levente-varga">
+        <svg class="size-8 fill-textDark hover:fill-textDim duration-250" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M31.9047 0C14.2622 0 0 14.4375 0 32.2987C0 46.576 9.13829 58.6615 21.8155 62.939C23.4005 63.2605 23.9811 62.244 23.9811 61.3889C23.9811 60.6401 23.9288 58.0735 23.9288 55.3993C15.0537 57.3247 13.2056 51.5491 13.2056 51.5491C11.7793 47.8058 9.66596 46.8438 9.66596 46.8438C6.76114 44.8652 9.87755 44.8652 9.87755 44.8652C13.0998 45.0791 14.7905 48.1806 14.7905 48.1806C17.6425 53.0998 22.238 51.7099 24.0869 50.8541C24.3507 48.7686 25.1964 47.3248 26.0944 46.5229C19.0158 45.7741 11.5683 42.9936 11.5683 30.5872C11.5683 27.0578 12.8353 24.1703 14.8428 21.9247C14.526 21.1227 13.4165 17.8067 15.1602 13.3685C15.1602 13.3685 17.854 12.5127 23.9282 16.6838C26.5287 15.9768 29.2106 15.6172 31.9047 15.6142C34.5985 15.6142 37.3447 15.9889 39.8805 16.6838C45.9553 12.5127 48.6491 13.3685 48.6491 13.3685C50.3928 17.8067 49.2826 21.1227 48.9659 21.9247C51.0263 24.1703 52.241 27.0578 52.241 30.5872C52.241 42.9936 44.7935 45.7203 37.662 46.5229C38.8245 47.5387 39.8276 49.4635 39.8276 52.5118C39.8276 56.8431 39.7753 60.3192 39.7753 61.3882C39.7753 62.244 40.3566 63.2605 41.9409 62.9396C54.6181 58.6609 63.7564 46.576 63.7564 32.2987C63.8087 14.4375 49.4942 0 31.9047 0Z"/>
+        </svg></a></li>
+      <li><a href="https://www.linkedin.com/in/levente-varga/">
+        <svg class="size-8 fill-textDark hover:fill-textDim duration-250" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M56.8889 64H7.11111C3.18375 64 0 60.8163 0 56.8889V7.11111C0 3.18375 3.18375 0 7.11111 0H56.8889C60.8163 0 64 3.18375 64 7.11111V56.8889C64 60.8163 60.8163 64 56.8889 64ZM45.6139 55.1111H55.1111V35.6011C55.1111 27.3462 50.4317 23.3549 43.8956 23.3549C37.3565 23.3549 34.6045 28.447 34.6045 28.447V24.2963H25.4519V55.1111H34.6045V38.9352C34.6045 34.601 36.5997 32.0218 40.4184 32.0218C43.9287 32.0218 45.6139 34.5002 45.6139 38.9352V55.1111ZM8.88889 14.5751C8.88889 17.7153 11.4152 20.2613 14.5328 20.2613C17.6503 20.2613 20.1751 17.7153 20.1751 14.5751C20.1751 11.435 17.6503 8.88889 14.5328 8.88889C11.4152 8.88889 8.88889 11.435 8.88889 14.5751ZM19.3506 55.1111H9.80671V24.2963H19.3506V55.1111Z"/>
+        </svg>
+      </a></li>
+      <li><a href="https://www.youtube.com/@levente-varga">
+        <svg class="size-8 fill-textDark hover:fill-textDim duration-250" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M57.0414 10.3765C59.7828 11.1177 61.9442 13.2883 62.6823 16.0412C64.053 21.0707 64.0003 31.5531 64.0003 31.5531C64.0003 31.5531 64.0003 41.9826 62.6823 47.0121C61.9442 49.765 59.7828 51.9356 57.0414 52.6768C52.0331 54.0004 32.0001 54.0004 32.0001 54.0004C32.0001 54.0004 12.0198 54.0004 6.95884 52.6239C4.21748 51.8827 2.05602 49.7121 1.31796 46.9591C0 41.9826 0 31.5002 0 31.5002C0 31.5002 0 21.0707 1.31796 16.0412C2.05602 13.2883 4.2702 11.0647 6.95884 10.3235C11.9671 9 32.0001 9 32.0001 9C32.0001 9 52.0331 9 57.0414 10.3765ZM25.6211 21.8648L42.2801 31.5002L25.6211 41.1355V21.8648Z"/>
+        </svg>
+      </a></li>
+    </ul>
+  </div>
+</div>
+
+<div id="projects" class="text-4xl text-center text-textDark font-bold mb-8">Projects</div>
+<div class="mx-8">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full lg:max-w-5xl max-w-2xl mx-auto" id="projects-container"></div>
+</div>
+
+<div id="experience" class="text-4xl text-center text-textDark font-bold mb-16 mt-32">Experience</div>
+<div class="mx-8">
+  <div class="flex flex-col mx-auto" id="experience-container"></div>
+</div>
+
+<div id="education" class="text-4xl text-center text-textDark font-bold mb-16 mt-32">Education</div>
+<div class="mx-8">
+  <div class="flex flex-col mx-auto" id="education-container"></div>
+</div>
+
+<div id="about" class="mx-8 my-64">
+  <div class="flex flex-row mx-auto max-w-5xl">
+    <div class="flex flex-1 flex-col text-textDark space-y-4 py-2">
+      <div class="text-textLight text-4xl font-bold">About</div>
+      <div class="text-text text-md italic">Software engineer and hobby designer with a keen eye for detail and perfection and desire to learn.</div>
+      <div class="text-text text-md italic">Pursuing a career in software development with the help of a robust background in computer science and mathematics enriched with design, robotics and music studies.</div>
+      <div class="text-text text-md italic">Interested in working as a mobile software developer, front-end developer, UI/UX programmer, game programmer or similar.</div>
     </div>
-
-    <div id="education" class="text-4xl text-center text-textDark font-bold mb-16 mt-32">Education</div>
-    <div class="mx-8">
-        <div class="flex flex-col mx-auto" id="education-container"></div>
+    <div class="md:flex hidden flex-1 flex-col items-center justify-center text-textDark">
+      <svg class="size-48 fill-textDark" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+        <path d="M30 0L30 60H10V20L30 0Z"/>
+        <path d="M30 60L50 40V60H30Z"/>
+      </svg>
     </div>
+  </div>
+</div>
 
-    <div id="about" class="mx-8 my-64">
-        <div class="flex flex-row mx-auto max-w-5xl">
-            <div class="flex flex-1 flex-col text-textDark space-y-4 py-2">
-                <div class="text-textLight text-4xl font-bold">About</div>
-                <div class="text-text text-md italic">Software engineer and hobby designer with a keen eye for detail and perfection and desire to learn.</div>
-                <div class="text-text text-md italic">Pursuing a career in software development with the help of a robust background in computer science and mathematics enriched with design, robotics and music studies.</div>
-                <div class="text-text text-md italic">Interested in working as a mobile software developer, front-end developer, UI/UX programmer, game programmer or similar.</div>
-            </div>
-            <div class="md:flex hidden flex-1 flex-col items-center justify-center text-textDark">
-                <svg class="size-48 fill-textDark" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M30 0L30 60H10V20L30 0Z"/>
-                    <path d="M30 60L50 40V60H30Z"/>
-                </svg>
-            </div>
-        </div>
-    </div>
+<div class="flex flex-col px-auto bg-backgroundLight text-center items-center justify-center py-16">
+  <div id="contact" class="text-4xl text-text font-bold mb-8">Contact</div>
+  <div class="text-text">Feel free to reach out on any of these platforms!</div>
+  <ul class="flex space-x-4 items-center mt-8 mx-auto w-fit">
+    <li><a href="https://github.com/levente-varga">
+      <svg class="size-8 fill-text hover:fill-textDim duration-250" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M31.9047 0C14.2622 0 0 14.4375 0 32.2987C0 46.576 9.13829 58.6615 21.8155 62.939C23.4005 63.2605 23.9811 62.244 23.9811 61.3889C23.9811 60.6401 23.9288 58.0735 23.9288 55.3993C15.0537 57.3247 13.2056 51.5491 13.2056 51.5491C11.7793 47.8058 9.66596 46.8438 9.66596 46.8438C6.76114 44.8652 9.87755 44.8652 9.87755 44.8652C13.0998 45.0791 14.7905 48.1806 14.7905 48.1806C17.6425 53.0998 22.238 51.7099 24.0869 50.8541C24.3507 48.7686 25.1964 47.3248 26.0944 46.5229C19.0158 45.7741 11.5683 42.9936 11.5683 30.5872C11.5683 27.0578 12.8353 24.1703 14.8428 21.9247C14.526 21.1227 13.4165 17.8067 15.1602 13.3685C15.1602 13.3685 17.854 12.5127 23.9282 16.6838C26.5287 15.9768 29.2106 15.6172 31.9047 15.6142C34.5985 15.6142 37.3447 15.9889 39.8805 16.6838C45.9553 12.5127 48.6491 13.3685 48.6491 13.3685C50.3928 17.8067 49.2826 21.1227 48.9659 21.9247C51.0263 24.1703 52.241 27.0578 52.241 30.5872C52.241 42.9936 44.7935 45.7203 37.662 46.5229C38.8245 47.5387 39.8276 49.4635 39.8276 52.5118C39.8276 56.8431 39.7753 60.3192 39.7753 61.3882C39.7753 62.244 40.3566 63.2605 41.9409 62.9396C54.6181 58.6609 63.7564 46.576 63.7564 32.2987C63.8087 14.4375 49.4942 0 31.9047 0Z"/>
+      </svg></a></li>
+    <li><a href="https://www.linkedin.com/in/levente-varga/">
+      <svg class="size-8 fill-text hover:fill-textDim duration-250" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M56.8889 64H7.11111C3.18375 64 0 60.8163 0 56.8889V7.11111C0 3.18375 3.18375 0 7.11111 0H56.8889C60.8163 0 64 3.18375 64 7.11111V56.8889C64 60.8163 60.8163 64 56.8889 64ZM45.6139 55.1111H55.1111V35.6011C55.1111 27.3462 50.4317 23.3549 43.8956 23.3549C37.3565 23.3549 34.6045 28.447 34.6045 28.447V24.2963H25.4519V55.1111H34.6045V38.9352C34.6045 34.601 36.5997 32.0218 40.4184 32.0218C43.9287 32.0218 45.6139 34.5002 45.6139 38.9352V55.1111ZM8.88889 14.5751C8.88889 17.7153 11.4152 20.2613 14.5328 20.2613C17.6503 20.2613 20.1751 17.7153 20.1751 14.5751C20.1751 11.435 17.6503 8.88889 14.5328 8.88889C11.4152 8.88889 8.88889 11.435 8.88889 14.5751ZM19.3506 55.1111H9.80671V24.2963H19.3506V55.1111Z"/>
+      </svg>
+    </a></li>
+    <li><a href="https://www.youtube.com/@levente-varga">
+      <svg class="size-8 fill-text hover:fill-textDim duration-250" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M57.0414 10.3765C59.7828 11.1177 61.9442 13.2883 62.6823 16.0412C64.053 21.0707 64.0003 31.5531 64.0003 31.5531C64.0003 31.5531 64.0003 41.9826 62.6823 47.0121C61.9442 49.765 59.7828 51.9356 57.0414 52.6768C52.0331 54.0004 32.0001 54.0004 32.0001 54.0004C32.0001 54.0004 12.0198 54.0004 6.95884 52.6239C4.21748 51.8827 2.05602 49.7121 1.31796 46.9591C0 41.9826 0 31.5002 0 31.5002C0 31.5002 0 21.0707 1.31796 16.0412C2.05602 13.2883 4.2702 11.0647 6.95884 10.3235C11.9671 9 32.0001 9 32.0001 9C32.0001 9 52.0331 9 57.0414 10.3765ZM25.6211 21.8648L42.2801 31.5002L25.6211 41.1355V21.8648Z"/>
+      </svg>
+    </a></li>
+  </ul>
+</div>
 
-    <div class="flex flex-col px-auto bg-backgroundLight text-center items-center justify-center py-16">
-        <div id="contact" class="text-4xl text-text font-bold mb-8">Contact</div>
-        <div class="text-text">Feel free to reach out on any of these platforms!</div>
-        <ul class="flex space-x-4 items-center mt-8 mx-auto w-fit">
-            <li><a href="https://github.com/levente-varga">
-                <svg class="size-8 fill-text hover:fill-textDim duration-250" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M31.9047 0C14.2622 0 0 14.4375 0 32.2987C0 46.576 9.13829 58.6615 21.8155 62.939C23.4005 63.2605 23.9811 62.244 23.9811 61.3889C23.9811 60.6401 23.9288 58.0735 23.9288 55.3993C15.0537 57.3247 13.2056 51.5491 13.2056 51.5491C11.7793 47.8058 9.66596 46.8438 9.66596 46.8438C6.76114 44.8652 9.87755 44.8652 9.87755 44.8652C13.0998 45.0791 14.7905 48.1806 14.7905 48.1806C17.6425 53.0998 22.238 51.7099 24.0869 50.8541C24.3507 48.7686 25.1964 47.3248 26.0944 46.5229C19.0158 45.7741 11.5683 42.9936 11.5683 30.5872C11.5683 27.0578 12.8353 24.1703 14.8428 21.9247C14.526 21.1227 13.4165 17.8067 15.1602 13.3685C15.1602 13.3685 17.854 12.5127 23.9282 16.6838C26.5287 15.9768 29.2106 15.6172 31.9047 15.6142C34.5985 15.6142 37.3447 15.9889 39.8805 16.6838C45.9553 12.5127 48.6491 13.3685 48.6491 13.3685C50.3928 17.8067 49.2826 21.1227 48.9659 21.9247C51.0263 24.1703 52.241 27.0578 52.241 30.5872C52.241 42.9936 44.7935 45.7203 37.662 46.5229C38.8245 47.5387 39.8276 49.4635 39.8276 52.5118C39.8276 56.8431 39.7753 60.3192 39.7753 61.3882C39.7753 62.244 40.3566 63.2605 41.9409 62.9396C54.6181 58.6609 63.7564 46.576 63.7564 32.2987C63.8087 14.4375 49.4942 0 31.9047 0Z"/>
-                </svg></a></li>
-            <li><a href="https://www.linkedin.com/in/levente-varga/">
-                <svg class="size-8 fill-text hover:fill-textDim duration-250" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M56.8889 64H7.11111C3.18375 64 0 60.8163 0 56.8889V7.11111C0 3.18375 3.18375 0 7.11111 0H56.8889C60.8163 0 64 3.18375 64 7.11111V56.8889C64 60.8163 60.8163 64 56.8889 64ZM45.6139 55.1111H55.1111V35.6011C55.1111 27.3462 50.4317 23.3549 43.8956 23.3549C37.3565 23.3549 34.6045 28.447 34.6045 28.447V24.2963H25.4519V55.1111H34.6045V38.9352C34.6045 34.601 36.5997 32.0218 40.4184 32.0218C43.9287 32.0218 45.6139 34.5002 45.6139 38.9352V55.1111ZM8.88889 14.5751C8.88889 17.7153 11.4152 20.2613 14.5328 20.2613C17.6503 20.2613 20.1751 17.7153 20.1751 14.5751C20.1751 11.435 17.6503 8.88889 14.5328 8.88889C11.4152 8.88889 8.88889 11.435 8.88889 14.5751ZM19.3506 55.1111H9.80671V24.2963H19.3506V55.1111Z"/>
-                </svg>
-            </a></li>
-            <li><a href="https://www.youtube.com/@levente-varga">
-                <svg class="size-8 fill-text hover:fill-textDim duration-250" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M57.0414 10.3765C59.7828 11.1177 61.9442 13.2883 62.6823 16.0412C64.053 21.0707 64.0003 31.5531 64.0003 31.5531C64.0003 31.5531 64.0003 41.9826 62.6823 47.0121C61.9442 49.765 59.7828 51.9356 57.0414 52.6768C52.0331 54.0004 32.0001 54.0004 32.0001 54.0004C32.0001 54.0004 12.0198 54.0004 6.95884 52.6239C4.21748 51.8827 2.05602 49.7121 1.31796 46.9591C0 41.9826 0 31.5002 0 31.5002C0 31.5002 0 21.0707 1.31796 16.0412C2.05602 13.2883 4.2702 11.0647 6.95884 10.3235C11.9671 9 32.0001 9 32.0001 9C32.0001 9 52.0331 9 57.0414 10.3765ZM25.6211 21.8648L42.2801 31.5002L25.6211 41.1355V21.8648Z"/>
-                </svg>
-            </a></li>
-        </ul>
-    </div>
+<div class="flex flex-row mx-auto max-w-5xl items-center justify-center text-textDark py-4">
+  <p>&copy; 2025 Levente Varga. All rights reserved.</p>
+</div>
 
-    <div class="flex flex-row mx-auto max-w-5xl items-center justify-center text-textDark py-4">
-        <p>&copy; 2025 Levente Varga. All rights reserved.</p>
-    </div>
-
-    <script type="module" src="/src/dropdownMenu.js"></script>
-    <script type="module" src="/src/components/projectCard.js"></script>
-    <script type="module" src="/src/components/timelineRow.js"></script>
-    <script type="module" src="main.js"></script>
+<script type="module" src="/src/dropdownMenu.js"></script>
+<script type="module" src="/src/components/projectCard.js"></script>
+<script type="module" src="/src/components/timelineRow.js"></script>
+<script type="module" src="main.js"></script>
 </body>
 </html>

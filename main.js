@@ -11,9 +11,10 @@ projects.forEach(project => {
     const projectCard = document.createElement('project-card');
     projectCard.setAttribute('title', project.title);
     projectCard.setAttribute('description', project.description);
-    projectCard.setAttribute('src', project.src);
+    projectCard.setAttribute('image', project.image);
     projectCard.setAttribute('tags', project.tags);
     projectCard.setAttribute('year', project.year);
+    projectCard.setAttribute('url', project.url);
     projectsContainer.appendChild(projectCard);
 });
 

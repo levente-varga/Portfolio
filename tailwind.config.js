@@ -1,6 +1,7 @@
 module.exports = {
     content: [
         "/index.html",
+        "/projects/portfolio.html",
         "/src/styles.css",
         "/src/components/projectCard.js",
         "/src/components/timelineRow.js",

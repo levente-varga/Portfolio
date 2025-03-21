@@ -1,6 +1,6 @@
 class ProjectCard extends HTMLElement {
     static get observedAttributes() {
-        return ["title", "description", "src", "tags", "year"];
+        return ["title", "description", "image", "tags", "year", "url"];
     }
 
     connectedCallback() {
@@ -14,14 +14,15 @@ class ProjectCard extends HTMLElement {
     render() {
         const title = this.getAttribute("title") || "Title";
         const description = this.getAttribute("description") || "Description";
-        const src = this.getAttribute("src") || "";
+        const image = this.getAttribute("image") || "";
         const tags = this.getAttribute("tags") ? JSON.parse(this.getAttribute("tags")) : {};
         const year = this.getAttribute("year") || "";
+        const url = this.getAttribute("url") || "";
 
         this.innerHTML = `
-            <a href="#">
+            <a href="${url}">
             <div class="relative w-full rounded-2xl ring-1 ring-white/5 bg-foreground shadow-xl">
-                <div class="rounded-t-2xl aspect-[calc(5/3)] bg-cover bg-center" style="background-image: url(${src});"> </div>
+                <div class="rounded-t-2xl aspect-[calc(5/3)] bg-cover bg-center" style="background-image: url(${image});"> </div>
                 
                 <div class="p-6">
                     <div class="flex justify-between items-center">
