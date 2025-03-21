@@ -3,6 +3,7 @@ module.exports = {
         "/index.html",
         "/src/styles.css",
         "/src/components/projectCard.js",
+        "/src/components/timelineRow.js",
         "/src/**/*.{js,ts,jsx,tsx}",
     ],
     theme: {
