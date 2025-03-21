@@ -14,16 +14,16 @@
 <body class="bg-background">
     <nav class="fixed top-0 left-0 z-20 w-full bg-background text-white p-4 flex justify-center h-16">
         <ul class="flex space-x-5 items-center">
-            <li><a href="#"><img src="/svg/logo.svg" alt="Logo" class="w-8 h-8 mr-4 ml-4"></a></li>
-            <li><a href="#" class="hover:text-gray-300">Projects</a></li>
+            <li><a href="#home"><img src="/svg/logo.svg" alt="Logo" class="w-8 h-8 mr-4 ml-4"></a></li>
+            <li><a href="#projects" class="hover:text-gray-300">Projects</a></li>
             <li><a href="#" class="hover:text-gray-300">About</a></li>
-            <li><a href="#" class="hover:text-gray-300">Experience</a></li>
-            <li><a href="#" class="hover:text-gray-300">Education</a></li>
+            <li><a href="#experience" class="hover:text-gray-300">Experience</a></li>
+            <li><a href="#education" class="hover:text-gray-300">Education</a></li>
             <li><a href="#" class="hover:text-gray-300">Contact</a></li>
         </ul>
     </nav>
 
-    <div class="container h-16"></div>
+    <div id="home" class="container h-16"></div>
 
     <div class="flex flex-col justify-center space-y-4 py-32 w-fit mx-auto">
         <img class="w-48 h-48 mx-auto mb-16 rounded-4xl" src="/images/profile.png" alt="Portrait of Levente Varga"/>
@@ -51,19 +51,19 @@
         </div>
     </div>
 
-    <div class="text-4xl text-center text-textDark font-bold mb-8">Projects</div>
+    <div id="projects" class="text-4xl text-center text-textDark font-bold mb-8">Projects</div>
     <div class="mx-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full lg:max-w-5xl max-w-2xl mx-auto" id="projects-container"></div>
     </div>
 
-    <div class="text-4xl text-center text-textDark font-bold mb-16 mt-32">Experience</div>
+    <div id="experience" class="text-4xl text-center text-textDark font-bold mb-16 mt-32">Experience</div>
     <div class="mx-8">
         <div class="flex flex-col mx-auto" id="experience-container">
 
         </div>
     </div>
 
-    <div class="text-4xl text-center text-textDark font-bold mb-16 mt-32">Education</div>
+    <div id="education" class="text-4xl text-center text-textDark font-bold mb-16 mt-32">Education</div>
     <div class="mx-8">
         <div class="flex flex-col mx-auto" id="education-container">
 
