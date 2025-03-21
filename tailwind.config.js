@@ -1,7 +1,18 @@
 module.exports = {
     content: [
         "/index.html",
+        "/projects/cardium.html",
+        "/projects/ecometer.html",
+        "/projects/ecometer_desktop.html",
+        "/projects/graphs.html",
+        "/projects/ice_adventure.html",
+        "/projects/json_parser.html",
+        "/projects/melodica.html",
+        "/projects/minesweeper.html",
         "/projects/portfolio.html",
+        "/projects/rhythm_ninja.html",
+        "/projects/tower.html",
+        "/projects/weave.html",
         "/src/styles.css",
         "/src/components/projectCard.js",
         "/src/components/timelineRow.js",
