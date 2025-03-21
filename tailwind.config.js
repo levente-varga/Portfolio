@@ -19,7 +19,7 @@ module.exports = {
         'bg-dart',
         'bg-godot',
         'bg-game',
-        {pattern: /bg-./},
+        {pattern: /bg-.+/},
     ],
     plugins: [],
 };
