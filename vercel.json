@@ -1,3 +1,8 @@
 {
-  "public": true
+  "public": true,
+
+  "rewrites": [
+    { "source": "/cardium", "destination": "/src/pages/cardium.html" },
+    { "source": "/ecometer", "destination": "/src/pages/ecometer.html" }
+  ]
 }
