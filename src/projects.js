@@ -5,7 +5,7 @@ export const projects = [
         image: "/images/projects/cardium.png",
         tags: '{"C#": "csharp", "Godot": "godot"}',
         year: "2025",
-        url: "/src/pages/cardium.html"
+        url: "/projects/cardium.html"
     },
     {
         title: "Ecometer Desktop",
@@ -21,7 +21,7 @@ export const projects = [
         image: "/images/projects/ecometer.png",
         tags: '{"Dart": "dart"}',
         year: "2024-2025",
-        url: "/src/pages/ecometer.html"
+        url: "/projects/ecometer.html"
     },
     {
         title: "Tower",
