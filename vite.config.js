@@ -9,8 +9,8 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: 'index.html',
-                cardium: 'public/projects/cardium.html',
-                ecometer: 'public/projects/ecometer.html',
+                cardium: 'projects/cardium.html',
+                ecometer: 'projects/ecometer.html',
             },
         },
     },
