@@ -14,11 +14,12 @@ module.exports = {
     },
     safelist: [
         'bg-java',
-        'bg-javascipt',
+        'bg-javascript',
         'bg-c',
         'bg-cpp',
         'bg-csharp',
         'bg-dart',
+        'bg-tailwind',
         'bg-godot',
         'bg-unity',
         {pattern: /bg-.+/},
