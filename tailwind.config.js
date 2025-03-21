@@ -20,7 +20,7 @@ module.exports = {
         'bg-godot',
         'bg-game',
         {
-            pattern: /bg-\[url\(*\)]/,
+            pattern: /bg-\[url\(.*\)]/,
         },
     ],
     plugins: [],
