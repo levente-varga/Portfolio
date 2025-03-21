@@ -1,9 +1,9 @@
-export const education = [
+export const educations = [
     {
         title: "Game Design and Technology MSc",
         subtitle: "University of Gothenburg",
         time: "Aug 2022 - Jun 2025",
-        description: "Experience in game engines, advanced computer graphics (OpenGl, DirectX), game design, game development (Godot) and web development (React).",
+        description: "Experience in game engines, advanced computer graphics (OpenGL, DirectX), game design, game development (Godot) and web development (React).",
         logo: "/images/education/gothenburg.jpg"
     },
     {

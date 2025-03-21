@@ -17,9 +17,9 @@ class TimelineRow extends HTMLElement {
         const time = this.getAttribute("time") || "Time";
         const description = this.getAttribute("description");
         const logo = this.getAttribute("logo") || "";
-        const left = this.getAttribute("left");
-        const first = this.getAttribute("first");
-        const last = this.getAttribute("last");
+        const left = this.getAttribute("left") === "true";
+        const first = this.getAttribute("first") === "true";
+        const last = this.getAttribute("last") === "true";
 
         this.innerHTML = `
             <div class="flex flex-row mx-auto max-w-5xl">
