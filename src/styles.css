@@ -9,6 +9,7 @@
 
 @theme {
     --color-background: #111111;
+    --color-backgroundLight: #181818;
     --color-foreground: #1e1e1e;
     --color-textDark: #343434;
     --color-textDim: #555555;

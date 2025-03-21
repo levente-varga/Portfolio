@@ -12,16 +12,44 @@
 </head>
 
 <body class="bg-background">
-    <nav class="fixed top-0 left-0 z-20 w-full bg-background text-white p-4 flex justify-center h-16">
-        <ul class="flex space-x-5 items-center">
-            <li><a href="#home"><img src="/svg/logo.svg" alt="Logo" class="w-8 h-8 mr-4 ml-4"></a></li>
-            <li><a href="#projects" class="hover:text-gray-300">Projects</a></li>
-            <li><a href="#about" class="hover:text-gray-300">About</a></li>
-            <li><a href="#experience" class="hover:text-gray-300">Experience</a></li>
-            <li><a href="#education" class="hover:text-gray-300">Education</a></li>
-            <li><a href="#" class="hover:text-gray-300">Contact</a></li>
-        </ul>
-    </nav>
+    <header>
+        <div class="flex fixed inset-0 z-20 bg-background text-white p-4 justify-center md:h-16 h-24">
+            <nav class="md:flex hidden">
+                <ul class="flex space-x-5 items-center">
+                    <li><a href="#home"><img src="/svg/logo.svg" alt="Logo" class="w-8 h-8 mr-4 ml-4"></a></li>
+                    <li><a href="#projects" class="hover:text-gray-300">Projects</a></li>
+                    <li><a href="#about" class="hover:text-gray-300">About</a></li>
+                    <li><a href="#experience" class="hover:text-gray-300">Experience</a></li>
+                    <li><a href="#education" class="hover:text-gray-300">Education</a></li>
+                    <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <div class="flex md:hidden w-full justify-between items-center">
+                <div class="flex-1 items-center"></div>
+                <button id="menu-btn" class="px-8 py-4 cursor-pointer">
+                    <svg class="size-8 fill-white" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M30 0L30 60H10V20L30 0Z" fill="white"/>
+                        <path d="M30 60L50 40V60H30Z" fill="white"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="md:hidden hidden z-20 fixed inset-y-24 w-full h-fit text-2xl">
+            <div class="bg-background shadow-md">
+                <a id="btnHome" href="#home" class="block px-8 py-6 text-white hover:bg-textDark duration-300">Home</a>
+                <a id="btnProjects" href="#projects" class="block px-8 py-6 text-white hover:bg-textDark duration-300">Projects</a>
+                <a id="btnExperience" href="#experience" class="block px-8 py-6 text-white hover:bg-textDark duration-300">Experience</a>
+                <a id="btnEducation" href="#education" class="block px-8 py-6 text-white hover:bg-textDark duration-300">Education</a>
+                <a id="btnAbout" href="#about" class="block px-8 py-6 text-white hover:bg-textDark duration-300">About</a>
+                <a id="btnContact" href="#contact" class="block px-8 py-6 text-white hover:bg-textDark duration-300">Contact</a>
+            </div>
+            <button id="btnClose" class="w-full h-full bg-black/50"></button>
+        </div>
+    </header>
 
     <div id="home" class="container h-16"></div>
 
@@ -79,11 +107,13 @@
                     <path d="M30 0L30 60H10V20L30 0Z"/>
                     <path d="M30 60L50 40V60H30Z"/>
                 </svg>
-
             </div>
         </div>
     </div>
 
+    <div id="contact" class="text-4xl text-center text-textDark font-bold mb-16 mt-32">Contact</div>
+
+    <script type="module" src="/src/dropdownMenu.js"></script>
     <script type="module" src="/src/components/projectCard.js"></script>
     <script type="module" src="/src/components/timelineRow.js"></script>
     <script type="module" src="main.js"></script>
