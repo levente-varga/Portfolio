@@ -18,7 +18,7 @@ class ProjectCard extends HTMLElement {
         const tags = this.getAttribute("tags") ? JSON.parse(this.getAttribute("tags")) : {};
 
         this.innerHTML = `
-            <div class="relative rounded-2xl m-4 sm:w-10 md:w-20 lg:30 xl:w-40 2xl:w-50 w-100 ring-1 ring-white/5 bg-foreground shadow-xl">
+            <div class="relative rounded-2xl w-100 ring-1 ring-white/5 bg-foreground shadow-xl">
                 <img class="rounded-t-2xl aspect-[calc(5/3)]" src="${bg}" alt="${title}"/>
                 
                 <div class="p-6">

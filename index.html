@@ -7,6 +7,7 @@
     <link href="/src/styles.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="/assets/images/logo_light.png" media="(prefers-color-scheme: light)">
     <link rel="icon" type="image/png" href="/assets/images/logo_dark.png" media="(prefers-color-scheme: dark)">
+    <link type="image/png" href="/assets/images/projects/cardium.png">
 </head>
 
 <body class="bg-background">
@@ -24,7 +25,7 @@
 
     <div class="flex flex-col items-center justify-center h-16"></div>
 
-    <div class="flex flex-col items-center justify-center space-y-4 min-h-screen">
+    <div class="flex flex-col items-center justify-center space-y-4 h-[calc(100vh-var(--spacing)*64)]">
         <img class="w-40 h-40 rounded-4xl hover:opacity-50 duration-300" src="/assets/images/profile.png" alt="Portrait of Levente Varga"/>
         <div class="text-textDark text-center content-center w-fit pt-16 pb-32 perspective-distant perspective-origin-right">
             <div class="text-8xl font-extrabold animate-rotate-y-right">
@@ -39,12 +40,39 @@
         </div>
     </div>
 
-    <project-card
-        title="Cardium"
-        description="A card game made in Godot Engine."
-        bg="/assets/images/projects/cardium.png"
-        tags='{"C#": "csharp", "Godot": "godot", "Game": "game"}'>
-    </project-card>
+    <div class="text-5xl text-center text-textDark font-bold h-16 mb-8">
+        Projects
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
+        <project-card
+            title="Cardium"
+            description="A card game made in Godot Engine."
+            bg="/assets/images/projects/cardium.png"
+            tags='{"C#": "csharp", "Godot": "godot", "Game": "game"}'>
+        </project-card>
+
+        <project-card
+            title="Cardium"
+            description="A card game made in Godot Engine."
+            bg="/assets/images/projects/cardium.png"
+            tags='{"C#": "csharp", "Godot": "godot", "Game": "game"}'>
+        </project-card>
+
+        <project-card
+            title="Cardium"
+            description="A card game made in Godot Engine."
+            bg="/assets/images/projects/cardium.png"
+            tags='{"C#": "csharp", "Godot": "godot", "Game": "game"}'>
+        </project-card>
+
+        <project-card
+            title="Cardium"
+            description="A card game made in Godot Engine."
+            bg="/assets/images/projects/cardium.png"
+            tags='{"C#": "csharp", "Godot": "godot", "Game": "game"}'>
+        </project-card>
+    </div>
 
     <div class="text-center p-4 text-textDark">
         <p id="viewportSize">Viewport size: 0 x 0</p>
