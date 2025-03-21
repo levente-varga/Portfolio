@@ -19,7 +19,7 @@ class ProjectCard extends HTMLElement {
         const year = this.getAttribute("year") || "";
 
         this.innerHTML = `
-            <div class="relative rounded-2xl w-80 ring-1 ring-white/5 bg-foreground shadow-xl">
+            <div class="relative rounded-2xl w-116 ring-1 ring-white/5 bg-foreground shadow-xl">
                 <div class="rounded-t-2xl aspect-[calc(5/3)] bg-cover bg-center" style="background-image: url(${src});"> </div>
                 
                 <div class="p-6">

@@ -24,27 +24,31 @@
 
     <div class="flex flex-col items-center justify-center h-16"></div>
 
-    <div class="flex flex-col items-center justify-center space-y-4 h-[calc(100vh-var(--spacing)*64)]">
-        <img class="w-40 h-40 rounded-4xl hover:opacity-50 duration-300" src="/images/profile.png" alt="Portrait of Levente Varga"/>
-        <div class="text-textDark text-center content-center w-fit pt-16 pb-32 perspective-distant perspective-origin-right">
-            <div class="text-8xl font-extrabold animate-rotate-y-right">
-                LEVENTE
-            </div>
-            <div class="text-8xl font-extrabold text-right animate-rotate-y-right animation-delay-200">
-                VARGA
-            </div>
-            <div class="text-3xl font-normal text-right animate-rotate-y-right animation-delay-400">
-                Developer & Designer
+    <div class="flex items-center mx-auto w-fit gap-12">
+        <div class="flex flex-col justify-center space-y-4 h-[calc(100vh-var(--spacing)*56)]">
+            <div class="text-textDark text-center content-center w-fit perspective-distant perspective-origin-right">
+                <div class="text-8xl font-extrabold animate-rotate-y-right">
+                    LEVENTE
+                </div>
+                <div class="text-8xl font-extrabold text-right animate-rotate-y-right animation-delay-200">
+                    VARGA
+                </div>
+                <div class="text-3xl font-normal text-right animate-rotate-y-right animation-delay-400">
+                    Developer & Designer
+                </div>
             </div>
         </div>
+        <img class="w-48 h-48 rounded-4xl" src="/images/profile.png" alt="Portrait of Levente Varga"/>
     </div>
+
+
 
     <div class="text-5xl text-center text-textDark font-bold h-16 mb-8">
         Projects
     </div>
 
     <div class="mx-6">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto w-fit">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mx-auto w-fit">
             <project-card
                     title="Cardium"
                     description="A extraction deckbuilder."
