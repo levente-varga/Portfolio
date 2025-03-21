@@ -16,7 +16,7 @@
         <ul class="flex space-x-5 items-center">
             <li><a href="#home"><img src="/svg/logo.svg" alt="Logo" class="w-8 h-8 mr-4 ml-4"></a></li>
             <li><a href="#projects" class="hover:text-gray-300">Projects</a></li>
-            <li><a href="#" class="hover:text-gray-300">About</a></li>
+            <li><a href="#about" class="hover:text-gray-300">About</a></li>
             <li><a href="#experience" class="hover:text-gray-300">Experience</a></li>
             <li><a href="#education" class="hover:text-gray-300">Education</a></li>
             <li><a href="#" class="hover:text-gray-300">Contact</a></li>
@@ -58,31 +58,31 @@
 
     <div id="experience" class="text-4xl text-center text-textDark font-bold mb-16 mt-32">Experience</div>
     <div class="mx-8">
-        <div class="flex flex-col mx-auto" id="experience-container">
-
-        </div>
+        <div class="flex flex-col mx-auto" id="experience-container"></div>
     </div>
 
     <div id="education" class="text-4xl text-center text-textDark font-bold mb-16 mt-32">Education</div>
     <div class="mx-8">
-        <div class="flex flex-col mx-auto" id="education-container">
+        <div class="flex flex-col mx-auto" id="education-container"></div>
+    </div>
 
+    <div id="about" class="mx-8 my-64">
+        <div class="flex flex-row mx-auto max-w-5xl">
+            <div class="flex flex-1 flex-col text-textDark space-y-4 py-2">
+                <div class="text-textLight text-4xl font-bold">About</div>
+                <div class="text-text text-md italic">Software engineer and hobby designer with a keen eye for detail and perfection and desire to learn.</div>
+                <div class="text-text text-md italic">Pursuing a career in software development with the help of a robust background in computer science and mathematics enriched with design, robotics and music studies.</div>
+                <div class="text-text text-md italic">Interested in working as a mobile software developer, front-end developer, UI/UX programmer, game programmer or similar.</div>
+            </div>
+            <div class="md:flex hidden flex-1 flex-col items-center justify-center text-textDark">
+                <svg class="size-48 fill-textDark" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 0L30 60H10V20L30 0Z"/>
+                    <path d="M30 60L50 40V60H30Z"/>
+                </svg>
+
+            </div>
         </div>
     </div>
-
-    <div class="text-center p-4 text-textDark">
-        <p id="viewportSize">Viewport size: 0 x 0</p>
-    </div>
-
-    <script>
-        function updateViewportSize() {
-            const width = window.innerWidth;
-            const height = window.innerHeight;
-            document.getElementById('viewportSize').textContent = `Viewport size: ${width} x ${height}`;
-        }
-        window.addEventListener('load', updateViewportSize);
-        window.addEventListener('resize', updateViewportSize);
-    </script>
 
     <script type="module" src="/src/components/projectCard.js"></script>
     <script type="module" src="/src/components/timelineRow.js"></script>
