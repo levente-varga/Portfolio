@@ -13,7 +13,7 @@ export const projects = [
         image: "/images/projects/ecometer_desktop.png",
         tags: '{"Dart": "dart"}',
         year: "2024-2025",
-        url: "/src/pages/ecometer_desktop.html"
+        url: "/projects/ecometer-desktop.html"
     },
     {
         title: "Ecometer",
@@ -29,7 +29,7 @@ export const projects = [
         image: "/images/projects/tower.png",
         tags: '{"C++": "cpp"}',
         year: "2025",
-        url: "/src/pages/tower.html"
+        url: "/projects/tower.html"
     },
     {
         title: "Portfolio",
@@ -37,7 +37,7 @@ export const projects = [
         image: "/images/projects/portfolio.png",
         tags: '{"JavaScript": "javascript", "Tailwind CSS": "tailwind"}',
         year: "2025",
-        url: "/src/pages/portfolio.html"
+        url: "/projects/portfolio.html"
     },
     {
         title: "Weave",
@@ -45,7 +45,7 @@ export const projects = [
         image: "/images/projects/weave.png",
         tags: '{"C#": "csharp", "Godot": "godot"}',
         year: "2023",
-        url: "/src/pages/weave.html"
+        url: "/projects/weave.html"
     },
     {
         title: "Melodica",
@@ -53,7 +53,7 @@ export const projects = [
         image: "/images/projects/melodica.png",
         tags: '{"C#": "csharp", "Godot": "godot"}',
         year: "2023",
-        url: "/src/pages/melodica.html"
+        url: "/projects/melodica.html"
     },
     {
         title: "JSON Parser",
@@ -61,7 +61,7 @@ export const projects = [
         image: "/images/projects/json.png",
         tags: '{"C++": "cpp"}',
         year: "2023",
-        url: "/src/pages/json_parser.html"
+        url: "/projects/json-parser.html"
     },
     {
         title: "Graphs",
@@ -69,7 +69,7 @@ export const projects = [
         image: "/images/projects/graphs.png",
         tags: '{"C#": "csharp"}',
         year: "2021-2023",
-        url: "/src/pages/graphs.html"
+        url: "/projects/graphs.html"
     },
     {
         title: "Rhythm Ninja",
@@ -77,7 +77,7 @@ export const projects = [
         image: "/images/projects/rhythm_ninja.png",
         tags: '{"C#": "csharp", "Unity": "unity"}',
         year: "2021",
-        url: "/src/pages/rhythm_ninja.html"
+        url: "/projects/rhythm-ninja.html"
     },
     {
         title: "Ice Adventure",
@@ -85,7 +85,7 @@ export const projects = [
         image: "/images/projects/ice.png",
         tags: '{"Java": "java"}',
         year: "2020",
-        url: "/src/pages/ice_adventure.html"
+        url: "/projects/ice-adventure.html"
     },
     {
         title: "Minesweeper",
@@ -93,6 +93,6 @@ export const projects = [
         image: "/images/projects/minesweeper.png",
         tags: '{"C": "cpp"}',
         year: "2020",
-        url: "/src/pages/minesweeper.html"
+        url: "/projects/minesweeper.html"
     }
 ];
