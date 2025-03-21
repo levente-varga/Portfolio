@@ -5,7 +5,7 @@ export const projects = [
         image: "/images/projects/cardium.png",
         tags: '{"C#": "csharp", "Godot": "godot"}',
         year: "2025",
-        url: "cardium.html"
+        url: "src/pages/cardium.html"
     },
     {
         title: "Ecometer Desktop",
@@ -13,7 +13,7 @@ export const projects = [
         image: "/images/projects/ecometer_desktop.png",
         tags: '{"Dart": "dart"}',
         year: "2024-2025",
-        url: "/projects/ecometer_desktop.html"
+        url: "/src/pages/ecometer_desktop.html"
     },
     {
         title: "Ecometer",
@@ -21,7 +21,7 @@ export const projects = [
         image: "/images/projects/ecometer.png",
         tags: '{"Dart": "dart"}',
         year: "2024-2025",
-        url: "/projects/ecometer.html"
+        url: "/src/pages/ecometer.html"
     },
     {
         title: "Tower",
@@ -29,7 +29,7 @@ export const projects = [
         image: "/images/projects/tower.png",
         tags: '{"C++": "cpp"}',
         year: "2025",
-        url: "/projects/tower.html"
+        url: "/src/pages/tower.html"
     },
     {
         title: "Portfolio",
@@ -37,7 +37,7 @@ export const projects = [
         image: "/images/projects/portfolio.png",
         tags: '{"JavaScript": "javascript", "Tailwind CSS": "tailwind"}',
         year: "2025",
-        url: "/projects/portfolio.html"
+        url: "/src/pages/portfolio.html"
     },
     {
         title: "Weave",
@@ -45,7 +45,7 @@ export const projects = [
         image: "/images/projects/weave.png",
         tags: '{"C#": "csharp", "Godot": "godot"}',
         year: "2023",
-        url: "/projects/weave.html"
+        url: "/src/pages/weave.html"
     },
     {
         title: "Melodica",
@@ -53,7 +53,7 @@ export const projects = [
         image: "/images/projects/melodica.png",
         tags: '{"C#": "csharp", "Godot": "godot"}',
         year: "2023",
-        url: "/projects/melodica.html"
+        url: "/src/pages/melodica.html"
     },
     {
         title: "JSON Parser",
@@ -61,7 +61,7 @@ export const projects = [
         image: "/images/projects/json.png",
         tags: '{"C++": "cpp"}',
         year: "2023",
-        url: "/projects/json_parser.html"
+        url: "/src/pages/json_parser.html"
     },
     {
         title: "Graphs",
@@ -69,7 +69,7 @@ export const projects = [
         image: "/images/projects/graphs.png",
         tags: '{"C#": "csharp"}',
         year: "2021-2023",
-        url: "/projects/graphs.html"
+        url: "/src/pages/graphs.html"
     },
     {
         title: "Rhythm Ninja",
@@ -77,7 +77,7 @@ export const projects = [
         image: "/images/projects/rhythm_ninja.png",
         tags: '{"C#": "csharp", "Unity": "unity"}',
         year: "2021",
-        url: "/projects/rhythm_ninja.html"
+        url: "/src/pages/rhythm_ninja.html"
     },
     {
         title: "Ice Adventure",
@@ -85,7 +85,7 @@ export const projects = [
         image: "/images/projects/ice.png",
         tags: '{"Java": "java"}',
         year: "2020",
-        url: "/projects/ice_adventure.html"
+        url: "/src/pages/ice_adventure.html"
     },
     {
         title: "Minesweeper",
@@ -93,6 +93,6 @@ export const projects = [
         image: "/images/projects/minesweeper.png",
         tags: '{"C": "cpp"}',
         year: "2020",
-        url: "/projects/minesweeper.html"
+        url: "/src/pages/minesweeper.html"
     }
 ];
