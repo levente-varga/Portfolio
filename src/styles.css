@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('/assets/fonts/Inter') format('ttf');
+    src: url('/public/fonts/Inter') format('ttf');
     font-weight: normal;
     font-style: normal;
 }

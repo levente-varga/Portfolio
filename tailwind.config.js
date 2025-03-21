@@ -1,8 +1,9 @@
 module.exports = {
     content: [
-        "./index.html",
-        ".src/styles.css",
-        "./src/**/*.{js,ts,jsx,tsx}",
+        "/index.html",
+        "/src/styles.css",
+        "/src/components/projectCard.js",
+        "/src/**/*.{js,ts,jsx,tsx}",
     ],
     theme: {
         extend: {

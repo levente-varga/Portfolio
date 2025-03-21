@@ -1,6 +1,6 @@
 class ProjectCard extends HTMLElement {
     static get observedAttributes() {
-        return ["title", "description", "bg", "tags"];
+        return ["title", "description", "src", "tags"];
     }
 
     connectedCallback() {
@@ -14,12 +14,12 @@ class ProjectCard extends HTMLElement {
     render() {
         const title = this.getAttribute("title") || "Title";
         const description = this.getAttribute("description") || "Description";
-        const bg = this.getAttribute("bg") || "";
+        const src = this.getAttribute("src") || "";
         const tags = this.getAttribute("tags") ? JSON.parse(this.getAttribute("tags")) : {};
 
         this.innerHTML = `
             <div class="relative rounded-2xl w-80 ring-1 ring-white/5 bg-foreground shadow-xl">
-                <div class='rounded-t-2xl aspect-[calc(5/3)] bg-cover bg-center bg-[url(${bg})]'> </div>
+                <div class='rounded-t-2xl aspect-[calc(5/3)] bg-cover bg-center bg-[url(${src})]'> </div>
                 
                 <div class="p-6">
                     <div class="text-xl text-textLight font-bold">${title}</div>
