@@ -19,7 +19,7 @@ class ProjectCard extends HTMLElement {
 
         this.innerHTML = `
             <div class="relative rounded-2xl max-w-100 ring-1 ring-white/5 bg-foreground shadow-xl">
-                <img class="rounded-t-2xl aspect-[calc(5/3)]" src="${bg}" alt="${title}"/>
+                <img class="rounded-t-2xl aspect-[calc(5/3)]" src="/assets/images/projects/cardium.png" alt="${title}"/>
                 
                 <div class="p-6">
                     <div class="text-xl text-textLight font-bold">${title}</div>
