@@ -23,17 +23,17 @@ class TimelineRow extends HTMLElement {
 
         this.innerHTML = `
             <div class="flex flex-row mx-auto max-w-5xl">
-                <div class="flex flex-1 flex-col ${left ? "items-end text-end order-0" : "items-start text-start order-2"} text-textDark space-y-2 py-2">
+                <div class="flex flex-1 flex-col ${left ? "md:items-end items-start md:text-end text-start md:order-0 order-2" : "items-start text-start order-2"} text-textDark space-y-2 md:py-2 py-6">
                     <div class="text-textLight text-2xl font-bold">${title}</div>
                     <div class="flex flex-row">
-                        <div class="text-text text-xl ${!left ? "order-1" : ""}">${subtitle}</div>
-                        ${logo ? `<img class="size-6 rounded ${left ? "order-1 ml-2" : "mr-2"}" src="${logo}" alt="Logo"/>` : ''}
+                        <div class="text-text text-xl ${left ? "md:order-0 order-1" : "md-order:0 order-1"}">${subtitle}</div>
+                        ${logo ? `<img class="size-6 rounded ${left ? "md:order-1 order-0 md:ml-2 md:mr-0 mr-2" : "mr-2"}" src="${logo}" alt="Logo"/>` : ''}
                     </div>
                     <div class="text-text text-md italic">${time}</div>
                     ${description ? `<div class="text-textDim text-md">${description}</div>` : ''}
                 </div>
                 <div class="w-1 mx-6 max-h-full ${first ? "rounded-t" : ""} ${last ? "rounded-b" : ""} order-1 bg-textDark"></div>
-                <div class="flex flex-1 flex-col items-center justify-center text-textDark ${left ? "order-2" : "order-0"}"></div>
+                <div class="md:flex hidden flex-1 flex-col items-center justify-center text-textDark ${left ? "order-2" : "order-0"}"></div>
             </div>
         `;
     }
