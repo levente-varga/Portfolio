@@ -19,7 +19,9 @@ module.exports = {
         'bg-dart',
         'bg-godot',
         'bg-game',
-        'bg-[url(/images/projects/cardium.png)]'
+        {
+            pattern: /bg-\[url\(*\)]/,
+        },
     ],
     plugins: [],
 };
