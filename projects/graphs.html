@@ -14,8 +14,8 @@
 
   <div class="flex flex-col justify-center space-y-4 py-64 w-fit mx-auto">
     <div class="text-textDark text-center content-center w-fit">
-      <div class="text-xl font-light">Project:</div>
       <div class="text-7xl font-extrabold">GRAPHS</div>
+      <div class="text-xl font-light">A random graph generator</div>
       <ul class="flex space-x-4 items-center mt-8 mx-auto w-fit">
         <li><a href="https://github.com/levente-varga/Graphs">
           <svg class="size-8 fill-textDark hover:fill-textDim duration-250" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
@@ -23,6 +23,59 @@
           </svg>
         </a></li>
       </ul>
+    </div>
+  </div>
+
+  <div id="models" class="text-4xl text-center text-textDark font-bold mb-8">Models</div>
+  <div class="mx-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full lg:max-w-5xl max-w-2xl mx-auto" id="projects-container">
+
+      <div class="w-full">
+        <div class="rounded-2xl aspect-square shadow-2xl bg-cover bg-center bg-[url(/images/projects/graphs/graph2.png)]"> </div>
+        <div class="p-6">
+          <div class="text-xl text-textLight font-bold">Erdős-Rényi model</div>
+          <div class="text-sm text-text font-light my-2">
+            <p>Connects nodes with a fixed probability.</p>
+            <p>Results in a Poisson distribution of degrees. </p>
+            <p class="text-textDark">Nodes: 100, Probability: 10%</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full">
+        <div class="rounded-2xl aspect-square shadow-2xl bg-cover bg-center bg-[url(/images/projects/graphs/graph3.png)]"> </div>
+        <div class="p-6">
+          <div class="text-xl text-textLight font-bold">Watts-Strogatz model</div>
+          <div class="text-sm text-text font-light my-2">
+            <p>Creates small-world networks with low average path lengths.</p>
+            <p class="text-textDark">Nodes: 100, Probability: 1%, Mean degree: 20</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full">
+        <div class="rounded-2xl aspect-square shadow-2xl bg-cover bg-center bg-[url(/images/projects/graphs/graph1.png)]"> </div>
+        <div class="p-6">
+          <div class="text-xl text-textLight font-bold">Barabási-Albert model</div>
+          <div class="text-sm text-text font-light my-2">
+            <p>Creates network-like graphs with power-law degree distributions.</p>
+            <p>Nodes are more likely to form edges with other nodes of higher degree</p>
+            <p class="text-textDark">Nodes: 100, Power: 1.55</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full">
+        <div class="rounded-2xl aspect-square shadow-2xl bg-cover bg-center bg-[url(/images/projects/graphs/graph4.png)]"> </div>
+        <div class="p-6">
+          <div class="text-xl text-textLight font-bold">Bianconi-Barabási model</div>
+          <div class="text-sm text-text font-light my-2">
+            <p>Similar to Barabási-Albert, with an additional fitness weight</p>
+            <p class="text-textDark">Nodes: 100, Fitness: 0.95</p>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 
