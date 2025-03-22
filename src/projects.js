@@ -92,7 +92,7 @@ export const projects = [
         description: "The classic game in full screen.",
         image: "/images/projects/minesweeper.png",
         tags: '{"C": "cpp"}',
-        year: "2020",
+        year: "2018-2020",
         url: "/projects/minesweeper.html"
     }
 ];

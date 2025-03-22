@@ -12,12 +12,7 @@
 
   <back-navbar></back-navbar>
 
-  <div class="flex flex-col justify-center space-y-4 py-32 w-fit mx-auto">
-    <div class="text-textDark text-center content-center w-fit">
-      <div class="text-xl font-light">Project:</div>
-      <div class="text-7xl font-extrabold">MINESWEEPER</div>
-    </div>
-  </div>
+  <custom-title title="MINESWEEPER" responsive="true" showProject="true" subtitle="The classic game in fullscreen"></custom-title>
 
   <div id="about" class="text-4xl text-center text-textDark font-bold">About</div>
   <div class="w-full max-w-xl mx-auto space-y-2 px-8 mb-16 mt-8">
@@ -103,6 +98,7 @@
 
   <custom-footer></custom-footer>
 
+  <script type="module" src="/src/components/customTitle.js"></script>
   <script type="module" src="/src/components/textGlow.js"></script>
   <script type="module" src="/src/components/customFooter.js"></script>
   <script type="module" src="/src/components/backNavbar.js"></script>
