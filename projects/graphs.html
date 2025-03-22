@@ -12,10 +12,10 @@
 
   <back-navbar></back-navbar>
 
-  <div class="flex flex-col justify-center space-y-4 py-64 w-fit mx-auto">
+  <div class="flex flex-col justify-center space-y-4 py-48 w-fit mx-auto">
     <div class="text-textDark text-center content-center w-fit">
       <div class="text-7xl font-extrabold">GRAPHS</div>
-      <div class="text-xl font-light">A random graph generator</div>
+      <div class="text-xl font-light">Educational random graph generator</div>
       <ul class="flex space-x-4 items-center mt-8 mx-auto w-fit">
         <li><a href="https://github.com/levente-varga/Graphs">
           <svg class="size-8 fill-textDark hover:fill-textDim duration-250" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
@@ -26,7 +26,30 @@
     </div>
   </div>
 
-  <div id="models" class="text-4xl text-center text-textDark font-bold mb-8">Models</div>
+  <div id="about" class="text-4xl text-center text-textDark font-bold mb-16">About</div>
+  <div class="w-full max-w-xl mx-auto">
+    <div class="px-8">
+      <div class="flex flex-row space-x-4">
+        <svg class="size-7 fill-text" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M11 17H13V11H11V17ZM12 9C12.2833 9 12.5208 8.90417 12.7125 8.7125C12.9042 8.52083 13 8.28333 13 8C13 7.71667 12.9042 7.47917 12.7125 7.2875C12.5208 7.09583 12.2833 7 12 7C11.7167 7 11.4792 7.09583 11.2875 7.2875C11.0958 7.47917 11 7.71667 11 8C11 8.28333 11.0958 8.52083 11.2875 8.7125C11.4792 8.90417 11.7167 9 12 9ZM12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.3833 2 14.6833 2.2625 15.9 2.7875C17.1167 3.3125 18.175 4.025 19.075 4.925C19.975 5.825 20.6875 6.88333 21.2125 8.1C21.7375 9.31667 22 10.6167 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM12 20C14.2333 20 16.125 19.225 17.675 17.675C19.225 16.125 20 14.2333 20 12C20 9.76667 19.225 7.875 17.675 6.325C16.125 4.775 14.2333 4 12 4C9.76667 4 7.875 4.775 6.325 6.325C4.775 7.875 4 9.76667 4 12C4 14.2333 4.775 16.125 6.325 17.675C7.875 19.225 9.76667 20 12 20Z"/></svg>
+        <div class="flex flex-col space-y-2 text-md text-text font-light mb-4">
+          <p>Developed in <text-glow>C#</text-glow> using <text-glow>WinForms</text-glow></p>
+          <p>Features a <text-glow>force-directed</text-glow> graph drawing algorithm</p>
+          <p>Uses 4 graph-generator models (discussed below)</p>
+          <p>Visualises the graphs with a graph view and three charts</p>
+          <p>Calculates the average degree distribution, supported by sample generation</p>
+        </div>
+      </div>
+      <div class="flex flex-row space-x-4">
+        <svg class="size-6 fill-text" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18,22l-0.01-6L14,12l3.99-4.01L18,2H6v6l4,4l-4,3.99V22H18z M8,7.5V4h8v3.5l-4,4L8,7.5z"/></svg>
+        <div class="flex flex-col space-y-2 text-md italic text-text font-light">
+          <p>Start of development: 2022</p>
+          <p>Release date (v0.1.0): 29 Apr 2024</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="models" class="text-4xl text-center text-textDark font-bold mb-16 my-32">Models</div>
   <div class="mx-8">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full lg:max-w-5xl max-w-2xl mx-auto" id="projects-container">
 
@@ -34,9 +57,9 @@
         <div class="rounded-2xl aspect-square shadow-2xl bg-cover bg-center bg-[url(/images/projects/graphs/graph2.png)]"> </div>
         <div class="p-6">
           <div class="text-xl text-textLight font-bold">Erdős-Rényi model</div>
-          <div class="text-sm text-text font-light my-2">
+          <div class="text-md text-text font-light my-2">
             <p>Connects nodes with a fixed probability.</p>
-            <p>Results in a Poisson distribution of degrees. </p>
+            <p>Degrees follow the Poisson distribution. </p>
             <p class="text-textDark">Nodes: 100, Probability: 10%</p>
           </div>
         </div>
@@ -46,9 +69,10 @@
         <div class="rounded-2xl aspect-square shadow-2xl bg-cover bg-center bg-[url(/images/projects/graphs/graph3.png)]"> </div>
         <div class="p-6">
           <div class="text-xl text-textLight font-bold">Watts-Strogatz model</div>
-          <div class="text-sm text-text font-light my-2">
-            <p>Creates small-world networks with low average path lengths.</p>
-            <p class="text-textDark">Nodes: 100, Probability: 1%, Mean degree: 20</p>
+          <div class="text-md text-text font-light my-2">
+            <p>Creates small-world networks.</p>
+            <p>Low average path lengths.</p>
+            <p class="text-textDark">Nodes: 100, Probability: 1%, Mean: 20</p>
           </div>
         </div>
       </div>
@@ -57,9 +81,9 @@
         <div class="rounded-2xl aspect-square shadow-2xl bg-cover bg-center bg-[url(/images/projects/graphs/graph1.png)]"> </div>
         <div class="p-6">
           <div class="text-xl text-textLight font-bold">Barabási-Albert model</div>
-          <div class="text-sm text-text font-light my-2">
-            <p>Creates network-like graphs with power-law degree distributions.</p>
-            <p>Nodes are more likely to form edges with other nodes of higher degree</p>
+          <div class="text-md text-text font-light my-2">
+            <p>Creates network-like graphs.</p>
+            <p>New nodes form edges based on degree.</p>
             <p class="text-textDark">Nodes: 100, Power: 1.55</p>
           </div>
         </div>
@@ -69,8 +93,8 @@
         <div class="rounded-2xl aspect-square shadow-2xl bg-cover bg-center bg-[url(/images/projects/graphs/graph4.png)]"> </div>
         <div class="p-6">
           <div class="text-xl text-textLight font-bold">Bianconi-Barabási model</div>
-          <div class="text-sm text-text font-light my-2">
-            <p>Similar to Barabási-Albert, with an additional fitness weight</p>
+          <div class="text-md text-text font-light my-2">
+            <p>Similar to Barabási-Albert, with an extra fitness weight</p>
             <p class="text-textDark">Nodes: 100, Fitness: 0.95</p>
           </div>
         </div>
@@ -80,5 +104,6 @@
   </div>
 
   <script type="module" src="/src/components/backNavbar.js"></script>
+  <script type="module" src="/src/components/textGlow.js"></script>
 </body>
 </html>
