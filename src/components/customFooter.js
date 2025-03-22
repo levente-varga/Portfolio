@@ -9,7 +9,7 @@ class CustomFooter extends HTMLElement {
 
   render() {
     this.innerHTML = `
-      <div class="flex flex-col px-auto bg-backgroundLight text-center items-center justify-center py-16">
+      <div class="flex flex-col px-auto bg-backgroundLight text-center items-center justify-center py-16 mt-16">
         <div id="contact" class="text-4xl text-text font-bold mb-8">Contact</div>
         <div class="text-text">Feel free to reach out on any of these platforms!</div>
         <ul class="flex space-x-4 items-center mt-8 mx-auto w-fit">
