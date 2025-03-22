@@ -11,7 +11,7 @@ export const projects = [
         title: "Ecometer Desktop",
         description: "A taximeter management software.",
         image: "/images/projects/ecometer_desktop.png",
-        tags: '{"Dart": "dart"}',
+        tags: '{"Dart": "dart", "Flutter": "flutter"}',
         year: "2024-2025",
         url: "/projects/ecometer-desktop.html"
     },
@@ -19,7 +19,7 @@ export const projects = [
         title: "Ecometer",
         description: "A mobile app for taxi drivers.",
         image: "/images/projects/ecometer.png",
-        tags: '{"Dart": "dart"}',
+        tags: '{"Dart": "dart", "Flutter": "flutter"}',
         year: "2024-2025",
         url: "/projects/ecometer.html"
     },

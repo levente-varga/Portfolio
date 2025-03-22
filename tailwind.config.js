@@ -32,6 +32,7 @@ module.exports = {
         'bg-cpp',
         'bg-csharp',
         'bg-dart',
+        'bg-flutter',
         'bg-tailwind',
         'bg-godot',
         'bg-unity',
