@@ -21,8 +21,8 @@
     <img src="/images/projects/graphs.png" class="w-full rounded-xl max-w-3xl mx-auto" alt="Graphs program window">
   </div>
 
-  <div id="about" class="text-4xl text-center text-textDim font-bold mb-16">About</div>
-  <div class="w-full max-w-xl mx-auto">
+  <div id="about" class="text-4xl text-center text-textDim font-bold">About</div>
+  <div class="w-full max-w-xl mx-auto my-8">
     <div class="px-8">
       <div class="flex flex-row space-x-4">
         <svg class="size-6 min-w-6 fill-text" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -48,7 +48,11 @@
     </div>
   </div>
 
-  <div id="models" class="text-4xl text-center text-textDark font-bold mb-16 my-32">Models</div>
+  <div class="mb-32">
+    <github-button url="https://github.com/levente-varga/Graphs"></github-button>
+  </div>
+
+  <div id="models" class="text-4xl text-center text-textDim font-bold mb-16 my-32">Models</div>
   <div class="mx-8">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full lg:max-w-5xl max-w-2xl mx-auto" id="projects-container">
 
@@ -59,7 +63,7 @@
           <div class="text-text font-light my-2">
             <p>Connects nodes with a fixed probability.</p>
             <p>Degrees follow the Poisson distribution. </p>
-            <p class="text-textDark">Nodes: 100, Probability: 10%</p>
+            <p class="text-textDim">Nodes: 100, Probability: 10%</p>
           </div>
         </div>
       </div>
@@ -71,7 +75,7 @@
           <div class="text-text font-light my-2">
             <p>Creates small-world networks.</p>
             <p>Low average path lengths.</p>
-            <p class="text-textDark">Nodes: 100, Probability: 1%, Mean: 20</p>
+            <p class="text-textDim">Nodes: 100, Probability: 1%, Mean: 20</p>
           </div>
         </div>
       </div>
@@ -83,7 +87,7 @@
           <div class="text-text font-light my-2">
             <p>Creates network-like graphs.</p>
             <p>New nodes form edges based on degree.</p>
-            <p class="text-textDark">Nodes: 100, Power: 1.55</p>
+            <p class="text-textDim">Nodes: 100, Power: 1.55</p>
           </div>
         </div>
       </div>
@@ -94,7 +98,7 @@
           <div class="text-xl text-textLight font-bold">Bianconi-Barabási model</div>
           <div class="text-text font-light my-2">
             <p>Similar to Barabási-Albert, with an extra fitness weight.</p>
-            <p class="text-textDark">Nodes: 100, Fitness: 0.95</p>
+            <p class="text-textDim">Nodes: 100, Fitness: 0.95</p>
           </div>
         </div>
       </div>
@@ -121,6 +125,7 @@
 
   <custom-footer></custom-footer>
 
+  <script type="module" src="/src/components/githubButton.js"></script>
   <script type="module" src="/src/components/customTitle.js"></script>
   <script type="module" src="/src/components/customFooter.js"></script>
   <script type="module" src="/src/components/backNavbar.js"></script>
