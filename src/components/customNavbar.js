@@ -56,8 +56,13 @@ class CustomNavbar extends HTMLElement {
     let lastScrollY = window.scrollY;
     const navbar = this.querySelector("#navbar");
     const scrollThreshold = 50;
+    let isAutoScrolling = false;
 
     window.addEventListener("scroll", () => {
+      if (isAutoScrolling) {
+        return;
+      }
+
       if (window.scrollY <= 0) {
         navbar.style.transform = "translateY(0)";
         lastScrollY = window.scrollY;
@@ -68,6 +73,29 @@ class CustomNavbar extends HTMLElement {
         navbar.style.transform = "translateY(0)";
         lastScrollY = window.scrollY;
       }
+    });
+
+    const menuItems = document.querySelectorAll("a[href^='#']");
+    menuItems.forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        const offset = 80;
+
+        if (targetElement) {
+          isAutoScrolling = true;
+
+          window.scrollTo({
+            top: targetElement.offsetTop - offset,
+            behavior: "smooth"
+          });
+
+          setTimeout(() => {
+            isAutoScrolling = false;
+          }, 1000);
+        }
+      });
     });
   }
 
