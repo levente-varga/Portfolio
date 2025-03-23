@@ -10,9 +10,7 @@ class CodeGlow extends HTMLElement {
   render() {
     const text = this.innerHTML;
 
-    this.innerHTML = `
-      <span class="font-mono font-normal text-textLight">${text}</span>
-    `;
+    this.innerHTML = `<span class="font-mono font-normal text-textLight">${text}</span>`;
   }
 }
 

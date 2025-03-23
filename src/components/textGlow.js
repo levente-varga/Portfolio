@@ -10,9 +10,7 @@ class TextGlow extends HTMLElement {
   render() {
     const text = this.innerHTML;
 
-    this.innerHTML = `
-      <span class="text-textLight font-bold">${text}</span>
-    `;
+    this.innerHTML = `<span class="text-textLight font-bold">${text}</span>`;
   }
 }
 
