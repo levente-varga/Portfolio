@@ -1,10 +1,12 @@
 import { projects } from './src/projects.js';
 import { experiences } from "./src/experiences.js";
 import { educations } from "./src/educations.js";
+import {awards} from "./src/awards.js";
 
 const projectsContainer = document.getElementById('projects-container');
 const experienceContainer = document.getElementById('experience-container');
 const educationContainer = document.getElementById('education-container');
+const awardsContainer = document.getElementById('awards-container');
 
 // Create project cards
 projects.forEach(project => {
@@ -50,4 +52,21 @@ educations.forEach((education, index) => {
     timelineRow.setAttribute('first', first ? 'true' : 'false');
     timelineRow.setAttribute('last', last ? 'true' : 'false');
     educationContainer.appendChild(timelineRow);
+})
+
+// Create awards timeline
+awards.forEach((award, index) => {
+    const left = index % 2 === 0;
+    const first = index === 0;
+    const last = index === educations.length - 1;
+    const timelineRow = document.createElement('timeline-row');
+    timelineRow.setAttribute('title', award.title);
+    timelineRow.setAttribute('subtitle', award.subtitle);
+    timelineRow.setAttribute('time', award.time);
+    timelineRow.setAttribute('description', award.description);
+    timelineRow.setAttribute('logo', award.logo);
+    timelineRow.setAttribute('left', left ? 'true' : 'false');
+    timelineRow.setAttribute('first', first ? 'true' : 'false');
+    timelineRow.setAttribute('last', last ? 'true' : 'false');
+    awardsContainer.appendChild(timelineRow);
 })

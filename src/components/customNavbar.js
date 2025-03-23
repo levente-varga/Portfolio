@@ -19,6 +19,7 @@ class CustomNavbar extends HTMLElement {
               <li><a href="#projects" class="hover:text-gray-300">Projects</a></li>
               <li><a href="#experience" class="hover:text-gray-300">Experience</a></li>
               <li><a href="#education" class="hover:text-gray-300">Education</a></li>
+              <li><a href="#awards" class="hover:text-gray-300">Awards</a></li>
               <li><a href="#about" class="hover:text-gray-300">About</a></li>
               <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
             </ul>
@@ -43,6 +44,7 @@ class CustomNavbar extends HTMLElement {
             <a id="btn-projects" href="#projects" class="block px-8 py-6 text-white hover:bg-textDark duration-300">Projects</a>
             <a id="btn-experience" href="#experience" class="block px-8 py-6 text-white hover:bg-textDark duration-300">Experience</a>
             <a id="btn-education" href="#education" class="block px-8 py-6 text-white hover:bg-textDark duration-300">Education</a>
+            <a id="btn-awards" href="#awards" class="block px-8 py-6 text-white hover:bg-textDark duration-300">Awards</a>
             <a id="btn-about" href="#about" class="block px-8 py-6 text-white hover:bg-textDark duration-300">About</a>
             <a id="btn-contact" href="#contact" class="block px-8 py-6 text-white hover:bg-textDark duration-300">Contact</a>
           </div>
@@ -106,6 +108,7 @@ class CustomNavbar extends HTMLElement {
     const btnProjects = this.querySelector('#btn-projects');
     const btnExperience = this.querySelector('#btn-experience');
     const btnEducation = this.querySelector('#btn-education');
+    const btnAwards = this.querySelector('#btn-awards');
     const btnAbout = this.querySelector('#btn-about');
     const btnContact = this.querySelector('#btn-contact');
     const btnClose = this.querySelector('#btn-close');
@@ -123,6 +126,9 @@ class CustomNavbar extends HTMLElement {
       mobileMenu.classList.add('hidden');
     });
     btnEducation.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+    });
+    btnAwards.addEventListener('click', () => {
       mobileMenu.classList.add('hidden');
     });
     btnAbout.addEventListener('click', () => {
