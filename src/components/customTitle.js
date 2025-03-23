@@ -1,6 +1,6 @@
 class CustomTitle extends HTMLElement {
   static get observedAttributes() {
-    return ["title", "subtitle", "showProject", "responsive", "github", "youtube"];
+    return ["text", "subtitle", "showProject", "responsive", "github", "youtube"];
   }
 
   connectedCallback() {
@@ -12,7 +12,7 @@ class CustomTitle extends HTMLElement {
   }
 
   render() {
-    const title = this.getAttribute("title") || "";
+    const title = this.getAttribute("text") || "";
     const subtitle = this.getAttribute("subtitle") || "";
     const showProject = this.getAttribute("showProject") || false;
     const responsive = this.getAttribute("responsive") || false;
