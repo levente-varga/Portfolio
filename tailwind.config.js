@@ -13,6 +13,7 @@ module.exports = {
         "/public/projects/rhythm_ninja.html",
         "/public/projects/tower.html",
         "/public/projects/weave.html",
+        "/public/projects/robotics.html",
         "/src/styles.css",
         "/src/components/projectCard.js",
         "/src/components/timelineRow.js",

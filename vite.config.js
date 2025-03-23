@@ -21,6 +21,7 @@ export default defineConfig({
                 rhythm_ninja: 'projects/rhythm-ninja.html',
                 tower: 'projects/tower.html',
                 weave: 'projects/weave.html',
+                robotics: 'projects/robotics.html',
             },
         },
     },
