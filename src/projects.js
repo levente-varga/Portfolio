@@ -94,5 +94,13 @@ export const projects = [
         tags: '{"C": "cpp"}',
         year: "2018-2020",
         url: "/projects/minesweeper.html"
+    },
+    {
+        title: "Robotics",
+        description: "Participation in LEGO robotics competitions.",
+        image: "/images/projects/robotics/design-award.jpg",
+        tags: '{}',
+        year: "2013-2018",
+        url: "/projects/robotics.html"
     }
 ];
