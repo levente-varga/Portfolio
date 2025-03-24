@@ -4,7 +4,7 @@ export const experiences = [
         company: "Ecometer Kft.",
         logo: "/images/experience/ecometer.png",
         time: "May 2024 - Present",
-        description: "Cross platform mobile and desktop development in Flutter (Dart) using GitHub as lead frontend developer. UI design in Figma.",
+        description: "Cross platform mobile and desktop development in Flutter (Dart) using GitHub as the lead frontend developer. UI design in Figma.",
     },
     {
         name: "R&D Intern",
