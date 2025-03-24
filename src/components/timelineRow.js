@@ -1,6 +1,6 @@
 class TimelineRow extends HTMLElement {
     static get observedAttributes() {
-        return ["title", "subtitle", "time", "description", "logo", "left", "first", "last"];
+        return ["name", "company", "logo", "time", "description", "left", "first", "last"];
     }
 
     connectedCallback() {
@@ -12,11 +12,11 @@ class TimelineRow extends HTMLElement {
     }
 
     render() {
-        const title = this.getAttribute("title") || "Title";
-        const subtitle = this.getAttribute("subtitle") || "Subtitle";
+        const name = this.getAttribute("name") || "Name";
+        const company = this.getAttribute("company") || "Company";
+        const logo = this.getAttribute("logo") || "";
         const time = this.getAttribute("time") || "Time";
         const description = this.getAttribute("description");
-        const logo = this.getAttribute("logo") || "";
         const left = this.getAttribute("left") === "true";
         const first = this.getAttribute("first") === "true";
         const last = this.getAttribute("last") === "true";
@@ -24,9 +24,9 @@ class TimelineRow extends HTMLElement {
         this.innerHTML = `
             <div class="flex flex-row mx-auto max-w-5xl">
                 <div class="flex flex-1 flex-col ${left ? "md:items-end items-start md:text-end text-start md:order-0 order-2" : "items-start text-start order-2"} text-textDark space-y-2 md:py-2 py-6">
-                    <div class="text-textLight text-2xl font-bold">${title}</div>
+                    <div class="text-textLight text-2xl font-bold">${name}</div>
                     <div class="flex flex-row">
-                        <div class="text-text text-xl ${left ? "md:order-0 order-1" : "md-order:0 order-1"}">${subtitle}</div>
+                        <div class="text-text text-xl ${left ? "md:order-0 order-1" : "md-order:0 order-1"}">${company}</div>
                         ${logo ? `<img class="size-6 rounded ${left ? "md:order-1 order-0 md:ml-2 md:mr-0 mr-2" : "mr-2"}" src="${logo}" alt="Logo"/>` : ''}
                     </div>
                     <div class="text-text text-md italic">${time}</div>

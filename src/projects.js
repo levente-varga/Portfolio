@@ -1,6 +1,6 @@
 export const projects = [
     {
-        title: "Cardium",
+        name: "Cardium",
         description: "An extraction deckbuilder.",
         image: "/images/projects/cardium.png",
         tags: '{"C#": "csharp", "Godot": "godot"}',
@@ -8,7 +8,7 @@ export const projects = [
         url: "/projects/cardium.html"
     },
     {
-        title: "Ecometer Desktop",
+        name: "Ecometer Desktop",
         description: "A taximeter management software.",
         image: "/images/projects/ecometer_desktop.png",
         tags: '{"Dart": "dart", "Flutter": "flutter"}',
@@ -16,7 +16,7 @@ export const projects = [
         url: "/projects/ecometer-desktop.html"
     },
     {
-        title: "Ecometer",
+        name: "Ecometer",
         description: "A mobile app for taxi drivers.",
         image: "/images/projects/ecometer.png",
         tags: '{"Dart": "dart", "Flutter": "flutter"}',
@@ -24,7 +24,7 @@ export const projects = [
         url: "/projects/ecometer.html"
     },
     {
-        title: "Tower",
+        name: "Tower",
         description: "A game engine using DirectX.",
         image: "/images/projects/tower.png",
         tags: '{"C++": "cpp"}',
@@ -32,7 +32,7 @@ export const projects = [
         url: "/projects/tower.html"
     },
     {
-        title: "Portfolio",
+        name: "Portfolio",
         description: "This portfolio website.",
         image: "/images/projects/portfolio.png",
         tags: '{"JavaScript": "javascript", "Tailwind CSS": "tailwind"}',
@@ -40,7 +40,7 @@ export const projects = [
         url: "/projects/portfolio.html"
     },
     {
-        title: "Weave",
+        name: "Weave",
         description: "A co-op video game mixing Tron and Snake.",
         image: "/images/projects/weave.png",
         tags: '{"C#": "csharp", "Godot": "godot"}',
@@ -48,7 +48,7 @@ export const projects = [
         url: "/projects/weave.html"
     },
     {
-        title: "Melodica",
+        name: "Melodica",
         description: "A minimalist rhythm game prototype.",
         image: "/images/projects/melodica.png",
         tags: '{"C#": "csharp", "Godot": "godot"}',
@@ -56,7 +56,7 @@ export const projects = [
         url: "/projects/melodica.html"
     },
     {
-        title: "JSON Parser",
+        name: "JSON Parser",
         description: "A custom JSON parser.",
         image: "/images/projects/json.png",
         tags: '{"C++": "cpp"}',
@@ -64,7 +64,7 @@ export const projects = [
         url: "/projects/json-parser.html"
     },
     {
-        title: "Graphs",
+        name: "Graphs",
         description: "An educational graph generator and visualiser.",
         image: "/images/projects/graphs.png",
         tags: '{"C#": "csharp"}',
@@ -72,7 +72,7 @@ export const projects = [
         url: "/projects/graphs.html"
     },
     {
-        title: "Rhythm Ninja",
+        name: "Rhythm Ninja",
         description: "A rhythm game prototype.",
         image: "/images/projects/rhythm_ninja.png",
         tags: '{"C#": "csharp", "Unity": "unity"}',
@@ -80,7 +80,7 @@ export const projects = [
         url: "/projects/rhythm-ninja.html"
     },
     {
-        title: "Ice Adventure",
+        name: "Ice Adventure",
         description: "A co-op survival video game for four players.",
         image: "/images/projects/ice.png",
         tags: '{"Java": "java"}',
@@ -88,7 +88,7 @@ export const projects = [
         url: "/projects/ice-adventure.html"
     },
     {
-        title: "Minesweeper",
+        name: "Minesweeper",
         description: "The classic game in full screen.",
         image: "/images/projects/minesweeper.png",
         tags: '{"C": "cpp"}',
@@ -96,7 +96,7 @@ export const projects = [
         url: "/projects/minesweeper.html"
     },
     {
-        title: "Robotics",
+        name: "Robotics",
         description: "Participation in LEGO robotics competitions.",
         image: "/images/projects/robotics/design-award.jpg",
         tags: '{}',

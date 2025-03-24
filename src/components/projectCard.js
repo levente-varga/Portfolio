@@ -1,6 +1,6 @@
 class ProjectCard extends HTMLElement {
     static get observedAttributes() {
-        return ["title", "description", "image", "tags", "year", "url"];
+        return ["name", "description", "image", "tags", "year", "url"];
     }
 
     connectedCallback() {
@@ -12,7 +12,7 @@ class ProjectCard extends HTMLElement {
     }
 
     render() {
-        const title = this.getAttribute("title") || "Title";
+        const name = this.getAttribute("name") || "Name";
         const description = this.getAttribute("description") || "Description";
         const image = this.getAttribute("image") || "";
         const tags = this.getAttribute("tags") ? JSON.parse(this.getAttribute("tags")) : {};
@@ -26,7 +26,7 @@ class ProjectCard extends HTMLElement {
                 
                 <div class="p-6">
                     <div class="flex justify-between items-center">
-                        <div class="text-xl text-textLight font-bold">${title}</div>
+                        <div class="text-xl text-textLight font-bold">${name}</div>
                         <div class="text-sm text-textDim font-light">${year}</div>
                     </div>
                     <div class="text-sm text-text font-light my-2">${description}</div>

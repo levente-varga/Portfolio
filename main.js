@@ -11,7 +11,7 @@ const awardsContainer = document.getElementById('awards-container');
 // Create project cards
 projects.forEach(project => {
     const projectCard = document.createElement('project-card');
-    projectCard.setAttribute('title', project.title);
+    projectCard.setAttribute('name', project.name);
     projectCard.setAttribute('description', project.description);
     projectCard.setAttribute('image', project.image);
     projectCard.setAttribute('tags', project.tags);
@@ -20,53 +20,24 @@ projects.forEach(project => {
     projectsContainer.appendChild(projectCard);
 });
 
-// Create experience timeline
-experiences.forEach((experience, index) => {
-    const left = index % 2 === 0;
-    const first = index === 0;
-    const last = index === experiences.length - 1;
-    const timelineRow = document.createElement('timeline-row');
-    timelineRow.setAttribute('title', experience.title);
-    timelineRow.setAttribute('subtitle', experience.subtitle);
-    timelineRow.setAttribute('time', experience.time);
-    timelineRow.setAttribute('description', experience.description);
-    timelineRow.setAttribute('logo', experience.logo);
-    timelineRow.setAttribute('left', left ? 'true' : 'false');
-    timelineRow.setAttribute('first', first ? 'true' : 'false');
-    timelineRow.setAttribute('last', last ? 'true' : 'false');
-    experienceContainer.appendChild(timelineRow);
-})
+function createTimeline(entries, container) {
+    entries.forEach((entry, index) => {
+        const left = index % 2 === 0;
+        const first = index === 0;
+        const last = index === entries.length - 1;
+        const timelineRow = document.createElement('timeline-row');
+        timelineRow.setAttribute('name', entry.name);
+        timelineRow.setAttribute('company', entry.company);
+        timelineRow.setAttribute('logo', entry.logo);
+        timelineRow.setAttribute('time', entry.time);
+        timelineRow.setAttribute('description', entry.description);
+        timelineRow.setAttribute('left', left ? 'true' : 'false');
+        timelineRow.setAttribute('first', first ? 'true' : 'false');
+        timelineRow.setAttribute('last', last ? 'true' : 'false');
+        container.appendChild(timelineRow);
+    });
+}
 
-// Create education timeline
-educations.forEach((education, index) => {
-    const left = index % 2 === 0;
-    const first = index === 0;
-    const last = index === educations.length - 1;
-    const timelineRow = document.createElement('timeline-row');
-    timelineRow.setAttribute('title', education.title);
-    timelineRow.setAttribute('subtitle', education.subtitle);
-    timelineRow.setAttribute('time', education.time);
-    timelineRow.setAttribute('description', education.description);
-    timelineRow.setAttribute('logo', education.logo);
-    timelineRow.setAttribute('left', left ? 'true' : 'false');
-    timelineRow.setAttribute('first', first ? 'true' : 'false');
-    timelineRow.setAttribute('last', last ? 'true' : 'false');
-    educationContainer.appendChild(timelineRow);
-})
-
-// Create awards timeline
-awards.forEach((award, index) => {
-    const left = index % 2 === 0;
-    const first = index === 0;
-    const last = index === educations.length - 1;
-    const timelineRow = document.createElement('timeline-row');
-    timelineRow.setAttribute('title', award.title);
-    timelineRow.setAttribute('subtitle', award.subtitle);
-    timelineRow.setAttribute('time', award.time);
-    timelineRow.setAttribute('description', award.description);
-    timelineRow.setAttribute('logo', award.logo);
-    timelineRow.setAttribute('left', left ? 'true' : 'false');
-    timelineRow.setAttribute('first', first ? 'true' : 'false');
-    timelineRow.setAttribute('last', last ? 'true' : 'false');
-    awardsContainer.appendChild(timelineRow);
-})
+createTimeline(experiences, experienceContainer);
+createTimeline(educations, educationContainer);
+createTimeline(awards, awardsContainer);
