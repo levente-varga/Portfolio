@@ -17,6 +17,7 @@ projects.forEach(project => {
     projectCard.setAttribute('tags', project.tags);
     projectCard.setAttribute('year', project.year);
     projectCard.setAttribute('url', project.url);
+    projectCard.classList.add('perspective-near');
     projectsContainer.appendChild(projectCard);
 });
 
