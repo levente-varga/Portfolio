@@ -11,6 +11,6 @@ export const educations = [
         company: "Budapest University of Technology and Engineering",
         logo: "/images/education/budapest.jpg",
         time: "Sep 2018 - Jan 2022",
-        description: "Experience with computer graphics, object-oriented programming (C++, C#, Kotlin, Dart, Java), design patterns, clean code principles, mobile development (Flutter, Android), web-development (JavaScript) and game development (Unity).",
+        description: "Experience in computer graphics, object-oriented programming (C++, C#, Kotlin, Dart, Java), design patterns, clean code principles, mobile development (Flutter, Android), web-development (JavaScript) and game development (Unity).",
     }
 ];
