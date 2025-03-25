@@ -58,21 +58,16 @@ class ProjectCard extends HTMLElement {
       const centerX = left + width / 2;
       const centerY = top + height / 2;
 
-      const mouseX = e.clientX;
-      const mouseY = e.clientY;
+      const deltaX = (e.clientX - centerX) / width;
+      const deltaY = (e.clientY - centerY) / height;
 
-      const deltaX = (mouseX - centerX) / width;
-      const deltaY = (mouseY - centerY) / height;
+      const tiltX = deltaY * -5;
+      const tiltY = -deltaX * -5;
 
-      const tiltX = deltaY * -5;  // Tilt amount in degrees
-      const tiltY = -deltaX * -5;  // Tilt amount in degrees
-
-      // Apply the 3D transformation using inline styles
       projectCard.style.transform = `rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
     });
 
     projectCard.addEventListener('mouseleave', () => {
-      // Reset the transform when the mouse leaves the card
       projectCard.style.transform = `rotateX(0deg) rotateY(0deg)`;
     });
   }
