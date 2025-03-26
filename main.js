@@ -29,6 +29,7 @@ function createTimeline(entries, container) {
         const timelineRow = document.createElement('timeline-row');
         timelineRow.setAttribute('name', entry.name);
         timelineRow.setAttribute('company', entry.company);
+        timelineRow.setAttribute('company-url', entry.companyUrl);
         timelineRow.setAttribute('logo', entry.logo);
         timelineRow.setAttribute('time', entry.time);
         timelineRow.setAttribute('description', entry.description);

@@ -10,7 +10,7 @@ export const projects = [
     {
         name: "Ecometer Desktop",
         description: "A taximeter management software.",
-        image: "/images/projects/ecometer_desktop.png",
+        image: "/images/projects/ecometer-desktop.png",
         tags: '{"Dart": "dart", "Flutter": "flutter"}',
         year: "2024-2025",
         url: "/projects/ecometer-desktop.html"

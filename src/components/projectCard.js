@@ -28,7 +28,7 @@ class ProjectCard extends HTMLElement {
       <a href="${url}">
       <div class="perspective-[700px]">
       <div id="${(this.projectCardId)}" class="w-full rounded-2xl duration-[120ms] ease-out ring-1 ring-white/5 bg-foreground shadow-xl">
-        <div class="rounded-t-2xl aspect-[calc(5/3)] bg-cover bg-center" style="background-image: url(${image});"> </div>
+        <div class="rounded-t-2xl aspect-[calc(5/3)] bg-cover bg-center bg-no-repeat" style="background-image: url(${image});"> </div>
         
         <div class="p-6">
           <div class="flex justify-between items-center">
