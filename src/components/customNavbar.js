@@ -13,7 +13,7 @@ class CustomNavbar extends HTMLElement {
     this.innerHTML = `
       <header id="navbar" style="transition: transform 0.3s ease-in-out;" class="fixed inset-0 z-20 h-fit">
         <div class="flex bg-background text-white p-4 justify-center sm:h-16 h-20">
-          <nav class="md:flex hidden">
+          <nav class="sm:flex hidden">
             <ul class="flex space-x-5 items-center">
               <li><a href="#home"><img src="/svg/logo.svg" alt="Logo" class="w-8 h-8 mr-4 ml-4"></a></li>
               <li><a href="#projects" class="hover:text-gray-300">Projects</a></li>
@@ -26,7 +26,7 @@ class CustomNavbar extends HTMLElement {
           </nav>
       
           <!-- Mobile Menu Button -->
-          <div class="flex md:hidden w-full justify-between items-center">
+          <div class="flex sm:hidden w-full justify-between items-center">
             <div class="flex-1 items-center"></div>
             <button id="btn-menu" class="px-4 cursor-pointer">
               <svg class="size-6 fill-white" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
