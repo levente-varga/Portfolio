@@ -22,6 +22,7 @@ export default defineConfig({
                 tower: 'projects/tower.html',
                 weave: 'projects/weave.html',
                 robotics: 'projects/robotics.html',
+                refraction: 'projects/refraction.html',
             },
         },
     },

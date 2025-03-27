@@ -72,7 +72,7 @@ export const projects = [
         url: "/projects/graphs.html"
     },
     {
-        name: "Refraction shader",
+        name: "Refraction Shader",
         description: "Bachelor's thesis on Unity's High Definition Render Pipeline (HDRP)",
         image: "/images/projects/refraction.png",
         tags: '{"HLSL": "hlsl", "Unity": "unity"}',
