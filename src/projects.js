@@ -27,7 +27,7 @@ export const projects = [
         name: "Tower",
         description: "A game engine using DirectX.",
         image: "/images/projects/tower.png",
-        tags: '{"C++": "cpp"}',
+        tags: '{"C++": "cpp", "HLSL": "hlsl"}',
         year: "2025",
         url: "/projects/tower.html"
     },
@@ -70,6 +70,14 @@ export const projects = [
         tags: '{"C#": "csharp"}',
         year: "2021-2023",
         url: "/projects/graphs.html"
+    },
+    {
+        name: "Refraction shader",
+        description: "Bachelor's thesis on Unity's High Definition Render Pipeline (HDRP)",
+        image: "/images/projects/refraction.png",
+        tags: '{"HLSL": "hlsl", "Unity": "unity"}',
+        year: "2021",
+        url: "/projects/refraction.html"
     },
     {
         name: "Rhythm Ninja",
