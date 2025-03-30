@@ -12,41 +12,46 @@ class CustomNavbar extends HTMLElement {
   render() {
     this.innerHTML = `
       <header id="navbar" style="transition: transform 0.3s ease-in-out;" class="fixed inset-0 z-20 h-fit">
-        <div class="flex bg-background text-white p-4 justify-center sm:h-16 h-20">
+        <div class="flex bg-background px-4 justify-center sm:h-16 h-20">
           <nav class="sm:flex hidden">
-            <ul class="flex space-x-5 items-center">
-              <li><a href="#home"><img src="/svg/logo.svg" alt="Logo" class="w-8 h-8 mr-4 ml-4"></a></li>
-              <li><a href="#projects" class="hover:text-gray-300">Projects</a></li>
-              <li><a href="#experience" class="hover:text-gray-300">Experience</a></li>
-              <li><a href="#education" class="hover:text-gray-300">Education</a></li>
-              <li><a href="#awards" class="hover:text-gray-300">Awards</a></li>
-              <li><a href="#about" class="hover:text-gray-300">About</a></li>
-              <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+            <ul class="flex space-x-5 items-center text-textLight">
+              <li><a href="#home" class="group m-4">
+                <svg class="size-6 m-4 fill-textLight group-hover:fill-text duration-150" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M30 0L30 60H10V20L30 0Z"/>
+                  <path d="M30 60L50 40V60H30Z"/>
+                </svg>
+              </a></li>
+              <li><a href="#projects" class="hover:text-text duration-150">Projects</a></li>
+              <li><a href="#experience" class="hover:text-text duration-150">Experience</a></li>
+              <li><a href="#education" class="hover:text-text duration-150">Education</a></li>
+              <li><a href="#awards" class="hover:text-text duration-150">Awards</a></li>
+              <li><a href="#about" class="hover:text-text duration-150">About</a></li>
+              <li><a href="#contact" class="hover:text-text duration-150">Contact</a></li>
             </ul>
           </nav>
       
           <!-- Mobile Menu Button -->
           <div class="flex sm:hidden w-full justify-between items-center">
             <div class="flex-1 items-center"></div>
-            <button id="btn-menu" class="px-4 cursor-pointer">
-              <svg class="size-6 fill-white" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
-                <path d="M30 0L30 60H10V20L30 0Z" fill="white"/>
-                <path d="M30 60L50 40V60H30Z" fill="white"/>
+            <button id="btn-menu" class="group p-4 cursor-pointer">
+              <svg class="size-6 fill-textLight group-hover:fill-text duration-150" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                <path d="M30 0L30 60H10V20L30 0Z"/>
+                <path d="M30 60L50 40V60H30Z"/>
               </svg>
             </button>
           </div>
         </div>
       
         <!-- Mobile Dropdown Menu -->
-        <div id="mobile-menu" class="md:hidden hidden z-20 fixed inset-y-16 w-full h-fit text-2xl">
+        <div id="mobile-menu" class="md:hidden hidden z-20 fixed sm:inset-y-16 inset-y-20 w-full h-fit text-2xl">
           <div class="bg-background shadow-md">
-            <a id="btn-home" href="#home" class="block px-8 py-6 text-white hover:bg-textDark duration-300">Home</a>
-            <a id="btn-projects" href="#projects" class="block px-8 py-6 text-white hover:bg-textDark duration-300">Projects</a>
-            <a id="btn-experience" href="#experience" class="block px-8 py-6 text-white hover:bg-textDark duration-300">Experience</a>
-            <a id="btn-education" href="#education" class="block px-8 py-6 text-white hover:bg-textDark duration-300">Education</a>
-            <a id="btn-awards" href="#awards" class="block px-8 py-6 text-white hover:bg-textDark duration-300">Awards</a>
-            <a id="btn-about" href="#about" class="block px-8 py-6 text-white hover:bg-textDark duration-300">About</a>
-            <a id="btn-contact" href="#contact" class="block px-8 py-6 text-white hover:bg-textDark duration-300">Contact</a>
+            <a id="btn-home" href="#home" class="block px-8 py-6 text-white hover:bg-textDark duration-150">Home</a>
+            <a id="btn-projects" href="#projects" class="block px-8 py-6 text-white hover:bg-textDark duration-150">Projects</a>
+            <a id="btn-experience" href="#experience" class="block px-8 py-6 text-white hover:bg-textDark duration-150">Experience</a>
+            <a id="btn-education" href="#education" class="block px-8 py-6 text-white hover:bg-textDark duration-150">Education</a>
+            <a id="btn-awards" href="#awards" class="block px-8 py-6 text-white hover:bg-textDark duration-150">Awards</a>
+            <a id="btn-about" href="#about" class="block px-8 py-6 text-white hover:bg-textDark duration-150">About</a>
+            <a id="btn-contact" href="#contact" class="block px-8 py-6 text-white hover:bg-textDark duration-150">Contact</a>
           </div>
           <button id="btn-close" class="w-full h-full bg-black/50"></button>
         </div>
