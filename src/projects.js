@@ -73,7 +73,7 @@ export const projects = [
   },
   {
     name: "Refraction Shader",
-    description: "Bachelor's thesis on Unity's High Definition Render Pipeline (HDRP)",
+    description: "BSc thesis on Unity's High Definition Render Pipeline (HDRP)",
     image: "/images/projects/refraction.png",
     tags: '{"HLSL": "hlsl", "Unity": "unity"}',
     year: "2021",

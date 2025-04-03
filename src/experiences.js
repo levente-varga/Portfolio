@@ -5,7 +5,7 @@ export const experiences = [
     companyUrl: "https://ecometer.hu/",
     logo: "/images/experience/ecometer.png",
     time: "May 2024 - Present",
-    description: "Cross platform mobile and desktop development in Flutter (Dart) using GitHub. Communication with the server through RESTful APIs and with taximeter units via Bluetooth. Full responsibility for frontend tasks. Designed both apps in Figma.",
+    description: "Cross-platform mobile and desktop development in Flutter (Dart) using GitHub. Communication with the server through RESTful APIs and with taximeter units via Bluetooth. Full responsibility for frontend tasks. Designed both apps in Figma.",
   },
   {
     name: "R&D Intern",
