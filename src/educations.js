@@ -10,7 +10,7 @@ export const educations = [
   {
     name: "Computer Science and Engineering BSc",
     company: "Budapest University of Technology and Engineering",
-    companyUrl: "https://www.bme.hu/",
+    companyUrl: "https://www.bme.hu/en",
     logo: "/images/education/budapest.jpg",
     time: "Sep 2018 - Jan 2022",
     description: "Experience in computer graphics, object-oriented programming (C++, C#, Kotlin, Dart, Java), design patterns, clean code principles, mobile development (Flutter, Android), web-development (JavaScript) and game development (Unity).",
