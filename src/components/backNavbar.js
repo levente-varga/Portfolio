@@ -45,7 +45,14 @@ class BackNavbar extends HTMLElement {
   setupBackButton() {
     const backButton = this.querySelector("button");
     backButton.addEventListener("click", () => {
-      window.history.back();
+      const previousURL = document.referrer;
+      const targetURL = "https://leventevarga.com/";
+
+      if (previousURL === targetURL) {
+        window.history.back();
+      } else {
+        window.location.href = targetURL;
+      }
     });
   }
 }
