@@ -1,7 +1,7 @@
 import { projects } from './src/projects.js';
 import { experiences } from "./src/experiences.js";
 import { educations } from "./src/educations.js";
-import {awards} from "./src/awards.js";
+import { awards } from "./src/awards.js";
 
 const projectsContainer = document.getElementById('projects-container');
 const experienceContainer = document.getElementById('experience-container');
