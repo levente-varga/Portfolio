@@ -96,8 +96,47 @@
         <div class="text-xl text-textLight font-bold">Loot</div>
         <div class="text-md text-text font-light my-2 space-y-2">
           <p>Loot is generated using the <code-glow>GenerateLoot()</code-glow> function, which takes a list of card types and their drop rates, and based on the <code-glow>amount</code-glow> parameter, returns a list of <code-glow>Card</code-glow> instances, where the distribution follows the dictionary values.</p>
-          <p>This is an elegant way for generating loot for chests and enemies.</p>
+          <p>This is an elegant way for generating loot for ›chests and enemies.</p>
           <p><text-glow>Criteria:</text-glow> the input dictionary must contains at least one type that can be cast to <code>Card</code>.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="">
+      <img src="/images/projects/cardium/pretty_walls.png" class="w-full max-w-3xl mx-auto rounded-2xl" alt="Image showing the UI of Ice Adventure">
+      <div class="p-6">
+        <div class="text-3xl text-textLight font-bold mb-6">Pretty walls</div>
+        <div class="text-md text-text font-light my-2 space-y-2">
+          <p>Walls are just solid cells by default. To make them visually more appealing, one can use a sprite sheet that contains textures for all possible wall orientations</p>
+          <p>In some styles (such as in this game), the used texture also depends on the surrounding 8 tiles. Since each tile can be either wall (true) or empty (false), the total combination of the possible surroundings is 2<sup>8</sup>, which is 256. However, some wall textures can be re-used for multiple scenarios, as their layout does not depend on certain cells.</p>
+          <p>The figure below illustrates how a certain wall texture can be applied in multiple scenarios. In the top-right corner of the image, surrounding cells are categorized as follows:</p>
+          <ul class="list-disc ml-6">
+            <li><code-glow>true</code-glow>: must be wall</li>
+            <li><code-glow>false</code-glow>: must be empty</li>
+            <li><code-glow>null</code-glow>: can be either</li>
+          </ul>
+       </div>
+      </div>
+      <img src="/images/projects/cardium/walls.png" class="w-full max-w-3xl mx-auto rounded-2xl" alt="Image showing the UI of Ice Adventure">
+      <div class="p-6">
+        <div class="text-md text-text font-light my-2 space-y-2">
+          <p>To address all 256 possible combinations, a <code>Dictionary</code> can be constructed, where keys are bitmasks representing the state of the surrounding tiles (false &#x279D; 0, true &#x279D; 1), and values are the corresponding wall texture's atlas coordinates.</p>
+          <p>Instead of populating the dictionary by hand, the above mentioned patterns, consisting of the <code-glow>true</code-glow>, <code-glow>false</code-glow>, and <code-glow>null</code-glow> values, can be used to describe conditions for each texture found in the sprite sheet. Then, using an algorithm, generate the dictionary entries that satisfy the condition.</p>
+        </div>
+      </div>
+      <div class="bg-backgroundLight max-w-3xl w-full rounded-xl text-left font-mono text-text content-center p-6 mx-auto">
+        <p><span class="text-orange-400">AddBitmaskEntries</span>(
+        <p>&nbsp;&nbsp;value: <span class="text-red-400">new</span> Vector2I(<span class="text-blue-300">3</span>, <span class="text-blue-300">1</span>),</p>
+        <p>&nbsp;&nbsp;pattern: <span class="text-red-400">new</span> List&lt;<span class="text-red-400">bool</span>?&gt;() {</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-red-400">null</span>,&nbsp;&nbsp;<span class="text-red-400">false</span>,&nbsp;<span class="text-red-400">null</span>,</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-red-400">true</span>,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-red-400">true</span>,</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-red-400">false</span>,&nbsp;<span class="text-red-400">true</span>,&nbsp;&nbsp;<span class="text-red-400">true</span></p>
+        <p>&nbsp;&nbsp;}</p>
+        <p>);</p>
+      </div>
+      <div class="p-6">
+        <div class="text-md text-text font-light my-2 space-y-2">
+          <p>This is what the <code-glow>AddBitmaskEntries()</code-glow> function does, which takes the atlas coordinates of a texture (<code-glow>value</code-glow>) and a <code-glow>pattern</code-glow> of 8 nullable booleans, where each value represents the state of a surrounding tile in the order shown in the bottom-right corner of the image. The function will then generate all possible combinations of the surrounding tiles that matches the pattern, and add them to the dictionary.</p>
         </div>
       </div>
     </div>
@@ -133,12 +172,14 @@
     </div>
 
     <div class="">
-      <div class="columns-5 w-full gap-4 max-w-3xl mx-auto">
-        <img src="/images/projects/cardium/enemy_slime.gif" alt="Animation showing the movement of the player">
-        <img src="/images/projects/cardium/enemy_spider.gif" alt="Animation showing the movement of the player">
-        <img src="/images/projects/cardium/enemy_voidling.gif" alt="Animation showing player interaction with objects">
-        <img src="/images/projects/cardium/enemy_ranger.gif" alt="Animation showing player interaction with objects">
-        <img src="/images/projects/cardium/enemy_exterminator.gif" alt="Animation showing player interaction with objects">
+      <div class="sm:mx-16">
+        <div class="columns-5 w-full gap:4 max-w-3xl mx-auto">
+          <img src="/images/projects/cardium/enemy_slime.gif" alt="Animation showing the movement of the player">
+          <img src="/images/projects/cardium/enemy_spider.gif" alt="Animation showing the movement of the player">
+          <img src="/images/projects/cardium/enemy_voidling.gif" alt="Animation showing player interaction with objects">
+          <img src="/images/projects/cardium/enemy_ranger.gif" alt="Animation showing player interaction with objects">
+          <img src="/images/projects/cardium/enemy_exterminator.gif" alt="Animation showing player interaction with objects">
+        </div>
       </div>
 
       <div class="p-6">
