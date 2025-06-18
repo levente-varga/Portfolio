@@ -107,7 +107,7 @@
       <div class="p-6">
         <div class="text-3xl text-textLight font-bold mb-6">Pretty walls</div>
         <div class="text-md text-text font-light my-2 space-y-2">
-          <p>Walls are just solid cells by default. To make them visually more appealing, one can use a sprite sheet that contains textures for all possible wall orientations</p>
+          <p>Walls are just solid cells by default. To make them visually more appealing, one can use a sprite sheet that contains textures for all possible wall orientations.</p>
           <p>In some styles (such as in this game), the used texture also depends on the surrounding 8 tiles. Since each tile can be either wall (true) or empty (false), the total combination of the possible surroundings is 2<sup>8</sup>, which is 256. However, some wall textures can be re-used for multiple scenarios, as their layout does not depend on certain cells.</p>
           <p>The figure below illustrates how a certain wall texture can be applied in multiple scenarios. In the top-right corner of the image, surrounding cells are categorized as follows:</p>
           <ul class="list-disc ml-6">
@@ -121,7 +121,7 @@
       <div class="p-6">
         <div class="text-md text-text font-light my-2 space-y-2">
           <p>To address all 256 possible combinations, a <code>Dictionary</code> can be constructed, where keys are bitmasks representing the state of the surrounding tiles (false &#x279D; 0, true &#x279D; 1), and values are the corresponding wall texture's atlas coordinates.</p>
-          <p>Instead of populating the dictionary by hand, the above mentioned patterns, consisting of the <code-glow>true</code-glow>, <code-glow>false</code-glow>, and <code-glow>null</code-glow> values, can be used to describe conditions for each texture found in the sprite sheet. Then, using an algorithm, generate the dictionary entries that satisfy the condition.</p>
+          <p>Instead of populating the dictionary by hand, the above-mentioned patterns, consisting of the <code-glow>true</code-glow>, <code-glow>false</code-glow>, and <code-glow>null</code-glow> values, can be used to describe conditions for each texture found in the sprite sheet. Then, using an algorithm, generate the dictionary entries that satisfy the condition.</p>
         </div>
       </div>
       <div class="bg-backgroundLight max-w-3xl w-full rounded-xl text-sm text-left font-mono text-text content-center p-6 mx-auto">
