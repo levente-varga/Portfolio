@@ -59,7 +59,7 @@
     <div class="flex flex-col gap-16 w-full max-w-3xl mx-auto">
 
       <div class="">
-        <div class="bg-backgroundLight max-w-3xl w-full rounded-xl text-left font-mono text-text content-center p-6 mx-auto">
+        <div class="bg-backgroundLight max-w-3xl w-full rounded-xl text-sm text-left font-mono text-text content-center p-6 mx-auto">
           <p><span class="text-red-400">auto</span> parser = <span class="text-red-400">new</span> Json::<span class="text-orange-400">Parser</span>();</p>
           <p><span class="text-red-400">auto</span> json = parser.<span class="text-orange-400">parse</span>(<span class="text-blue-300">"test.json"</span>);</p>
         </div>
@@ -73,7 +73,7 @@
 
 
       <div class="">
-        <div class="bg-backgroundLight max-w-3xl w-full rounded-xl text-left font-mono text-text content-center p-6 mx-auto">
+        <div class="bg-backgroundLight max-w-3xl w-full rounded-xl text-sm text-left font-mono text-text content-center p-6 mx-auto">
           <p><span class="text-red-400">auto</span> node = json-><span class="text-orange-400">at</span>(<span class="text-blue-300">"users"</span>)-><span class="text-orange-400">at</span>(<span class="text-blue-300">0</span>)-><span class="text-orange-400">at</span>(<span class="text-blue-300">"age"</span>);</p>
         </div>
         <div class="p-6">
@@ -85,7 +85,7 @@
       </div>
 
       <div class="">
-        <div class="bg-backgroundLight max-w-3xl w-full rounded-xl text-left font-mono text-text content-center p-6 mx-auto">
+        <div class="bg-backgroundLight max-w-3xl w-full rounded-xl text-sm text-left font-mono text-text content-center p-6 mx-auto">
           <p><span class="text-red-400">int</span> age = node-><span class="text-orange-400">getAs</span>&lt;<span class="text-red-400">int</span>&gt;();</p>
         </div>
         <div class="p-6">
@@ -97,11 +97,11 @@
       </div>
 
       <div class="">
-        <div class="bg-backgroundLight max-w-3xl w-full rounded-xl text-left font-mono text-text content-center p-6 mx-auto">
+        <div class="bg-backgroundLight max-w-3xl w-full rounded-xl text-sm text-left font-mono text-text content-center p-6 mx-auto">
           <p><span class="text-red-400">for</span> (<span class="text-red-400">auto</span> user : json-><span class="text-orange-400">at</span>(<span class="text-blue-300">"users"</span>))</p>
           <p>{</p>
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-red-400">auto</span> node = user-><span class="text-orange-400">at</span>(<span class="text-blue-300">"name"</span>);</p>
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-red-400">string</span> name = node-><span class="text-orange-400">getAs</span>&lt;<span class="text-red-400">string</span>&gt;();</p>
+          <p>&nbsp;&nbsp;<span class="text-red-400">auto</span> node = user-><span class="text-orange-400">at</span>(<span class="text-blue-300">"name"</span>);</p>
+          <p>&nbsp;&nbsp;<span class="text-red-400">string</span> name = node-><span class="text-orange-400">getAs</span>&lt;<span class="text-red-400">string</span>&gt;();</p>
           <p>}</p>
         </div>
         <div class="p-6">
