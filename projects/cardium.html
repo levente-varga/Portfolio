@@ -79,6 +79,30 @@
     </div>
 
     <div class="">
+      <div class="bg-backgroundLight max-w-3xl w-full rounded-xl text-left font-mono text-text content-center p-6 mx-auto">
+        <p>Utils.<span class="text-orange-400">GenerateLoot</span>(</p>
+        <p>&nbsp;&nbsp;amount: <span class="text-blue-300">3</span></p>
+        <p>&nbsp;&nbsp;dropRate: <span class="text-red-400">new</span> Dictionary&lt;Type, <span class="text-red-400">int</span>&gt; {</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;{ <span class="text-red-400">typeof</span>(<span class="text-orange-400">SmiteCard</span>), <span class="text-blue-300">40</span> },</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;{ <span class="text-red-400">typeof</span>(<span class="text-orange-400">ScoutCard</span>), <span class="text-blue-300">40</span> },</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;{ <span class="text-red-400">typeof</span>(<span class="text-orange-400">ChainCard</span>), <span class="text-blue-300">20</span> },</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;{ <span class="text-red-400">typeof</span>(<span class="text-orange-400">TeleportCard</span>), <span class="text-blue-300">20</span> },</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;{ <span class="text-red-400">typeof</span>(<span class="text-orange-400">WoodenKeyCard</span>), <span class="text-blue-300">5</span> },</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;{ <span class="text-red-400">typeof</span>(<span class="text-orange-400">GoldenKeyCard</span>), <span class="text-blue-300">5</span> },</p>
+        <p>&nbsp;&nbsp;}</p>
+        <p>  );</p>
+     </div>
+      <div class="p-6">
+        <div class="text-xl text-textLight font-bold">Loot</div>
+        <div class="text-md text-text font-light my-2 space-y-2">
+          <p>Loot is generated using the <code-glow>GenerateLoot()</code-glow> function, which takes a list of card types and their drop rates, and based on the <code-glow>amount</code-glow> parameter, returns a list of <code-glow>Card</code-glow> instances, where the distribution follows the dictionary values.</p>
+          <p>This is an elegant way for generating loot for chests and enemies.</p>
+          <p><text-glow>Criteria:</text-glow> the input dictionary must contains at least one type that can be cast to <code>Card</code>.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="">
       <div class="columns-2 w-full gap-8 max-w-3xl mx-auto">
         <img src="/images/projects/cardium/moving.gif" class="w-full rounded-2xl" alt="Animation showing the movement of the player">
         <img src="/images/projects/cardium/nudging.gif" class="w-full rounded-2xl" alt="Animation showing player interaction with objects">
@@ -155,6 +179,7 @@
 <script type="module" src="/src/components/customTitle.js"></script>
 <script type="module" src="/src/components/customFooter.js"></script>
 <script type="module" src="/src/components/textGlow.js"></script>
+<script type="module" src="/src/components/codeGlow.js"></script>
 <script type="module" src="/src/components/backNavbar.js"></script>
 </body>
 </html>
