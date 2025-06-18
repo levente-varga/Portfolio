@@ -67,15 +67,9 @@
 
 <div class="mx-8">
   <div class="flex flex-col gap-32 w-full max-w-3xl mx-auto">
-    <div class="">
-      <img src="/images/projects/cardium.png" class="w-full max-w-3xl mx-auto rounded-2xl" alt="Image showing the UI of Ice Adventure">
-      <div class="p-6">
-        <div class="text-xl text-textLight font-bold">Gameplay</div>
-        <div class="text-md text-text font-light my-2 space-y-2">
-          <p>The only resource in the game is <text-glow>cards</text-glow>: found inside chests and dropped from defeated enemies.</p>
-          <p>The game is turn based, with each action (moving, playing or discarding a card, etc.) counting as one turn.</p>
-        </div>
-      </div>
+
+    <div id="technical-details" class="max-w-3xl">
+      <div class="text-5xl text-textDim font-bold"><span class="text-textLight">#1</span> Technical details</div>
     </div>
 
     <div class="">
@@ -90,10 +84,10 @@
         <p>&nbsp;&nbsp;&nbsp;&nbsp;{ <span class="text-red-400">typeof</span>(<span class="text-orange-400">WoodenKeyCard</span>), <span class="text-blue-300">5</span> },</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;{ <span class="text-red-400">typeof</span>(<span class="text-orange-400">GoldenKeyCard</span>), <span class="text-blue-300">5</span> },</p>
         <p>&nbsp;&nbsp;}</p>
-        <p>  );</p>
-     </div>
+        <p>);</p>
+      </div>
       <div class="p-6">
-        <div class="text-xl text-textLight font-bold">Loot</div>
+        <div class="text-3xl text-textLight font-bold mb-6">Loot</div>
         <div class="text-md text-text font-light my-2 space-y-2">
           <p>Loot is generated using the <code-glow>GenerateLoot()</code-glow> function, which takes a list of card types and their drop rates, and based on the <code-glow>amount</code-glow> parameter, returns a list of <code-glow>Card</code-glow> instances, where the distribution follows the dictionary values.</p>
           <p>This is an elegant way for generating loot for ›chests and enemies.</p>
@@ -120,13 +114,13 @@
       <img src="/images/projects/cardium/walls.png" class="w-full max-w-3xl mx-auto rounded-2xl" alt="Image showing the UI of Ice Adventure">
       <div class="p-6">
         <div class="text-md text-text font-light my-2 space-y-2">
-          <p>To address all 256 possible combinations, a <code>Dictionary</code> can be constructed, where keys are bitmasks representing the state of the surrounding tiles (false &#x279D; 0, true &#x279D; 1), and values are the corresponding wall texture's atlas coordinates.</p>
-          <p>Instead of populating the dictionary by hand, the above-mentioned patterns, consisting of the <code-glow>true</code-glow>, <code-glow>false</code-glow>, and <code-glow>null</code-glow> values, can be used to describe conditions for each texture found in the sprite sheet. Then, using an algorithm, generate the dictionary entries that satisfy the condition.</p>
+          <p>To address all 256 possible combinations, a <code>Dictionary</code> can be constructed, where <i>keys</i> are bitmasks representing the state of the surrounding tiles (empty &#x279D; 0, wall &#x279D; 1), and <i>values</i> are the corresponding wall texture's atlas coordinates.</p>
+          <p>Instead of populating the dictionary by hand, the above-mentioned patterns, consisting of the <code-glow>true</code-glow>, <code-glow>false</code-glow>, and <code-glow>null</code-glow> values, can be used to describe conditions for each texture found in the sprite sheet. Then, an algorithm can be used to generate the dictionary entries that satisfy the conditions.</p>
         </div>
       </div>
       <div class="bg-backgroundLight max-w-3xl w-full rounded-xl text-sm text-left font-mono text-text content-center p-6 mx-auto">
         <p><span class="text-orange-400">AddBitmaskEntries</span>(
-        <p>&nbsp;&nbsp;value: <span class="text-red-400">new</span> Vector2I(<span class="text-blue-300">3</span>, <span class="text-blue-300">1</span>),</p>
+        <p>&nbsp;&nbsp;atlasCoords: <span class="text-red-400">new</span> Vector2I(<span class="text-blue-300">3</span>, <span class="text-blue-300">1</span>),</p>
         <p>&nbsp;&nbsp;pattern: <span class="text-red-400">new</span> List&lt;<span class="text-red-400">bool</span>?&gt;() {</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-red-400">null</span>,&nbsp;&nbsp;<span class="text-red-400">false</span>,&nbsp;<span class="text-red-400">null</span>,</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-red-400">true</span>,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-red-400">true</span>,</p>
@@ -136,7 +130,28 @@
       </div>
       <div class="p-6">
         <div class="text-md text-text font-light my-2 space-y-2">
-          <p>This is what the <code-glow>AddBitmaskEntries()</code-glow> function does, which takes the atlas coordinates of a texture (<code-glow>value</code-glow>) and a <code-glow>pattern</code-glow> of 8 nullable booleans, where each value represents the state of a surrounding tile in the order shown in the bottom-right corner of the image. The function will then generate all possible combinations of the surrounding tiles that matches the pattern, and add them to the dictionary.</p>
+          <p>This is what the <code-glow>AddBitmaskEntries()</code-glow> function does, which takes the atlas coordinates of a texture (<code-glow>atlasCoords</code-glow>) and a <code-glow>pattern</code-glow> of 8 nullable booleans, where each value represents the state of a surrounding tile in the order shown in the bottom-right corner of the image. The function will then generate all possible combinations of the surrounding tiles that matches the pattern, and add them to the dictionary.</p>
+          <p>Finally, the dictionary can be easily used to access the appropriate texture by providing the bitmask that describes a cell's surroundings.</p>
+        </div>
+      </div>
+      <div class="bg-backgroundLight max-w-3xl w-full rounded-xl text-sm text-left font-mono text-text content-center p-6 mx-auto">
+        <p><span class="text-red-400">var</span> bitmask = <span class="text-orange-400">GetWallBitmask</span>(x, y);</p>
+        <p><span class="text-red-400">var</span> atlasCoords = <span class="text-indigo-400">bitmaskToWallAtlasCoords</span>[bitmask];</p>
+        <p>WallLayer.<span class="text-orange-400">SetCell</span>(<span class="text-red-400">new</span> Vector2I(x, y), <span class="text-blue-300">0</span>, atlasCoords);</p>
+      </div>
+    </div>
+
+    <div id="gameplay" class="max-w-3xl">
+      <div class="text-5xl text-textDim font-bold"><span class="text-textLight">#2</span> Gameplay</div>
+    </div>
+
+    <div class="">
+      <img src="/images/projects/cardium.png" class="w-full max-w-3xl mx-auto rounded-2xl" alt="Image showing the UI of Ice Adventure">
+      <div class="p-6">
+        <div class="text-xl text-textLight font-bold">Overview</div>
+        <div class="text-md text-text font-light my-2 space-y-2">
+          <p>The only resource in the game is <text-glow>cards</text-glow>: found inside chests and dropped from defeated enemies.</p>
+          <p>The game is turn based, with each action (moving, playing or discarding a card, etc.) counting as one turn.</p>
         </div>
       </div>
     </div>
