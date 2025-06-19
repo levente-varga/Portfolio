@@ -66,7 +66,7 @@
 </div>
 
 <div class="sm:mx-8 mx-4">
-  <div class="flex flex-col gap-32 w-full max-w-3xl mx-auto">
+  <div class="flex flex-col gap-32 w-full max-w-xl mx-auto">
 
     <div id="technical-details" class="max-w-3xl">
       <div class="text-5xl text-textDim font-bold"><span class="text-textLight">#1</span> Technical details</div>
@@ -131,13 +131,29 @@
       <div class="p-6">
         <div class="text-md text-text font-light my-2 space-y-2">
           <p>This is what the <code-glow>AddBitmaskEntries()</code-glow> function does, which takes the atlas coordinates of a texture (<code-glow>atlasCoords</code-glow>) and a <code-glow>pattern</code-glow> of 8 nullable booleans, where each value represents the state of a surrounding tile in the order shown in the bottom-right corner of the image. The function will then generate all possible combinations of the surrounding tiles that matches the pattern, and add them to the dictionary.</p>
-          <p>Finally, the dictionary can be easily used to access the appropriate texture by providing the bitmask that describes a cell's surroundings.</p>
         </div>
       </div>
       <div class="bg-backgroundLight max-w-3xl w-full rounded-xl text-sm text-left font-mono text-text content-center p-6 mx-auto">
         <p><span class="text-red-400">var</span> bitmask = <span class="text-orange-400">GetWallBitmask</span>(x, y);</p>
         <p><span class="text-red-400">var</span> atlasCoords = <span class="text-indigo-400">bitmaskToWallAtlasCoords</span>[bitmask];</p>
         <p>WallLayer.<span class="text-orange-400">SetCell</span>(<span class="text-red-400">new</span> Vector2I(x, y), <span class="text-blue-300">0</span>, atlasCoords);</p>
+      </div>
+      <div class="p-6">
+        <div class="text-md text-text font-light my-2 space-y-2">
+          <p>Finally, the dictionary can be easily used to access the appropriate texture by providing the bitmask that describes a cell's surroundings.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="">
+      <img src="/images/projects/cardium/dungeon_generation.gif" class="w-full max-w-3xl mx-auto rounded-2xl" alt="Animation showing the dungeon generation steps">
+      <div class="p-6">
+        <div class="text-3xl text-textLight font-bold mb-6">Dungeon generation</div>
+        <div class="text-md text-text font-light my-2 space-y-2">
+          <p>The process is an extended version of the <text-glow><a href="https://journal.stuffwithstuff.com/2014/12/21/rooms-and-mazes/" class="hover:underline">algorithm</a></text-glow> from Bob Nystrom.</p>
+          <p>First, a bunch of rectangular rooms are placed, which later get connected via mazes and doorways. Dead ends are removed to improve the exploration experience.</p>
+          <p>As the final step, enemies and objects are instantiated into each room. Their number and type depends on the room size, difficulty level, and other factors.</p>
+        </div>
       </div>
     </div>
 
@@ -211,18 +227,6 @@
         <div class="text-xl text-textLight font-bold">Interactive main menu</div>
         <div class="text-md text-text font-light my-2 space-y-2">
           <p>This area serves both as the main menu and the safe zone. The player can interact with objects to perform actions like managing their <text-glow>inventory</text-glow>, changing the <text-glow>difficulty</text-glow>, viewing <text-glow>statistics</text-glow>, or <text-glow>exiting</text-glow> the game.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="">
-      <img src="/images/projects/cardium/dungeon_generation.gif" class="w-full max-w-3xl mx-auto rounded-2xl" alt="Animation showing the dungeon generation steps">
-      <div class="p-6">
-        <div class="text-xl text-textLight font-bold">Dungeon generation</div>
-        <div class="text-md text-text font-light my-2 space-y-2">
-          <p>The process is an extended version of the <text-glow><a href="https://journal.stuffwithstuff.com/2014/12/21/rooms-and-mazes/" class="hover:underline">algorithm</a></text-glow> from Bob Nystrom.</p>
-          <p>First, a bunch of rectangular rooms are placed, which later get connected via mazes and doorways. Dead ends are removed to improve the exploration experience.</p>
-          <p>As the final step, enemies and objects are instantiated into each room. Their number and type depends on the room size, difficulty level, and other factors.</p>
         </div>
       </div>
     </div>
