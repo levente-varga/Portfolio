@@ -1,6 +1,6 @@
 class TimelineRow extends HTMLElement {
   static get observedAttributes() {
-    return ["name", "company", "company-url", "logo", "time", "extra-info", "description", "left", "first", "last"];
+    return ["name", "company", "company-url", "logo", "time", "footer", "description", "left", "first", "last"];
   }
 
   connectedCallback() {
@@ -17,7 +17,7 @@ class TimelineRow extends HTMLElement {
     const companyUrl = this.getAttribute("company-url") || "";
     const logo = this.getAttribute("logo") || "";
     const time = this.getAttribute("time") || "Time";
-    const extraInfo = this.getAttribute("extra-info");
+    const footer = this.getAttribute("footer");
     const description = this.getAttribute("description");
     const left = this.getAttribute("left") === "true";
     const first = this.getAttribute("first") === "true";
@@ -35,7 +35,7 @@ class TimelineRow extends HTMLElement {
           </a>
           <div class="text-text text-md italic">${time}</div>
           ${description ? `<div class="text-textDim text-md">${description}</div>` : ''}
-          ${extraInfo ? `<div class="text-textDim text-md">${extraInfo}</div>` : ''}
+          ${footer ? footer : ''}
         </div>
         <div class="w-1 md:mx-6 mr-6 max-h-full ${first ? "rounded-t" : ""} ${last ? "rounded-b" : ""} order-1 bg-textDark"></div>
         <div class="md:flex hidden flex-1 flex-col items-center justify-center text-textDark ${left ? "order-2" : "order-0"}"></div>
