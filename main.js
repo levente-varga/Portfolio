@@ -32,6 +32,7 @@ function createTimeline(entries, container) {
     timelineRow.setAttribute('company-url', entry.companyUrl);
     timelineRow.setAttribute('logo', entry.logo);
     timelineRow.setAttribute('time', entry.time);
+    timelineRow.setAttribute('extra-info', entry.extraInfo);
     timelineRow.setAttribute('description', entry.description);
     timelineRow.setAttribute('left', left ? 'true' : 'false');
     timelineRow.setAttribute('first', first ? 'true' : 'false');
