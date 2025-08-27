@@ -1,6 +1,6 @@
 class CustomTitle extends HTMLElement {
   static get observedAttributes() {
-    return ["text", "subtitle", "showProject", "responsive", "itch", "github", "youtube"];
+    return ["title", "prefix", "suffix", "topPadding", "bottomPadding", "responsive", "itch", "github", "youtube"];
   }
 
   connectedCallback() {
@@ -12,20 +12,22 @@ class CustomTitle extends HTMLElement {
   }
 
   render() {
-    const title = this.getAttribute("text") || "";
-    const subtitle = this.getAttribute("subtitle") || "";
-    const showProject = this.getAttribute("showProject") || false;
+    const title = this.getAttribute("title") || "";
+    const prefix = this.getAttribute("prefix") || "";
+    const suffix = this.getAttribute("suffix") || "";
+    const topPadding = this.getAttribute("topPadding") || 32;
+    const bottomPadding = this.getAttribute("bottomPadding") || 32;
     const responsive = this.getAttribute("responsive") || false;
     const itch = this.getAttribute("itch");
     const github = this.getAttribute("github");
     const youtube = this.getAttribute("youtube");
 
     this.innerHTML = `
-      <div class="flex flex-col justify-center space-y-4 py-32 w-fit mx-auto">
+      <div class="flex flex-col justify-center space-y-4 pt-${topPadding} pb-${bottomPadding} px-8 w-fit mx-auto">
         <div class="text-textDim text-center content-center w-fit">
-          ${showProject ? `<div class="text-xl font-light">Project:</div>` : ``}
+          ${prefix ? `<div class="text-xl font-light">${prefix}</div>` : ``}
           <div class="${responsive ? "sm:text-6xl text-5xl md:text-7xl" : "text-7xl"} font-extrabold">${title}</div>
-          ${subtitle ? `<div class="text-xl font-light">${subtitle}</div>` : ``}
+          ${suffix ? `<div class="text-xl font-light">${suffix}</div>` : ``}
           ${itch || github || youtube ? `
             <ul class="flex space-x-4 items-center mt-8 mx-auto w-fit">
               ${itch ? `<li><a href="${itch}" target="_blank" rel="noopener noreferrer">
