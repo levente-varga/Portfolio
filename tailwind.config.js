@@ -1,23 +1,8 @@
 module.exports = {
   content: [
-    "/index.html",
-    "/public/projects/cardium.html",
-    "/public/projects/ecometer.html",
-    "/public/projects/ecometer_desktop.html",
-    "/public/projects/graphs.html",
-    "/public/projects/ice_adventure.html",
-    "/public/projects/json_parser.html",
-    "/public/projects/melodica.html",
-    "/public/projects/minesweeper.html",
-    "/public/projects/portfolio.html",
-    "/public/projects/rhythm_ninja.html",
-    "/public/projects/tower.html",
-    "/public/projects/weave.html",
-    "/public/projects/robotics.html",
-    "/src/styles.css",
-    "/src/components/projectCard.js",
-    "/src/components/timelineRow.js",
-    "/src/**/*.{js,ts,jsx,tsx}",
+    './index.html',
+    './public/**/*.{html}',
+    './src/**/*.{js,ts,jsx,tsx,css}',
   ],
   theme: {
     extend: {
