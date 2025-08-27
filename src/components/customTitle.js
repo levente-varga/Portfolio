@@ -1,6 +1,6 @@
 class CustomTitle extends HTMLElement {
   static get observedAttributes() {
-    return ["title", "prefix", "suffix", "topPadding", "bottomPadding", "responsive", "itch", "github", "youtube"];
+    return ["text", "prefix", "suffix", "topPadding", "bottomPadding", "responsive", "itch", "github", "youtube"];
   }
 
   connectedCallback() {
@@ -12,18 +12,20 @@ class CustomTitle extends HTMLElement {
   }
 
   render() {
-    const title = this.getAttribute("title") || "";
+    const title = this.getAttribute("text") || "";
     const prefix = this.getAttribute("prefix") || "";
     const suffix = this.getAttribute("suffix") || "";
-    const topPadding = this.getAttribute("topPadding") || 32;
-    const bottomPadding = this.getAttribute("bottomPadding") || 32;
+    const topPadding = this.getAttribute("topPadding") || 8;
+    const bottomPadding = this.getAttribute("bottomPadding") || 8;
     const responsive = this.getAttribute("responsive") || false;
     const itch = this.getAttribute("itch");
     const github = this.getAttribute("github");
     const youtube = this.getAttribute("youtube");
 
+    console.log(`Padding: ${topPadding}, ${bottomPadding}`);
+
     this.innerHTML = `
-      <div class="flex flex-col justify-center space-y-4 pt-${topPadding} pb-${bottomPadding} px-8 w-fit mx-auto">
+      <div class="flex flex-col justify-center space-y-4 px-8 w-fit mx-auto" style="padding-top: ${topPadding}rem; padding-bottom: ${bottomPadding}rem;">
         <div class="text-textDim text-center content-center w-fit">
           ${prefix ? `<div class="text-xl font-light">${prefix}</div>` : ``}
           <div class="${responsive ? "sm:text-6xl text-5xl md:text-7xl" : "text-7xl"} font-extrabold">${title}</div>
