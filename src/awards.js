@@ -5,6 +5,7 @@ export const awards = [
     companyUrl: "https://arpadgimnazium.hu/",
     logo: "/images/awards/arpad.png",
     time: "May 2018",
+    location: "",
     footer: "",
     description: "Granted for my achievements in national informatics competitions (two-time finalist), robotics team competitions (numerous awards), mathematics team competitions (two-time second place) and academic performance.",
   },
@@ -14,6 +15,7 @@ export const awards = [
     companyUrl: "https://www.wro-association.org/",
     logo: "/images/awards/wro.png",
     time: "May 2016",
+    location: "",
     footer: "",
     description: "Granted for the robot designed by me. It featured a unique design among the other contestants.",
   }
