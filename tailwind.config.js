@@ -22,6 +22,7 @@ module.exports = {
     'bg-flutter',
     'bg-tailwind',
     'bg-godot',
+    'bg-gdscript',
     'bg-unity',
     {pattern: /bg-.+/},
   ],

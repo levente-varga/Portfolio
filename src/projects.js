@@ -43,7 +43,7 @@ export const projects = [
     name: "Dream Pools",
     description: "A surreal narrative adventure.",
     image: "/images/projects/dream_pools.png",
-    tags: '{"GodotScript": "godotscript", "Godot": "godot"}',
+    tags: '{"GDScript": "gdscript", "Godot": "godot"}',
     year: "2023",
     url: "/projects/dream-pools.html"
   },
