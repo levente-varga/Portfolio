@@ -26,7 +26,7 @@ class ProjectCard extends HTMLElement {
 
     this.innerHTML = `
       <a href="${url}">
-      <div class="perspective-[700px]">
+      <div class="perspective-[700px] hover:scale-[1.02] duration-200">
       <div id="${(this.projectCardId)}" class="w-full rounded-2xl duration-[120ms] ease-out ring-1 ring-white/5 bg-foreground shadow-xl">
         <div class="rounded-t-2xl aspect-[calc(5/3)] bg-cover bg-center bg-no-repeat" style="background-image: url(${image});"> </div>
         
