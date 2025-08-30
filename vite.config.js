@@ -1,6 +1,6 @@
 // vite.config.js
 import { defineConfig } from 'vite';
-import tailwindcss from '@tailwindcss/vite'; // Ensure the correct import
+import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   plugins: [tailwindcss()],
@@ -23,6 +23,7 @@ export default defineConfig({
         weave: 'projects/weave.html',
         robotics: 'projects/robotics.html',
         refraction: 'projects/refraction.html',
+        dream_pools: 'projects/dream-pools.html',
       },
     },
   },
