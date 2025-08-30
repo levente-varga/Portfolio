@@ -1,5 +1,15 @@
 export const experiences = [
   {
+    name: "Junior Software Engineer",
+    company: "Education First",
+    companyUrl: "https://www.ef.com/",
+    logo: "/images/experience/ef.png",
+    time: "July 2025 - August 2025",
+    location: "Budapest, Hungary",
+    footer: "",
+    description: "Full-stack development in the High School Exchange Year team using ASP.NET Core (C#, Razor, MVC), Entity Framework, with JavaScript (Knockout.js, jQuery, AJAX), MSSQL and MongoDB. Working with Azure, Azure DevOps for CI/CD, and the Atlassian suite. Got exposed to Salesforce too.",
+  },
+  {
     name: "Flutter Developer",
     company: "Ecometer Kft.",
     companyUrl: "https://ecometer.hu/",
