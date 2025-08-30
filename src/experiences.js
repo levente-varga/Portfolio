@@ -17,7 +17,7 @@ export const experiences = [
     time: "May 2024 - Present (part-time)",
     location: "Budapest, Hungary (remote)",
     footer: "",
-    description: "Cross-platform mobile and desktop app development in Flutter (Dart) using GitHub. Communication with the server through RESTful APIs and with taximeter units via Bluetooth. Full responsibility for frontend tasks. Designed both apps in Figma.",
+    description: "Cross-platform mobile and desktop app development in Flutter (Dart, BLoC) using GitHub. Communication with the server through RESTful APIs and with taximeter units via Bluetooth. Full responsibility for frontend tasks. Designed both apps in Figma.",
   },
   {
     name: "R&D Intern",
@@ -37,6 +37,6 @@ export const experiences = [
     time: "Apr 2022 - Aug 2022",
     location: "Budapest, Hungary",
     footer: "",
-    description: "Cross-platform mobile development in Flutter using GitHub as part of an agile team. Implemented screens and widgets using the BLoC pattern, added push notifications with Firebase, and social logins for Google and Apple accounts. Participated in standups, worked with the UI designer, tester, and backend developer.",
+    description: "Cross-platform mobile development in Flutter (Dart, BLoC) using GitHub as part of a multidisciplinary agile team. Implemented screens, widgets, push notifications (Firebase), Google and Apple social logins. Used REST to communicate with a server and public APIs.",
   }
 ];
