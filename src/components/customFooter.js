@@ -13,21 +13,11 @@ class CustomFooter extends HTMLElement {
         <div id="contact" class="text-4xl font-bold mb-8">Contact</div>
         <div class="">Feel free to reach out on any of these platforms!</div>
         <ul class="flex space-x-4 items-center mt-8 mx-auto w-fit">
-          <li><a href="https://github.com/levente-varga" target="_blank" rel="noopener noreferrer">
-            <svg class="size-8 hover:fill-text duration-250"><use href="/svg/icons.svg#github"/></svg>
-          </a></li>
-          <li><a href="https://www.linkedin.com/in/levente-varga/" target="_blank" rel="noopener noreferrer">
-            <svg class="size-8 hover:fill-text duration-250"><use href="/svg/icons.svg#linkedin"/></svg>
-          </a></li>
-          <li><a href="https://leventevarga.itch.io" target="_blank" rel="noopener noreferrer">
-            <svg class="size-8 hover:fill-text duration-250"><use href="/svg/icons.svg#itch"/></svg>
-          </a></li>
-          <li><a href="mailto:v.levente1999@gmail.com">
-            <svg class="size-8 hover:fill-text duration-250"><use href="/svg/icons.svg#gmail"/></svg>
-          </a></li>
-          <li><a href="https://www.youtube.com/@levente-varga" target="_blank" rel="noopener noreferrer">
-            <svg class="size-8 hover:fill-text duration-250"><use href="/svg/icons.svg#youtube"/></svg>
-          </a></li>
+          ${this.item("https://github.com/levente-varga", "github")}
+          ${this.item("https://www.linkedin.com/in/levente-varga/", "linkedin")}
+          ${this.item("https://leventevarga.itch.io", "itch")}
+          ${this.item("mailto:v.levente1999@gmail.com", "gmail")}
+          ${this.item("https://www.youtube.com/@levente-varga", "youtube")}
         </ul>
       </div>
       
@@ -35,6 +25,14 @@ class CustomFooter extends HTMLElement {
         <p>&copy; 2025 Levente Varga. All rights reserved.</p>
       </div>
     `;
+  }
+
+  item(url, icon) {
+    return url ? `
+      <li><a href="${url}" target="_blank" rel="noopener noreferrer">
+        <svg class="size-8 fill-textDim hover:fill-text duration-250"><use href="/svg/icons.svg#${icon}"></use></svg>
+      </a></li>
+    ` : ``;
   }
 }
 
