@@ -36,14 +36,7 @@
   </project-details>
 
   <div class="mx-auto w-fit mb-32 max-w-3xl">
-    <div class="flex flex-row justify-center items-center">
-      <a href="/files/minesweeper/Minesweeper-v1.1.0.zip">
-        <div class="flex flex-row w-fit rounded p-2 gap-x-2 ring-2 ring-text hover:ring-textLight bg-background hover:bg-backgroundLight fill-text hover:fill-textLight hover:text-textLight text-text duration-300">
-          <svg class="size-6"><use href="/svg/icons.svg#download"/></svg>
-          Download
-        </div>
-      </a>
-    </div>
+    <icon-button icon="download" text="Download" url="/files/minesweeper/Minesweeper-v1.1.0.zip" blank="false"></icon-button>
     <div class="mt-4 text-sm max-w-xs flex flex-col items-center text-textDim font-light fill-textDim">
       <p>Contains an executable!</p>
       <p>Some browsers might flag it as harmful.</p>
@@ -86,6 +79,7 @@
 
   <custom-footer></custom-footer>
 
+  <script type="module" src="/src/components/iconButton.js"></script>
   <script type="module" src="/src/components/projectDetails.js"></script>
   <script type="module" src="/src/components/customTitle.js"></script>
   <script type="module" src="/src/components/textGlow.js"></script>

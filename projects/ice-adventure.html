@@ -35,13 +35,8 @@
     ]'>
   </project-details>
 
-  <div class="mx-auto w-fit mb-32">
-    <a href="/files/ice-adventure/documentation.pdf" class="" target="_blank" rel="noopener noreferrer">
-      <div class="flex flex-row bg-background hover:bg-backgroundLight fill-text hover:fill-textLight duration-300 ring-2 ring-text hover:ring-textLight rounded p-2 gap-x-2 hover:text-textLight text-text">
-        <svg class="size-6"><use href="/svg/icons.svg#document"/></svg>
-        View documentation (HU)
-      </div>
-    </a>
+  <div class="mb-32">
+    <icon-button icon="document" text="View documentation (HU)" url="/files/ice-adventure/documentation.pdf"></icon-button>
   </div>
 
   <div id="items" class="mt-24 mb-8 text-4xl text-center text-textDim font-bold">Items</div>
@@ -88,6 +83,7 @@
 
   <custom-footer></custom-footer>
 
+  <script type="module" src="/src/components/iconButton.js"></script>
   <script type="module" src="/src/components/projectDetails.js"></script>
   <script type="module" src="/src/components/customTitle.js"></script>
   <script type="module" src="/src/components/customFooter.js"></script>
