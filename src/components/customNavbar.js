@@ -16,10 +16,7 @@ class CustomNavbar extends HTMLElement {
           <nav class="sm:flex hidden">
             <ul class="flex space-x-5 items-center text-textLight">
               <li><a href="#home" class="group m-4">
-                <svg class="size-6 m-4 fill-textLight group-hover:fill-text duration-150" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M30 0L30 60H10V20L30 0Z"/>
-                  <path d="M30 60L50 40V60H30Z"/>
-                </svg>
+                <svg class="size-6 m-4 fill-textLight group-hover:fill-text duration-150"><use href="/svg/icons.svg#logo"/></svg>
               </a></li>
               <li><a href="#projects" class="hover:text-text duration-150">Projects</a></li>
               <li><a href="#experience" class="hover:text-text duration-150">Experience</a></li>
@@ -34,10 +31,7 @@ class CustomNavbar extends HTMLElement {
           <div class="flex sm:hidden w-full justify-between items-center">
             <div class="flex-1 items-center"></div>
             <button id="btn-menu" class="group p-4 cursor-pointer">
-              <svg class="size-6 fill-textLight group-hover:fill-text duration-150" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
-                <path d="M30 0L30 60H10V20L30 0Z"/>
-                <path d="M30 60L50 40V60H30Z"/>
-              </svg>
+              <svg class="size-6 fill-textLight group-hover:fill-text duration-150"><use href="/svg/icons.svg#logo"/></svg>
             </button>
           </div>
         </div>
