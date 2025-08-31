@@ -15,7 +15,7 @@ class IconButton extends HTMLElement {
     const icon = this.getAttribute("icon") ?? "";
     const text = this.getAttribute("text") ?? "";
     const url = this.getAttribute("url") ?? "";
-    const blank = this.getAttribute("blank") === "true" ?? true;
+    const blank = !this.hasAttribute("blank") || this.getAttribute("blank") === "true";
 
     this.innerHTML = `
       <div class="mx-auto w-fit max-w-3xl">
