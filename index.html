@@ -55,8 +55,35 @@
   </div>
 
   <div id="projects" class="text-4xl text-center text-textDim font-bold mb-8">Projects</div>
+
   <div class="mx-8">
-    <div class="grid grid-cols-1 md:grid-cols-2 w-full md:max-w-5xl max-w-lg gap-8 mx-auto" id="projects-container"></div>
+    <div class="grid grid-cols-1 md:grid-cols-2 w-full md:max-w-5xl max-w-lg gap-8 mx-auto" id="projects-container">
+
+      <div class="relative overflow-hidden rounded-2xl mx-auto">
+        <!-- Image -->
+        <img src="/images/projects/ecometer-desktop.png" alt="" class="w-96 h-64 object-cover rounded-2xl border border-foreground">
+
+        <!-- Blurred element with gradient mask -->
+        <div class="absolute inset-0 blur-sm rounded-2xl" style="mask-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.9), rgba(0,0,0,1));">
+          <img src="/images/projects/ecometer-desktop.png" alt="" class="size-full object-cover">
+        </div>
+
+        <!-- Black gradient background with middle point -->
+        <div class="absolute inset-0" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.85) 100%);">
+        </div>
+
+        <!-- Inner border/ring -->
+        <div class="absolute inset-0 rounded-2xl pointer-events-none"></div>
+
+
+        <!-- Optional: Content that would appear over the gradient -->
+        <div class="absolute bottom-0 p-6">
+          <h3 class="pb-1 text-xl font-bold text-textLight/95">Ecometer</h3>
+          <p class="text-sm text-textLight/60">App for taxi drivers</p>
+        </div>
+      </div>
+
+    </div>
   </div>
 
   <div id="experience" class="text-4xl text-center text-textDim font-bold mb-16 mt-32">Experience</div>
