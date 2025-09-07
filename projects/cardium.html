@@ -168,7 +168,11 @@
         <div class="text-3xl text-textLight font-bold mb-6">Pretty walls</div>
         <div class="text-md text-text font-light my-2 space-y-2">
           <p>Walls are just solid cells by default. To make them visually more appealing, one can use a sprite sheet that contains textures for all possible wall orientations.</p>
-          <p>In some styles (such as in this game), the texture used for a certain cell depends on the surrounding 8 tiles. Since each tile can be either wall (true) or empty (false), the total amount of possible surroundings is 2<sup>8</sup>, which is 256. However, some wall textures can be re-used for multiple scenarios, as their layout does not depend on certain cells.</p>
+          <p>In some styles (such as in this game), the texture used for a certain cell depends on the surrounding 8 tiles. Since each tile can be either wall (true) or empty (false), the total amount of possible surroundings is</p>
+          <div class="bg-backgroundLight max-w-3xl w-fit rounded-lg text-sm text-center font-mono text-text content-center py-2 px-4 mx-auto">
+            <p><span class="text-blue-300">2</span><sup><span class="text-red-400">8</span></sup> = <span class="text-orange-400">256</span></p>
+          </div>
+          <p>However, some wall textures can be re-used for multiple scenarios, as their layout does not depend on certain cells.</p>
           <p>The figure below illustrates how a certain wall texture can be applied in multiple scenarios. In the top-right corner of the image, surrounding cells are categorized as follows:</p>
           <ul class="list-disc ml-6">
             <li><code-glow>true</code-glow>: must be wall</li>
@@ -180,6 +184,11 @@
       <img src="/images/projects/cardium/walls.png" class="w-full max-w-3xl mx-auto rounded-2xl" alt="The wall sprite sheet and an explanation of neighbor rules">
       <div class="p-6">
         <div class="text-md text-text font-light my-2 space-y-2">
+          <p>In the above example, the highlighted sprite can be used in a total of
+          <span class="bg-backgroundLight max-w-3xl w-fit rounded-lg text-sm text-center font-mono text-text content-center py-[2px] px-2 mx-auto"><span class="text-blue-300">2</span><sup>(number of <span class="text-red-400">null</span> neighbors)</sup> = <span class="text-blue-300">2</span><sup><span class="text-red-400">2</span></sup> = <span class="text-orange-400">4</span></span>
+          scenarios, reducing the total number of sprites needed by
+          <span class="bg-backgroundLight max-w-3xl w-fit rounded-lg text-sm text-center font-mono text-text content-center py-[2px] px-2 mx-auto"><span class="text-orange-400">4</span> - 1 = 3</span>
+          .</p>
           <p>To address all 256 possible combinations, a <code>Dictionary</code> can be constructed, where <i>keys</i> are 8-bit masks representing the state of the surrounding tiles (empty &#x279D; 0, wall &#x279D; 1), and <i>values</i> are the corresponding wall texture's atlas coordinates.</p>
           <p>Instead of populating the dictionary by hand, the above-mentioned patterns, consisting of the <code-glow>true</code-glow>, <code-glow>false</code-glow>, and <code-glow>null</code-glow> values, can be used to describe conditions for each texture found in the sprite sheet. Then, an algorithm can generate the dictionary entries that satisfy the conditions.</p>
         </div>
