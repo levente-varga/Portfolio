@@ -219,3 +219,5 @@ docs/
 css/
 export.scss
 export/
+
+*.DS_Store
