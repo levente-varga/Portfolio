@@ -48,7 +48,7 @@ class BackNavbar extends HTMLElement {
       const previousURL = document.referrer;
       const targetURL = "https://leventevarga.com/";
 
-      if (previousURL === targetURL || previousURL.includes("localhost:")) {
+      if (previousURL === targetURL || previousURL.includes("localhost:") || previousURL.includes(".vercel.app")) {
         window.history.back();
       } else {
         window.location.href = targetURL;
