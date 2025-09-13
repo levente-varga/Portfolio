@@ -42,54 +42,6 @@
     <div class="absolute top-0 left-0 size-full" style="background: linear-gradient(to right, #111111ff 0%, #11111100 33%, #11111100 66%, #111111ff 100%);"></div>
   </div>
 
-  <script>
-    const iconList = [
-      'vscode', 'visualstudio', 'azure', 'unity', 'html', 'css', 'javascript', 'dart', 'kotlin', 'xcode', 'git', 'cpp', 'csharp', 'aspnet', 'tailwind', 'androidstudio', 'webstorm', 'rider', 'blender', 'davinci', 'figma', 'godot', 'flutter'
-    ];
-    iconList.sort(() => Math.random() - 0.5);
-
-    const carouselTrack = document.getElementById('icon-carousel');
-    const iconWidth = 32;
-    const gap = 16;
-    const speed = 15;
-
-    function createIcon(id) {
-      const img = document.createElement('div');
-      img.setAttribute('class', 'size-8 bg-cover bg-center bg-no-repeat');
-      img.style.backgroundImage = `url('/images/tools/${id}.png')`;
-      const div = document.createElement('div');
-      div.setAttribute('class', 'h-8 w-12 pr-4');
-      div.appendChild(img);
-      return div;
-    }
-
-    function fillCarousel() {
-      const containerWidth = carouselTrack.parentElement.offsetWidth;
-      for (let i = 0; i < iconList.length * 2; i++) {
-        const icon = createIcon(iconList[i % iconList.length]);
-        carouselTrack.appendChild(icon);
-      }
-    }
-
-    fillCarousel();
-
-    let offset = 0;
-    function animateCarousel() {
-      offset -= (speed / 60);
-      carouselTrack.style.transform = `translateX(${offset}px)`;
-
-      const firstIcon = carouselTrack.firstElementChild;
-      if (firstIcon && firstIcon.getBoundingClientRect().right < carouselTrack.parentElement.getBoundingClientRect().left) {
-        carouselTrack.appendChild(firstIcon);
-        offset += iconWidth + gap;
-        carouselTrack.style.transform = `translateX(${offset}px)`;
-      }
-      requestAnimationFrame(animateCarousel);
-    }
-
-    animateCarousel();
-  </script>
-
   <div id="projects" class="text-4xl text-center text-textDim font-bold mb-8">Projects</div>
   <div class="mx-8">
     <div class="grid grid-cols-1 md:grid-cols-2 w-full md:max-w-5xl max-w-lg gap-8 mx-auto" id="projects-container"></div>
