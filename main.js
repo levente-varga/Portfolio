@@ -44,7 +44,7 @@ function createTimeline(entries, container) {
 
 function setupCarousel() {
   const iconList = [
-    'vscode', 'visualstudio', 'azure', 'unity', 'html', 'css', 'javascript', 'dart', 'kotlin', 'xcode', 'git', 'cpp', 'csharp', 'aspnet', 'tailwind', 'androidstudio', 'webstorm', 'rider', 'blender', 'davinci', 'figma', 'godot', 'flutter'
+    'vscode', 'visualstudio', 'azure', 'unity', 'html', 'css', 'javascript', 'dart', 'kotlin', 'xcode', 'git', 'cpp', 'csharp', 'aspnet', 'tailwind', 'androidstudio', 'webstorm', 'rider', 'blender', 'davinci', 'figma', 'godot', 'flutter', 'bootstrap', 'mongo', 'mssql'
   ];
   iconList.sort(() => Math.random() - 0.5);
 
