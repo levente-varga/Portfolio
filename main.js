@@ -51,7 +51,19 @@ function setupCarousel() {
   const carousel = document.getElementById('icon-carousel');
   const iconWidth = 32;
   const gap = 16;
-  const speed = 15;
+  const maxSpeed = 40;
+  let speed = 40;
+  let hovered = false;
+
+  carousel.onmouseover = () => {
+    hovered = true;
+    console.log('hovered');
+  }
+  carousel.onmouseout = () => {
+    hovered = false;
+    console.log('unhovered');
+  }
+  const lerp = (x, y, a) => x * (1 - a) + y * a;
 
   function createIcon(id) {
     const img = document.createElement('div');
@@ -65,8 +77,8 @@ function setupCarousel() {
 
   function fillCarousel() {
     const containerWidth = carousel.parentElement.offsetWidth;
-    for (let i = 0; i < iconList.length * 2; i++) {
-      const icon = createIcon(iconList[i % iconList.length]);
+    for (let i = 0; i < iconList.length; i++) {
+      const icon = createIcon(iconList[i]);
       carousel.appendChild(icon);
     }
   }
@@ -74,8 +86,17 @@ function setupCarousel() {
   fillCarousel();
 
   let offset = 0;
+  let previousTime = performance.now();
   function animateCarousel() {
-    offset -= (speed / 60);
+    let deltaTime = (performance.now() - previousTime) / 1000.0;
+    previousTime = performance.now();
+
+    if (hovered) {
+      speed = lerp(speed, 0, deltaTime * 4);
+    } else {
+      speed = lerp(speed, maxSpeed, deltaTime * 0.5);
+    }
+    offset -= speed * deltaTime;
     carousel.style.transform = `translateX(${offset}px)`;
 
     const firstIcon = carousel.firstElementChild;
