@@ -40,6 +40,14 @@ export const projects = [
     url: "/projects/portfolio.html"
   },
   {
+    name: "Dream Pools",
+    description: "A surreal narrative adventure.",
+    image: "/images/projects/dream_pools.png",
+    tags: '{"GDScript": "gdscript", "Godot": "godot"}',
+    year: "2023",
+    url: "/projects/dream-pools.html"
+  },
+  {
     name: "Weave",
     description: "A co-op video game mixing Tron and Snake.",
     image: "/images/projects/weave.png",

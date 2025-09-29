@@ -15,50 +15,27 @@
 
   <back-navbar></back-navbar>
 
-  <custom-title text="REFRACTION SHADER" responsive="true" showProject="true" subtitle="BSc thesis"></custom-title>
+  <custom-title text="REFRACTION SHADER" prefix="Project:" suffix="BSc thesis" responsive="true"></custom-title>
 
-  <div id="about" class="text-4xl text-center text-textDim font-bold">About</div>
-  <div class="w-full max-w-xl mx-auto space-y-2 px-8 mb-16 mt-8">
-    <div class="flex flex-row space-x-4">
-      <svg class="size-6 min-w-6 fill-text" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M10 18C9.45 18 8.97917 17.8042 8.5875 17.4125C8.19583 17.0208 8 16.55 8 16V14.75C7.05 14.1 6.3125 13.2667 5.7875 12.25C5.2625 11.2333 5 10.15 5 9C5 7.05 5.67917 5.39583 7.0375 4.0375C8.39583 2.67917 10.05 2 12 2C13.95 2 15.6042 2.67917 16.9625 4.0375C18.3208 5.39583 19 7.05 19 9C19 10.15 18.7375 11.2292 18.2125 12.2375C17.6875 13.2458 16.95 14.0833 16 14.75V16C16 16.55 15.8042 17.0208 15.4125 17.4125C15.0208 17.8042 14.55 18 14 18H10ZM10 16H14V13.7L14.85 13.1C15.5333 12.6333 16.0625 12.0375 16.4375 11.3125C16.8125 10.5875 17 9.81667 17 9C17 7.61667 16.5125 6.4375 15.5375 5.4625C14.5625 4.4875 13.3833 4 12 4C10.6167 4 9.4375 4.4875 8.4625 5.4625C7.4875 6.4375 7 7.61667 7 9C7 9.81667 7.1875 10.5875 7.5625 11.3125C7.9375 12.0375 8.46667 12.6333 9.15 13.1L10 13.7V16ZM10 22C9.71667 22 9.47917 21.9042 9.2875 21.7125C9.09583 21.5208 9 21.2833 9 21V20H15V21C15 21.2833 14.9042 21.5208 14.7125 21.7125C14.5208 21.9042 14.2833 22 14 22H10Z"/>
-      </svg>
+  <project-details
+    idea='[
+      "Bachelor&#39;s thesis project at the Budapest University of Technology and Economics",
+      "At that time Unity did not have a default ray-traced refraction shader, so I developed my own",
+      "The thesis also included experimentation with other built-in Unity shaders and rendering techniques"
+    ]'
+    info='[
+      "Developed in <text-glow>Unity</text-glow> with <text-glow>HLSL</text-glow>",
+      "Can be applied to any object",
+      "Adjustable refraction index and color"
+    ]'
+    time='[
+      "Sep - Dec, 2021",
+      "Status: <span class=\"font-bold text-green-500\">Finished</span>"
+    ]'>
+  </project-details>
 
-      <div class="flex flex-col space-y-2 text-md text-text font-light mb-4">
-        <p>Bachelor's thesis project at the Budapest University of Technology and Economics</p>
-        <p>At that time Unity did not have a default ray-traced refraction shader, so I developed my own</p>
-        <p>The thesis also included experimentation with other built-in Unity shaders and rendering techniques</p>
-      </div>
-    </div>
-    <div class="flex flex-row space-x-4">
-      <svg class="size-6 min-w-6 fill-text" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M13 8C13 8.55229 12.5523 9 12 9C11.4477 9 11 8.55229 11 8C11 7.44772 11.4477 7 12 7C12.5523 7 13 7.44772 13 8Z"/>
-        <path d="M13 17V11H11V17H13Z"/>
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"/>
-      </svg>
-      <div class="flex flex-col space-y-2 text-md text-text font-light mb-4">
-        <p>Developed in <text-glow>Unity</text-glow> with <text-glow>HLSL</text-glow></p>
-        <p>Can be applied to any object</p>
-        <p>Adjustable refraction index and color</p>
-      </div>
-    </div>
-    <div class="flex flex-row space-x-4">
-      <svg class="size-6 min-w-6 fill-text" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 22L17.99 16L14 12L17.99 7.99L18 2H6V8L10 12L6 15.99V22H18ZM8 7.5V4H16V7.5L12 11.5L8 7.5Z"/></svg>
-      <div class="flex flex-col space-y-2 text-md text-text font-light">
-        <p>Sep 2021 - Dec 2021</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="mx-auto w-fit mb-32">
-    <a href="/files/refraction/thesis.pdf" class="" target="_blank" rel="noopener noreferrer">
-      <div class="flex flex-row bg-background hover:bg-backgroundLight fill-text hover:fill-textLight duration-300 ring-2 ring-text hover:ring-textLight rounded p-2 gap-x-2 hover:text-textLight text-text">
-        <svg class="size-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M8 13H16V11H8V13ZM8 16H16V14H8V16ZM8 19H13V17H8V19ZM6 22C5.45 22 4.97917 21.8042 4.5875 21.4125C4.19583 21.0208 4 20.55 4 20V4C4 3.45 4.19583 2.97917 4.5875 2.5875C4.97917 2.19583 5.45 2 6 2H14L20 8V20C20 20.55 19.8042 21.0208 19.4125 21.4125C19.0208 21.8042 18.55 22 18 22H6ZM13 9V4H6V20H18V9H13Z"/>
-        </svg>
-        View thesis (HU)
-      </div>
-    </a>
+  <div class="mb-32">
+    <icon-button icon="document" text="View thesis (HU)" url="/files/refraction/thesis.pdf" blank="false"></icon-button>
   </div>
 
   <div class="mx-8 mt-32 space-y-16">
@@ -107,7 +84,7 @@
         </div>
       </div>
       <div class="">
-        <img src="/images/projects/refraction/subsurface-scattering.png" class="w-full md:rounded-xl rounded-lg max-w-3xl mx-auto" alt="A comparison of subsurface scatering">
+        <img src="/images/projects/refraction/subsurface-scattering.png" class="w-full md:rounded-xl rounded-lg max-w-3xl mx-auto" alt="A comparison of subsurface scattering">
         <div class="p-6">
           <div class="text-xl text-textLight font-bold">Subsurface scattering</div>
           <div class="text-md text-text font-light my-2 space-y-2">
@@ -141,6 +118,8 @@
 
   <custom-footer></custom-footer>
 
+  <script type="module" src="/src/components/iconButton.js"></script>
+  <script type="module" src="/src/components/projectDetails.js"></script>
   <script type="module" src="/src/components/customTitle.js"></script>
   <script type="module" src="/src/components/textGlow.js"></script>
   <script type="module" src="/src/components/customFooter.js"></script>

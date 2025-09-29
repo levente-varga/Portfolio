@@ -1,6 +1,6 @@
 class TimelineRow extends HTMLElement {
   static get observedAttributes() {
-    return ["name", "company", "company-url", "logo", "time", "footer", "description", "left", "first", "last"];
+    return ["name", "company", "company-url", "logo", "time", "location", "footer", "description", "left", "first", "last"];
   }
 
   connectedCallback() {
@@ -14,9 +14,10 @@ class TimelineRow extends HTMLElement {
   render() {
     const name = this.getAttribute("name") || "Name";
     const company = this.getAttribute("company") || "Company";
-    const companyUrl = this.getAttribute("company-url") || "";
-    const logo = this.getAttribute("logo") || "";
+    const companyUrl = this.getAttribute("company-url");
+    const logo = this.getAttribute("logo");
     const time = this.getAttribute("time") || "Time";
+    const location = this.getAttribute("location");
     const footer = this.getAttribute("footer");
     const description = this.getAttribute("description");
     const left = this.getAttribute("left") === "true";
@@ -34,6 +35,7 @@ class TimelineRow extends HTMLElement {
             </div>
           </a>
           <div class="text-text text-md italic">${time}</div>
+          ${location ? `<div class="text-textDim text-md italic">${location}</div>` : ''}
           ${description ? `<div class="text-textDim text-md">${description}</div>` : ''}
           ${footer ? footer : ''}
         </div>

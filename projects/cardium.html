@@ -15,54 +15,40 @@
 
 <back-navbar></back-navbar>
 
-<custom-title text="CARDIUM" subtitle="Extraction deckbuilder" showProject="true" itch="https://leventevarga.itch.io/cards" github="https://github.com/levente-varga/Cardium"></custom-title>
+<custom-title text="CARDIUM" suffix="Extraction deckbuilder" prefix="Project:" itch="https://leventevarga.itch.io/cards" github="https://github.com/levente-varga/Cardium"></custom-title>
 
-<div id="about" class="text-4xl text-center text-textDim font-bold">About</div>
-<div class="w-full max-w-xl mx-auto space-y-2 sm:px-8 px-4 my-8">
-  <div class="flex flex-row space-x-4">
-    <svg class="size-6 min-w-6 fill-text" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M10 18C9.45 18 8.97917 17.8042 8.5875 17.4125C8.19583 17.0208 8 16.55 8 16V14.75C7.05 14.1 6.3125 13.2667 5.7875 12.25C5.2625 11.2333 5 10.15 5 9C5 7.05 5.67917 5.39583 7.0375 4.0375C8.39583 2.67917 10.05 2 12 2C13.95 2 15.6042 2.67917 16.9625 4.0375C18.3208 5.39583 19 7.05 19 9C19 10.15 18.7375 11.2292 18.2125 12.2375C17.6875 13.2458 16.95 14.0833 16 14.75V16C16 16.55 15.8042 17.0208 15.4125 17.4125C15.0208 17.8042 14.55 18 14 18H10ZM10 16H14V13.7L14.85 13.1C15.5333 12.6333 16.0625 12.0375 16.4375 11.3125C16.8125 10.5875 17 9.81667 17 9C17 7.61667 16.5125 6.4375 15.5375 5.4625C14.5625 4.4875 13.3833 4 12 4C10.6167 4 9.4375 4.4875 8.4625 5.4625C7.4875 6.4375 7 7.61667 7 9C7 9.81667 7.1875 10.5875 7.5625 11.3125C7.9375 12.0375 8.46667 12.6333 9.15 13.1L10 13.7V16ZM10 22C9.71667 22 9.47917 21.9042 9.2875 21.7125C9.09583 21.5208 9 21.2833 9 21V20H15V21C15 21.2833 14.9042 21.5208 14.7125 21.7125C14.5208 21.9042 14.2833 22 14 22H10Z"/>
-    </svg>
+<project-details
+  idea='[
+    "Master&#39;s Thesis project in Game Design and Technology at the University of Gothenburg",
+    "Experimenting with a new mix of game genres: <text-glow>extraction</text-glow> and <text-glow>deck-builder</text-glow>"
+  ]'
+  info='[
+    "Developed with <text-glow>Godot .NET</text-glow> in <text-glow>C#</text-glow>",
+    "Features generated dungeons",
+    "Various card and enemy types"
+  ]'
+  time='[
+    "Feb - May, 2025",
+    "Status: <span class=\"font-bold text-green-500\">Demo released</span>"
+  ]'>
+</project-details>
 
-    <div class="flex flex-col space-y-2 text-md text-text font-light mb-4">
-      <p>Master's Thesis project in Game Design and Technology at the University of Gothenburg</p>
-      <p>Experimenting with a new mix of game genres: <text-glow>extraction</text-glow> and <text-glow>deck-builder</text-glow></p>
-    </div>
-  </div>
-  <div class="flex flex-row space-x-4">
-    <svg class="size-6 min-w-6 fill-text" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path d="M13 8C13 8.55229 12.5523 9 12 9C11.4477 9 11 8.55229 11 8C11 7.44772 11.4477 7 12 7C12.5523 7 13 7.44772 13 8Z"/>
-      <path d="M13 17V11H11V17H13Z"/>
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z"/>
-    </svg>
-    <div class="flex flex-col space-y-2 text-md text-text font-light mb-4">
-      <p>Developed with <text-glow>Godot .NET</text-glow> in <text-glow>C#</text-glow></p>
-      <p>Features generated dungeons</p>
-      <p>Various card and enemy types</p>
-    </div>
-  </div>
-  <div class="flex flex-row space-x-4">
-    <svg class="size-6 min-w-6 fill-text" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 22L17.99 16L14 12L17.99 7.99L18 2H6V8L10 12L6 15.99V22H18ZM8 7.5V4H16V7.5L12 11.5L8 7.5Z"/></svg>
-    <div class="flex flex-col space-y-2 text-md text-text font-light">
-      <p>Development period: Feb 2025 - May 2025</p>
-      <p>Status: <span class="font-bold text-green-600">Demo available</span></p>
-    </div>
+<div class="mb-2">
+  <icon-button icon="itch" text="Download on itch.io" url="https://leventevarga.itch.io/cards"></icon-button>
+</div>
+
+<div class="mx-auto mb-8 text-sm max-w-xs flex flex-col items-center text-textDim font-light fill-textDim">
+  <div class="flex flex-row items-center justify-center gap-1">
+    Available for:
+    <svg class="size-4"><use href="/svg/icons.svg#windows"/></svg>
+    <svg class="size-4"><use href="/svg/icons.svg#apple"/></svg>
   </div>
 </div>
 
-<div class="mx-auto w-fit mb-8">
-  <a href="https://leventevarga.itch.io/cards" class="" target="_blank" rel="noopener noreferrer">
-    <div class="flex flex-row bg-background hover:bg-backgroundLight fill-text hover:fill-textLight duration-300 ring-2 ring-text hover:ring-textLight rounded p-2 gap-x-2 hover:text-textLight text-text">
-      <svg class="size-6" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-        <path d="M8.40568 3.35869C5.59336 5.02853 0.0525519 11.3939 0 13.0632V15.8264C0 19.329 3.27398 22.4074 6.24658 22.4074C9.81591 22.4074 12.7898 19.4493 12.7901 15.9383C12.7901 19.4493 15.662 22.4074 19.2316 22.4074C22.8015 22.4074 25.5812 19.4493 25.5812 15.9383C25.5812 19.4493 28.635 22.4074 32.2046 22.4074H32.2692C35.8391 22.4074 38.8929 19.4493 38.8929 15.9383C38.8929 19.4493 41.6729 22.4074 45.2422 22.4074C48.8118 22.4074 51.6838 19.4493 51.6838 15.9383C51.6838 19.4493 54.6582 22.4074 58.2273 22.4074C61.1999 22.4074 64.4738 19.3295 64.4738 15.8264V13.0632C64.4213 11.3936 58.8805 5.028 56.0687 3.35869C47.3277 3.05179 41.268 2.99871 32.2367 3.00002C23.2056 3.00081 10.8932 3.14191 8.40515 3.35869H8.40568ZM25.536 20.7578C25.1947 21.3528 24.772 21.8972 24.28 22.3751C22.9326 23.6926 21.0857 24.5093 19.0495 24.5093C17.0902 24.5111 15.2083 23.7445 13.808 22.3741C13.3198 21.8959 12.9488 21.3845 12.609 20.7891L12.6075 20.7902C12.268 21.3866 11.795 21.8977 11.3058 22.3764C9.90491 23.7458 8.02322 24.5118 6.06423 24.51C5.81881 24.51 5.56341 24.4423 5.35688 24.3713C5.06995 27.3594 4.94881 30.2151 4.90598 32.2972L4.90546 32.309C4.9002 33.3664 4.89495 34.2358 4.88969 35.4437C4.94487 41.7132 4.26879 55.764 7.65392 59.2164C12.8997 60.4395 22.5524 60.9966 32.2364 61H32.238C41.9217 60.9966 51.5745 60.4395 56.8202 59.2164C60.2053 55.7637 59.5292 41.7129 59.5844 35.4435C59.5786 34.2358 59.5739 33.3664 59.5686 32.3088L59.5679 32.2969C59.5253 30.2143 59.4042 27.3589 59.1172 24.3708C58.9107 24.4417 58.6556 24.5095 58.4099 24.5095C56.4509 24.5113 54.5692 23.7453 53.1684 22.3759C52.6791 21.8972 52.2061 21.3864 51.8664 20.7896L51.8648 20.7886C51.5248 21.384 51.154 21.8956 50.6658 22.3736C49.2656 23.7439 47.3838 24.5104 45.4246 24.5085C43.3887 24.5085 41.5415 23.6913 40.1941 22.3741C39.7021 21.8961 39.2794 21.3518 38.9381 20.7568C38.6004 21.3511 38.1816 21.8954 37.6937 22.3741C36.293 23.7442 34.411 24.5106 32.4516 24.5087C32.3807 24.5087 32.3097 24.5056 32.2388 24.5035H32.2369C32.166 24.5056 32.095 24.5087 32.0233 24.5087C30.064 24.5107 28.1819 23.7444 26.7812 22.3743C26.2933 21.8957 25.8745 21.3514 25.5368 20.7571L25.536 20.7578ZM20.1531 27.7183L20.1526 27.721H20.1566C22.2883 27.7254 24.182 27.721 26.5285 30.2818C28.3751 30.0882 30.3049 29.9915 32.2361 29.9944H32.2377C34.169 29.9917 36.0987 30.0882 37.9456 30.2818C40.2921 27.7207 42.1858 27.7252 44.3176 27.721H44.3212L44.3207 27.7183C45.3279 27.7183 49.3568 27.7183 52.1641 35.603L55.1795 46.4195C57.414 54.4662 54.464 54.663 50.7843 54.6701C45.3273 54.467 42.3059 50.5041 42.3059 46.5417C39.2852 47.0367 35.7613 47.2842 32.2375 47.2845H32.2359C28.7117 47.2845 25.1879 47.0367 22.1675 46.5417C22.1675 50.5041 19.1457 54.467 13.689 54.6701C10.0093 54.663 7.05956 54.4665 9.29407 46.4195L12.3103 35.6032C15.1176 27.7186 19.1465 27.7186 20.1537 27.7186L20.1531 27.7183ZM32.2361 33.9147V33.9163C32.2309 33.9216 26.4914 39.1925 25.4596 41.0673L29.2181 40.9168V44.1944C29.2181 44.3479 30.7263 44.2853 32.2361 44.2154H32.2377C33.747 44.2853 35.2555 44.3479 35.2555 44.1944V40.9168L39.014 41.0673C37.9819 39.1925 32.2375 33.9163 32.2375 33.9163V33.9147L32.2367 33.9153L32.2361 33.9147Z"/>
-      </svg>
-      Download on itch.io
-    </div>
-  </a>
-</div>
 
-<div class="mb-32">
-  <github-button url="https://github.com/levente-varga/Cardium"></github-button>
+<div class="mb-32 flex flex-row items-center justify-center gap-4">
+  <icon-button icon="github" text="View on GitHub" url="https://github.com/levente-varga/Cardium"></icon-button>
+  <icon-button icon="document" text="View thesis" url="/files/cardium/thesis.pdf" blank="false"></icon-button>
 </div>
 
 <div class="sm:mx-8 mx-4">
@@ -73,7 +59,7 @@
     </div>
 
     <div class="">
-      <img src="/images/projects/cardium.png" class="w-full max-w-3xl mx-auto rounded-2xl" alt="Image showing the UI of Ice Adventure">
+      <img src="/images/projects/cardium.png" class="w-full max-w-3xl mx-auto rounded-2xl" alt="Gameplay overview">
       <div class="p-6">
         <div class="text-xl text-textLight font-bold">Overview</div>
         <div class="text-md text-text font-light my-2 space-y-2">
@@ -85,8 +71,8 @@
 
     <div class="">
       <div class="columns-2 w-full gap-8 max-w-3xl mx-auto">
-        <img src="/images/projects/cardium/moving.gif" class="w-full rounded-2xl" alt="Animation showing the movement of the player">
-        <img src="/images/projects/cardium/nudging.gif" class="w-full rounded-2xl" alt="Animation showing player interaction with objects">
+        <img src="/images/projects/cardium/moving.gif" class="w-full rounded-2xl" alt="Player movement animation">
+        <img src="/images/projects/cardium/nudging.gif" class="w-full rounded-2xl" alt="Player nudging animation">
       </div>
 
       <div class="p-6">
@@ -100,8 +86,8 @@
 
     <div class="">
       <div class="columns-2 w-full gap-8 max-w-3xl mx-auto">
-        <img src="/images/projects/cardium/playing.gif" class="w-full rounded-2xl" alt="Animation showing the movement of the player">
-        <img src="/images/projects/cardium/targeting.gif" class="w-full rounded-2xl" alt="Animation showing player interaction with objects">
+        <img src="/images/projects/cardium/playing.gif" class="w-full rounded-2xl" alt="Card play animation">
+        <img src="/images/projects/cardium/targeting.gif" class="w-full rounded-2xl" alt="Target selection animation">
       </div>
 
       <div class="p-6">
@@ -116,11 +102,11 @@
     <div class="">
       <div class="sm:mx-16">
         <div class="columns-5 w-full gap:4 max-w-3xl mx-auto">
-          <img src="/images/projects/cardium/enemy_slime.gif" alt="Animation showing the movement of the player">
-          <img src="/images/projects/cardium/enemy_spider.gif" alt="Animation showing the movement of the player">
-          <img src="/images/projects/cardium/enemy_voidling.gif" alt="Animation showing player interaction with objects">
-          <img src="/images/projects/cardium/enemy_ranger.gif" alt="Animation showing player interaction with objects">
-          <img src="/images/projects/cardium/enemy_exterminator.gif" alt="Animation showing player interaction with objects">
+          <img src="/images/projects/cardium/enemy_slime.gif" alt="Slime">
+          <img src="/images/projects/cardium/enemy_spider.gif" alt="Spider">
+          <img src="/images/projects/cardium/enemy_voidling.gif" alt="Voidling">
+          <img src="/images/projects/cardium/enemy_ranger.gif" alt="Ranger">
+          <img src="/images/projects/cardium/enemy_exterminator.gif" alt="Exterminator">
         </div>
       </div>
 
@@ -133,7 +119,7 @@
     </div>
 
     <div class="">
-      <img src="/images/projects/cardium/lobby_explanation.png" class="w-full max-w-3xl mx-auto rounded-2xl" alt="Image showing the UI of Ice Adventure">
+      <img src="/images/projects/cardium/lobby_explanation.png" class="w-full max-w-3xl mx-auto rounded-2xl" alt="Cardium's lobby and main menu">
       <div class="p-6">
         <div class="text-xl text-textLight font-bold">Interactive main menu</div>
         <div class="text-md text-text font-light my-2 space-y-2">
@@ -164,19 +150,19 @@
         <div class="text-3xl text-textLight font-bold mb-6">Loot</div>
         <div class="text-md text-text font-light my-2 space-y-2">
           <p>Loot is generated using the <code-glow>GenerateLoot()</code-glow> function, which takes a list of card types and their drop rates, and based on the <code-glow>amount</code-glow> parameter, returns a list of <code-glow>Card</code-glow> instances, where the distribution follows the dictionary values.</p>
-          <p>This is an elegant way for generating loot for ›chests and enemies.</p>
-          <p><text-glow>Criteria:</text-glow> the input dictionary must contains at least one type that can be cast to <code>Card</code>.</p>
+          <p>This is an elegant way for generating loot for chests and enemies.</p>
+          <p><text-glow>Criteria:</text-glow> the input dictionary must contain at least one type that can be cast to <code>Card</code>.</p>
         </div>
       </div>
     </div>
 
     <div class="">
-      <img src="/images/projects/cardium/pretty_walls.png" class="w-full max-w-3xl mx-auto rounded-2xl" alt="Image showing the UI of Ice Adventure">
+      <img src="/images/projects/cardium/pretty_walls.png" class="w-full max-w-3xl mx-auto rounded-2xl" alt="A section of pretty walls from the game">
       <div class="p-6">
         <div class="text-3xl text-textLight font-bold mb-6">Pretty walls</div>
         <div class="text-md text-text font-light my-2 space-y-2">
           <p>Walls are just solid cells by default. To make them visually more appealing, one can use a sprite sheet that contains textures for all possible wall orientations.</p>
-          <p>In some styles (such as in this game), the used texture also depends on the surrounding 8 tiles. Since each tile can be either wall (true) or empty (false), the total combination of the possible surroundings is 2<sup>8</sup>, which is 256. However, some wall textures can be re-used for multiple scenarios, as their layout does not depend on certain cells.</p>
+          <p>In some styles (such as in this game), the texture used for a certain cell depends on the surrounding 8 tiles. Since each tile can be either wall (true) or empty (false), the total amount of possible surroundings is 2<sup>8</sup>, which is 256. However, some wall textures can be re-used for multiple scenarios, as their layout does not depend on certain cells.</p>
           <p>The figure below illustrates how a certain wall texture can be applied in multiple scenarios. In the top-right corner of the image, surrounding cells are categorized as follows:</p>
           <ul class="list-disc ml-6">
             <li><code-glow>true</code-glow>: must be wall</li>
@@ -185,11 +171,11 @@
           </ul>
         </div>
       </div>
-      <img src="/images/projects/cardium/walls.png" class="w-full max-w-3xl mx-auto rounded-2xl" alt="Image showing the UI of Ice Adventure">
+      <img src="/images/projects/cardium/walls.png" class="w-full max-w-3xl mx-auto rounded-2xl" alt="The wall sprite sheet and an explanation of neighbor rules">
       <div class="p-6">
         <div class="text-md text-text font-light my-2 space-y-2">
-          <p>To address all 256 possible combinations, a <code>Dictionary</code> can be constructed, where <i>keys</i> are bitmasks representing the state of the surrounding tiles (empty &#x279D; 0, wall &#x279D; 1), and <i>values</i> are the corresponding wall texture's atlas coordinates.</p>
-          <p>Instead of populating the dictionary by hand, the above-mentioned patterns, consisting of the <code-glow>true</code-glow>, <code-glow>false</code-glow>, and <code-glow>null</code-glow> values, can be used to describe conditions for each texture found in the sprite sheet. Then, an algorithm can be used to generate the dictionary entries that satisfy the conditions.</p>
+          <p>To address all 256 possible combinations, a <code>Dictionary</code> can be constructed, where <i>keys</i> are 8-bit masks representing the state of the surrounding tiles (empty &#x279D; 0, wall &#x279D; 1), and <i>values</i> are the corresponding wall texture's atlas coordinates.</p>
+          <p>Instead of populating the dictionary by hand, the above-mentioned patterns, consisting of the <code-glow>true</code-glow>, <code-glow>false</code-glow>, and <code-glow>null</code-glow> values, can be used to describe conditions for each texture found in the sprite sheet. Then, an algorithm can generate the dictionary entries that satisfy the conditions.</p>
         </div>
       </div>
       <div class="bg-backgroundLight max-w-3xl w-full rounded-xl text-sm text-left font-mono text-text content-center p-6 mx-auto">
@@ -204,7 +190,7 @@
       </div>
       <div class="p-6">
         <div class="text-md text-text font-light my-2 space-y-2">
-          <p>This is what the <code-glow>AddBitmaskEntries()</code-glow> function does, which takes the atlas coordinates of a texture (<code-glow>atlasCoords</code-glow>) and a <code-glow>pattern</code-glow> of 8 nullable booleans, where each value represents the state of a surrounding tile in the order shown in the bottom-right corner of the image. The function will then generate all possible combinations of the surrounding tiles that matches the pattern, and add them to the dictionary.</p>
+          <p>This is what the <code-glow>AddBitmaskEntries()</code-glow> function does, which takes the atlas coordinates of a texture (<code-glow>atlasCoords</code-glow>) and a <code-glow>pattern</code-glow> of 8 nullable booleans (soon to be converted to a bitmask), where each value represents the state of a surrounding tile in the order shown in the bottom-right corner of the image. The function will then generate all possible surrounding variations that matches the pattern, and add them to the dictionary.</p>
         </div>
       </div>
       <div class="bg-backgroundLight max-w-3xl w-full rounded-xl text-sm text-left font-mono text-text content-center p-6 mx-auto">
@@ -226,7 +212,7 @@
         <div class="text-md text-text font-light my-2 space-y-2">
           <p>The process is an extended version of the <text-glow><a href="https://journal.stuffwithstuff.com/2014/12/21/rooms-and-mazes/" class="hover:underline">algorithm</a></text-glow> from Bob Nystrom.</p>
           <p>First, a bunch of rectangular rooms are placed, which later get connected via mazes and doorways. Dead ends are removed to improve the exploration experience.</p>
-          <p>As the final step, enemies and objects are instantiated into each room. Their number and type depends on the room size, difficulty level, and other factors.</p>
+          <p>As the final step, enemies and objects are placed into each room. Their number, level, and type depend on the room size, difficulty level, and other factors.</p>
         </div>
       </div>
     </div>
@@ -235,7 +221,8 @@
 
 <custom-footer></custom-footer>
 
-<script type="module" src="/src/components/githubButton.js"></script>
+<script type="module" src="/src/components/projectDetails.js"></script>
+<script type="module" src="/src/components/iconButton.js"></script>
 <script type="module" src="/src/components/customTitle.js"></script>
 <script type="module" src="/src/components/customFooter.js"></script>
 <script type="module" src="/src/components/textGlow.js"></script>

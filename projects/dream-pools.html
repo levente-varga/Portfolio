@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-background">
+<head>
+  <meta charset="UTF-8">
+  <title>Cardium</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="/src/styles.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/images/logo_light.png" media="(prefers-color-scheme: light)">
+  <link rel="icon" type="image/png" href="/images/logo_dark.png" media="(prefers-color-scheme: dark)">
+  <link rel="apple-touch-icon" href="/public/images/touch_icon.png">
+</head>
+<body>
+  <back-navbar></back-navbar>
+  <custom-title text="DREAM POOLS" suffix="A surreal narrative adventure" prefix="Project:" github="https://github.com/AsperTheDog/Dreampools"></custom-title>
+
+  <project-details
+    warn='[
+      "<text-glow>Disclaimer:</text-glow> I had a minor role in the development process as I was new to GDScript, and most of the code was carried over from a team member&#39;s previous projects"
+    ]'
+    idea='[
+      "3-person group project as part of the <i>Interactive and Linear Storytelling with Digital Media</i> course at the University of Gothenburg",
+      "Inspired by The Stanley Parable and backrooms-like games"
+    ]'
+    info='[
+      "Developed with <text-glow>Godot .NET</text-glow> in <text-glow>GDScript</text-glow>",
+      "Features a gameplay loop with a narrator",
+      "Interactable objects, custom music, voice lines, and subtitles."
+    ]'
+    time='[
+      "Nov - Dec, 2023",
+      "Status: <span class=\"font-bold text-green-500\">Finished</span>"
+    ]'>
+  </project-details>
+
+  <div class="mb-32">
+    <icon-button icon="github" text="View on GitHub" url="https://github.com/AsperTheDog/Dreampools"></icon-button>
+  </div>
+
+  <div class="mx-8 mb-32">
+    <img src="/images/projects/dream_pools.png" class="w-full rounded-xl max-w-3xl mx-auto border-1 border-gray-800" alt="One of the halls in the game">
+  </div>
+
+  <custom-footer></custom-footer>
+
+  <script type="module" src="/src/components/projectDetails.js"></script>
+  <script type="module" src="/src/components/iconButton.js"></script>
+  <script type="module" src="/src/components/customTitle.js"></script>
+  <script type="module" src="/src/components/customFooter.js"></script>
+  <script type="module" src="/src/components/textGlow.js"></script>
+  <script type="module" src="/src/components/codeGlow.js"></script>
+  <script type="module" src="/src/components/backNavbar.js"></script>
+</body>
+</html>
