@@ -114,4 +114,4 @@ function setupCarousel() {
 createTimeline(experiences, experienceContainer);
 createTimeline(educations, educationContainer);
 createTimeline(awards, awardsContainer);
-setupCarousel();
+//setupCarousel();
