@@ -11,6 +11,8 @@
   --color-background: #111111;
   --color-backgroundLight: #181818;
   --color-foreground: #1e1e1e;
+  --color-hoverable: #232323;
+  --color-hovered: #2c2c2c;
   --color-textDark: #343434;
   --color-textDim: #555555;
   --color-textFaded: #666666;
