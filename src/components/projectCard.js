@@ -24,28 +24,33 @@ class ProjectCard extends HTMLElement {
 
     this.projectCardId = `project-card-${name.toLowerCase()}`;
 
-    this.innerHTML = `
+    this.innerHTML = `<div class="reveal-on-scroll">
       <a href="${url}">
       <div class="perspective-[700px] hover:scale-[1.02] duration-200">
       <div id="${(this.projectCardId)}" class="w-full rounded-2xl duration-[120ms] ease-out ring-1 ring-white/5 bg-foreground shadow-xl">
         <div class="rounded-t-2xl aspect-[calc(5/3)] bg-cover bg-center bg-no-repeat" style="background-image: url(${image});"> </div>
         
-        <div class="p-6">
+        <div class="px-6 py-6">
           <div class="flex justify-between items-center">
             <div class="text-xl text-textLight font-title">${name}</div>
             <div class="text-sm text-textDim">${year}</div>
           </div>
-          <div class="text-sm text-text font-light my-2">${description}</div>
-          <ul class="flex text-text items-center">
-            ${Object.entries(tags).map(([tag, color]) => `
-              <li class="w-3 h-3 rounded-2xl bg-${color} inset-ring-1 inset-ring-white/20"></li>
-              <li class="pr-4 pl-1 text-sm font-light">${tag}</li>
-            `).join("")}
-          </ul>
+          <div class="text-sm text-text mt-1">${description}</div>
         </div>
+        ${Object.entries(tags).length === 0 ? `` : `
+          <div class="px-6 pb-3 bg-foreground rounded-b-2xl">
+            <ul class="flex text-text items-center">
+              ${Object.entries(tags).map(([tag, color]) => `
+                <li class="w-2 h-2 rounded-2xl bg-${color} inset-ring-1 inset-ring-white/20"></li>
+                <li class="pr-4 pl-2 text-sm">${tag}</li>
+              `).join("")}
+            </ul>
+          </div>
+        `}
       </div>
       </div>
       </a>
+      </div>
     `;
   }
 

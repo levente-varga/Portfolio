@@ -19,7 +19,7 @@ class IconButton extends HTMLElement {
 
     this.innerHTML = `
       <div class="mx-auto w-fit max-w-3xl">
-        <div class="flex flex-row justify-center items-center">
+        <div class="flex flex-row justify-center items-center hover:shadow-md hover:shadow-hovered duration-300">
           <a href="${url}" target="${blank ? `_blank` : `_self`}" rel="noopener noreferrer">
             <div class="flex flex-row w-fit rounded p-2 gap-x-2 ring-1 duration-300 ring-textDark hover:ring-textDim bg-hoverable hover:bg-hovered fill-text hover:fill-textLight text-text hover:text-textLight">
               <div class="aspect-square size-6">

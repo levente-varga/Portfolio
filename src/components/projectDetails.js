@@ -26,8 +26,8 @@ class ProjectDetails extends HTMLElement {
 
   paragraph(lines, icon) {
     return lines ? `
-      <div class="flex flex-row space-x-4">
-        <svg class="size-6 min-w-6"><use href="/svg/icons.svg#${icon}"/></svg>
+      <div class="group flex flex-row space-x-4">
+        <svg class="size-6 min-w-6 fill-text group-hover:fill-textLight duration-300"><use href="/svg/icons.svg#${icon}"/></svg>
         <div class="flex flex-col space-y-2 mb-4">
           ${lines.map(p => `<p>${p}</p>`).join('')}
         </div>
