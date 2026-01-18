@@ -10,8 +10,8 @@ class CustomFooter extends HTMLElement {
   render() {
     this.innerHTML = `
       <div class="flex flex-col px-auto bg-backgroundLight text-textDim fill-textDim text-center items-center justify-center py-16 mt-16">
-        <div id="contact" class="text-4xl font-bold mb-8">Contact</div>
         <div class="">Feel free to reach out on any of these platforms!</div>
+        <div id="contact" class="text-4xl font-title mb-8">Contact</div>
         <ul class="flex space-x-4 items-center mt-8 mx-auto w-fit">
           ${this.item("https://github.com/levente-varga", "github")}
           ${this.item("https://www.linkedin.com/in/levente-varga/", "linkedin")}

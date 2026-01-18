@@ -29,7 +29,7 @@
   ]'
   time='[
     "Feb - May, 2025",
-    "Status: <span class=\"font-bold text-green-500\">Demo released</span>"
+    "Status: <span class=\"font-title text-green-500\">Demo released</span>"
   ]'>
 </project-details>
 
@@ -55,13 +55,13 @@
   <div class="flex flex-col gap-32 w-full max-w-xl mx-auto">
 
     <div id="gameplay" class="max-w-3xl">
-      <div class="text-5xl text-textDim font-bold"><span class="text-textLight">#1</span> Gameplay</div>
+      <div class="text-5xl text-textDim font-title"><span class="text-textLight">#1</span> Gameplay</div>
     </div>
 
     <div class="">
       <img src="/images/projects/cardium.png" class="w-full max-w-3xl mx-auto rounded-2xl" alt="Gameplay overview">
       <div class="p-6">
-        <div class="text-xl text-textLight font-bold">Overview</div>
+        <div class="text-xl text-textLight font-title">Overview</div>
         <div class="text-md text-text font-light my-2 space-y-2">
           <p>The only resource in the game is <text-glow>cards</text-glow>: found inside chests and dropped from defeated enemies.</p>
           <p>The game is turn based, with each action (moving, playing or discarding a card, etc.) counting as one turn.</p>
@@ -76,7 +76,7 @@
       </div>
 
       <div class="p-6">
-        <div class="text-xl text-textLight font-bold">Controls</div>
+        <div class="text-xl text-textLight font-title">Controls</div>
         <div class="text-md text-text font-light my-2 space-y-2">
           <p> The player moves using the <text-glow>arrow keys</text-glow>. Objects can be <text-glow>interacted</text-glow> by nudging them.</p>
           <p> Holding down a key allows for continuous movement to speed up traversing long corridors.</p>
@@ -91,7 +91,7 @@
       </div>
 
       <div class="p-6">
-        <div class="text-xl text-textLight font-bold">Using cards</div>
+        <div class="text-xl text-textLight font-title">Using cards</div>
         <div class="text-md text-text font-light my-2 space-y-2">
           <p> Cards are selected and played using <text-glow>drag-and-drop</text-glow>. Targets are picked using <text-glow>left-click</text-glow> for cards that need them. Targeting can be cancelled with <text-glow>right-click</text-glow>.</p>
           <p> Cards can be <text-glow>discarded</text-glow> by drag-and-dropping them onto the discard pile.</p>
@@ -111,7 +111,7 @@
       </div>
 
       <div class="p-6">
-        <div class="text-xl text-textLight font-bold">Enemies</div>
+        <div class="text-xl text-textLight font-title">Enemies</div>
         <div class="text-md text-text font-light my-2 space-y-2">
           <p> The prototype features <text-glow>4 common</text-glow> enemy types and <text-glow>1 boss</text-glow>, each having their own logic, core stats, and spawn conditions.</p>
         </div>
@@ -121,7 +121,7 @@
     <div class="">
       <img src="/images/projects/cardium/lobby_explanation.png" class="w-full max-w-3xl mx-auto rounded-2xl" alt="Cardium's lobby and main menu">
       <div class="p-6">
-        <div class="text-xl text-textLight font-bold">Interactive main menu</div>
+        <div class="text-xl text-textLight font-title">Interactive main menu</div>
         <div class="text-md text-text font-light my-2 space-y-2">
           <p>This area serves both as the main menu and the safe zone. The player can interact with objects to perform actions like managing their <text-glow>inventory</text-glow>, changing the <text-glow>difficulty</text-glow>, viewing <text-glow>statistics</text-glow>, or <text-glow>exiting</text-glow> the game.</p>
         </div>
@@ -129,7 +129,7 @@
     </div>
 
     <div id="technical-details" class="max-w-3xl">
-      <div class="text-5xl text-textDim font-bold"><span class="text-textLight">#2</span> Technical details</div>
+      <div class="text-5xl text-textDim font-title"><span class="text-textLight">#2</span> Technical details</div>
     </div>
 
     <div class="">
@@ -147,7 +147,7 @@
         <p>);</p>
       </div>
       <div class="p-6">
-        <div class="text-3xl text-textLight font-bold mb-6">Loot</div>
+        <div class="text-3xl text-textLight font-title mb-6">Loot</div>
         <div class="text-md text-text font-light my-2 space-y-2">
           <p>Loot is generated using the <code-glow>GenerateLoot()</code-glow> function, which takes a list of card types and their drop rates, and based on the <code-glow>amount</code-glow> parameter, returns a list of <code-glow>Card</code-glow> instances, where the distribution follows the dictionary values.</p>
           <p>This is an elegant way for generating loot for chests and enemies.</p>
@@ -159,7 +159,7 @@
     <div class="">
       <img src="/images/projects/cardium/pretty_walls.png" class="w-full max-w-3xl mx-auto rounded-2xl" alt="A section of pretty walls from the game">
       <div class="p-6">
-        <div class="text-3xl text-textLight font-bold mb-6">Pretty walls</div>
+        <div class="text-3xl text-textLight font-title mb-6">Pretty walls</div>
         <div class="text-md text-text font-light my-2 space-y-2">
           <p>Walls are just solid cells by default. To make them visually more appealing, one can use a sprite sheet that contains textures for all possible wall orientations.</p>
           <p>In some styles (such as in this game), the texture used for a certain cell depends on the surrounding 8 tiles. Since each tile can be either wall (true) or empty (false), the total amount of possible surroundings is 2<sup>8</sup>, which is 256. However, some wall textures can be re-used for multiple scenarios, as their layout does not depend on certain cells.</p>
@@ -208,7 +208,7 @@
     <div class="">
       <img src="/images/projects/cardium/dungeon_generation.gif" class="w-full max-w-3xl mx-auto rounded-2xl" alt="Animation showing the dungeon generation steps">
       <div class="p-6">
-        <div class="text-3xl text-textLight font-bold mb-6">Dungeon generation</div>
+        <div class="text-3xl text-textLight font-title mb-6">Dungeon generation</div>
         <div class="text-md text-text font-light my-2 space-y-2">
           <p>The process is an extended version of the <text-glow><a href="https://journal.stuffwithstuff.com/2014/12/21/rooms-and-mazes/" class="hover:underline">algorithm</a></text-glow> from Bob Nystrom.</p>
           <p>First, a bunch of rectangular rooms are placed, which later get connected via mazes and doorways. Dead ends are removed to improve the exploration experience.</p>

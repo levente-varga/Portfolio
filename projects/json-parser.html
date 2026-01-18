@@ -31,7 +31,7 @@
     ]'
     time='[
       "Sep - Oct, 2023",
-      "Status: <span class=\"font-bold text-green-500\">Finished</span>"
+      "Status: <span class=\"font-title text-green-500\">Finished</span>"
     ]'>
   </project-details>
 
@@ -48,7 +48,7 @@
           <p><span class="text-red-400">auto</span> json = parser.<span class="text-orange-400">parse</span>(<span class="text-blue-300">"test.json"</span>);</p>
         </div>
         <div class="p-6">
-          <div class="text-xl text-textLight font-bold">Parsing</div>
+          <div class="text-xl text-textLight font-title">Parsing</div>
           <div class="text-md text-text font-light my-2">
             <p>Parsing a JSON file couldn't be simpler. The <code-glow>parse()</code-glow> method returns the root node.</p>
           </div>
@@ -61,7 +61,7 @@
           <p><span class="text-red-400">auto</span> node = json-><span class="text-orange-400">at</span>(<span class="text-blue-300">"users"</span>)-><span class="text-orange-400">at</span>(<span class="text-blue-300">0</span>)-><span class="text-orange-400">at</span>(<span class="text-blue-300">"age"</span>);</p>
         </div>
         <div class="p-6">
-          <div class="text-xl text-textLight font-bold">Traverse</div>
+          <div class="text-xl text-textLight font-title">Traverse</div>
           <div class="text-md text-text font-light my-2">
             <p>Using <code-glow>at()</code-glow> with a key or index parameter on a node returns another <code-glow>Json::Node</code-glow> class.</p>
           </div>
@@ -73,7 +73,7 @@
           <p><span class="text-red-400">int</span> age = node-><span class="text-orange-400">getAs</span>&lt;<span class="text-red-400">int</span>&gt;();</p>
         </div>
         <div class="p-6">
-          <div class="text-xl text-textLight font-bold">Convert</div>
+          <div class="text-xl text-textLight font-title">Convert</div>
           <div class="text-md text-text font-light my-2">
             <p>Each node can store one of seven possible types: <code-glow>bool</code-glow>, <code-glow>int</code-glow>, <code-glow>double</code-glow>, <code-glow>std::string</code-glow>, <code-glow>Json::List</code-glow>, <code-glow>Json::Object</code-glow> or <code-glow>std::nullptr_t</code-glow> (for null values).</p>
           </div>
@@ -89,7 +89,7 @@
           <p>}</p>
         </div>
         <div class="p-6">
-          <div class="text-xl text-textLight font-bold">Iterate</div>
+          <div class="text-xl text-textLight font-title">Iterate</div>
           <div class="text-md text-text font-light my-2">
             <p>Nodes with <code-glow>Json::List</code-glow> and <code-glow>Json::Object</code-glow> types can be iterated through.</p>
           </div>

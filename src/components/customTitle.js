@@ -28,7 +28,7 @@ class CustomTitle extends HTMLElement {
       <div class="flex flex-col justify-center space-y-4 px-8 w-fit mx-auto" style="padding-top: ${topPadding}rem; padding-bottom: ${bottomPadding}rem;">
         <div class="text-textDim text-center content-center w-fit">
           ${prefix ? `<div class="text-xl font-light">${prefix}</div>` : ``}
-          <div class="${responsive ? "sm:text-6xl text-5xl md:text-7xl" : "text-7xl"} font-bold">${title}</div>
+          <div class="${responsive ? "sm:text-6xl text-5xl md:text-7xl" : "text-7xl"} tracking-wide font-title">${title}</div>
           ${suffix ? `<div class="text-xl font-light">${suffix}</div>` : ``}
           ${itch || github || youtube ? `
             <ul class="flex space-x-4 items-center mt-8 mx-auto w-fit">

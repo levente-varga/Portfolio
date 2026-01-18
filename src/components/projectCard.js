@@ -32,8 +32,8 @@ class ProjectCard extends HTMLElement {
         
         <div class="p-6">
           <div class="flex justify-between items-center">
-            <div class="text-xl text-textLight font-bold">${name}</div>
-            <div class="text-sm text-textDim font-light">${year}</div>
+            <div class="text-xl text-textLight font-title">${name}</div>
+            <div class="text-sm text-textDim">${year}</div>
           </div>
           <div class="text-sm text-text font-light my-2">${description}</div>
           <ul class="flex text-text items-center">

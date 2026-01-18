@@ -14,7 +14,7 @@ class ProjectDetails extends HTMLElement {
     const time = JSON.parse(this.getAttribute('time'));
 
     this.innerHTML = `
-      <div id="about" class="text-4xl text-center text-textDim font-bold">About</div>
+      <div id="about" class="text-4xl text-center text-textDim font-title">About</div>
       <div class="w-full max-w-xl mx-auto space-y-2 sm:px-8 px-4 my-8 text-text text-md font-light fill-text">
         ${this.paragraph(warn, 'warning')}
         ${this.paragraph(idea, 'bulb')}
