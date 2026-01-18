@@ -69,6 +69,19 @@
 }
 
 @layer utilities {
+  .bg-java { background-color: var(--color-java); }
+  .bg-javascript { background-color: var(--color-javascript); }
+  .bg-c { background-color: var(--color-c); }
+  .bg-cpp { background-color: var(--color-cpp); }
+  .bg-csharp { background-color: var(--color-csharp); }
+  .bg-dart { background-color: var(--color-dart); }
+  .bg-hlsl { background-color: var(--color-hlsl); }
+  .bg-flutter { background-color: var(--color-flutter); }
+  .bg-tailwind { background-color: var(--color-tailwind); }
+  .bg-godot { background-color: var(--color-godot); }
+  .bg-gdscript { background-color: var(--color-gdscript); }
+  .bg-unity { background-color: var(--color-unity); }
+
   .animation-delay-200 {
     animation-delay: 200ms;
     animation-fill-mode: backwards;
@@ -83,20 +96,3 @@
 body {
   font-family: 'Inter', sans-serif;
 }
-
-/*
-    Safelist for dynamic classes:
-
-    bg-java
-    bg-javascript
-    bg-c
-    bg-cpp
-    bg-csharp
-    bg-dart
-    bg-hlsl
-    bg-flutter
-    bg-tailwind
-    bg-godot
-    bg-gdscript
-    bg-unity
- */
