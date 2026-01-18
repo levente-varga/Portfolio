@@ -2,12 +2,30 @@
 
 @font-face {
   font-family: 'Inter';
-  src: url('/public/fonts/Inter') format('ttf');
-  font-weight: normal;
+  src: url('/public/fonts/Inter/Inter.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter Semi-Bold';
+  src: url('/public/fonts/Inter/Inter.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter Bold';
+  src: url('/public/fonts/Inter/Inter.ttf') format('truetype');
+  font-weight: 700;
   font-style: normal;
 }
 
 @theme {
+  --font-display: "Inter", ui-sans-serif, system-ui;
+  --font-title: "Inter Semi-Bold", serif;
+  --font-header: "Inter Bold", serif;
+
   --color-background: #111111;
   --color-backgroundLight: #181818;
   --color-foreground: #1e1e1e;
