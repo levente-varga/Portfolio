@@ -8,77 +8,10 @@ class ProjectCard extends HTMLElement {
   connectedCallback() {
     this.render();
     this.addHover();
-    this.setupGyro();
   }
 
   attributeChangedCallback() {
     this.render();
-  }
-
-  setupGyro() {
-    const projectCard = document.getElementById(this.projectCardId);
-    if (!projectCard) return;
-
-    const cardImage = projectCard.querySelector('.project-card-image');
-
-    const handleOrientation = (e) => {
-      if (this.isMouseActive) return;
-
-      // beta: front-back tilt (-180 to 180), gamma: left-right tilt (-90 to 90)
-      let beta = e.beta;
-      let gamma = e.gamma;
-
-      if (beta === null || gamma === null) return;
-
-      // Normalize values. Assuming typical holding angle is ~45 deg beta.
-      // We want a range of about +/- 15 degrees from "natural" position
-      const naturalBeta = 45;
-      const range = 15;
-
-      let deltaY = (beta - naturalBeta) / range;
-      let deltaX = gamma / range;
-
-      // Clamp values between -1 and 1
-      deltaX = Math.max(-1, Math.min(1, deltaX));
-      deltaY = Math.max(-1, Math.min(1, deltaY));
-
-      const tiltX = deltaY * 5;
-      const tiltY = deltaX * -5;
-
-      projectCard.style.transition = 'transform 0.2s ease-out';
-      cardImage.style.transition = 'transform 0.2s ease-out';
-
-      projectCard.style.transform = `rotateX(${tiltX.toFixed(2)}deg) rotateY(${tiltY.toFixed(2)}deg)`;
-
-      const translateX = deltaX * 10;
-      const translateY = deltaY * 10;
-      cardImage.style.transform = `translate3d(${translateX.toFixed(2)}px, ${translateY.toFixed(2)}px, -40px) scale(1.03)`;
-    };
-
-    // Request permission for iOS 13+
-    const requestPermission = () => {
-      // Check if we are on a mobile device to avoid unnecessary listeners on desktop
-      const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-      if (!isMobile) return;
-
-      if (typeof DeviceOrientationEvent !== 'undefined' && typeof DeviceOrientationEvent.requestPermission === 'function') {
-        DeviceOrientationEvent.requestPermission()
-          .then(response => {
-            if (response === 'granted') {
-              window.addEventListener('deviceorientation', handleOrientation);
-            }
-          })
-          .catch(console.error);
-      } else {
-        window.addEventListener('deviceorientation', handleOrientation);
-      }
-      // Remove listener after first interaction to avoid multiple requests
-      window.removeEventListener('touchstart', requestPermission);
-      window.removeEventListener('mousedown', requestPermission);
-    };
-
-    window.addEventListener('touchstart', requestPermission);
-    window.addEventListener('mousedown', requestPermission);
   }
 
   render() {
@@ -133,13 +66,6 @@ class ProjectCard extends HTMLElement {
     });
 
     projectCard.addEventListener('mousemove', (e) => {
-      // If mouse is moving, we should probably ignore gyroscope or at least let mouse take priority
-      this.isMouseActive = true;
-      clearTimeout(this.mouseActiveTimeout);
-      this.mouseActiveTimeout = setTimeout(() => {
-        this.isMouseActive = false;
-      }, 2000);
-
       const {width, height, left, top} = projectCard.getBoundingClientRect();
 
       const centerX = left + width / 2;
