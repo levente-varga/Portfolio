@@ -45,7 +45,7 @@ class CustomTitle extends HTMLElement {
   item(url, icon) {
     return url ? `
       <li><a href="${url}" target="_blank" rel="noopener noreferrer">
-        <svg class="size-8 fill-textDim hover:fill-text duration-250"><use href="/svg/icons.svg#${icon}"></use></svg>
+        <svg class="size-6 fill-textDim hover:fill-text duration-250"><use href="/svg/icons.svg#${icon}"></use></svg>
       </a></li>
     ` : ``;
   }
