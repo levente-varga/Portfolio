@@ -220,7 +220,7 @@ css/
 export.scss
 export/
 
-*.DS_Store
+.DS_Store
 .idea/copilot.data.migration.agent.xml
 .idea/copilot.data.migration.ask.xml
 .idea/copilot.data.migration.ask2agent.xml
