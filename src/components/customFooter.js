@@ -11,7 +11,7 @@ class CustomFooter extends HTMLElement {
     this.innerHTML = `
       <div class="flex flex-col px-auto bg-backgroundLight text-textDim fill-textDim text-center items-center justify-center py-16 mt-16">
         <div id="contact" class="text-4xl font-title mb-8">Contact</div>
-        <div class="">You can find me on all of these platforms</div>
+        <div class="">You can find me on all of these platforms:</div>
         <ul class="flex space-x-4 items-center mt-8 mx-auto w-fit">
           ${this.item("https://github.com/levente-varga", "github")}
           ${this.item("https://www.linkedin.com/in/levente-varga/", "linkedin")}
@@ -21,8 +21,8 @@ class CustomFooter extends HTMLElement {
         </ul>
       </div>
       
-      <div class="flex flex-row mx-auto max-w-5xl items-center justify-center text-textDark py-4">
-        <p>&copy; 2025 Levente Varga. All rights reserved.</p>
+      <div class="flex flex-row mx-auto max-w-5xl items-center justify-center text-textDark text-sm py-4">
+        <p>&copy; 2026 Levente Varga. All rights reserved.</p>
       </div>
     `;
   }
