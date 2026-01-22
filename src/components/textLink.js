@@ -11,7 +11,7 @@ class TextLink extends HTMLElement {
     const text = this.innerHTML;
     const href = this.getAttribute("href");
 
-    this.innerHTML = `<span class="underline hover:text-textLight"><a href="${href}">${text}</a></span>`;
+    this.innerHTML = `<span class="underline hover:text-textLight duration-200"><a href="${href}">${text}</a></span>`;
   }
 }
 
